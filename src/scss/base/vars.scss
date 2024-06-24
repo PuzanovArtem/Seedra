@@ -7,6 +7,42 @@ $dark-color: #000000;
 $background-color:gray;
 
 
+$mobile: 359px;
+$s-mobile: 425px;
+$m-mobile: 560px;
+$l-mobile: 630px;
+$s-tablet: 695px;
+$m-tablet: 730px;
+$l-tablet: 767px;
+$tablet: 768px;
+$xm-tablet: 860px;
+$xl-tablet: 920px;
+$desktop: 992px;
+$m-desktop: 1090px;
+$l-desktop: 1290px;
+$LapTop: 1440px;
+$xl-LapTop: 1718px;
+$xxl-LapTop: 1800px;
+
+
+@mixin respond-to($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin gray-line {
+    content: "";
+        width: 100%;
+        height: 1px;
+        background: $dark-color;
+        opacity: 6%;
+        position: absolute;
+}
+
+
+///////приклад використання
+/// @include respond-to($xxl-LapTop) { }
 
 
 
