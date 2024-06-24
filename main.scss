@@ -1,13 +1,6 @@
 @import '/src/scss/base/general.scss';
 @import '/src/scss/base/reset.scss';
 @import '/src/scss/base/vars.scss';
+@import '/src/scss/base/template.scss';
 
-body{
-    background-color: indigo;
-    color: white;
 
-    a{
-        color: white;
-    }
-
-}
