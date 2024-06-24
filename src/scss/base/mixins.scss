@@ -12,3 +12,9 @@ $desktop: 1400px;
         @content;
     }
 }
+
+
+
+///////приклад використання
+/// @include respond-to($xxl-LapTop) { }
+
