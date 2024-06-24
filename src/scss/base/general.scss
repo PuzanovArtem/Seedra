@@ -1,0 +1,21 @@
+@import './src/scss/vars.scss';
+@import 'fonts.scss';
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	font-family: $fontFamilyBase;
+	font-weight: $fontWeightBase;
+	font-size: $fontSizeBase;
+	background: $background-color;
+	color: $main-color;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: $maxWidthContainer;
+	padding:0 15px;
+	
+}
+
