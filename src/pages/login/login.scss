@@ -4,7 +4,9 @@
 
 
 @import '/src/scss/components/header.scss';
-
+body{
+    background: yellow;
+}
 .login title{
     font-size: 75px;
     color: red;

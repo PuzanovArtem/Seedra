@@ -1,7 +1,6 @@
-@import '@/scss/general.scss';
-@import '@/scss/reset.scss';
-@import '@/scss/vars.scss';
-@import '@/scss/extends.scss';
+@import '/src/scss/base/general.scss';
+@import '/src/scss/base/reset.scss';
+@import '/src/scss/base/vars.scss';
 
 body{
     background-color: indigo;

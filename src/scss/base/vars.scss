@@ -1,10 +1,10 @@
-$fontFamilyBase: "Montserrat", sans-serif;
-$fontFamileSecond: "Chakra Petch", sans-serif;
-$fontWeightBase: 500;
-$fontSizeBase: 22px;
+$fontFamilyBase: "Lexend", sans-serif;
+$fontWeightBase: 400;
+$fontSizeBase: 14px;
 $main-color: #FFFFFF;
 $dark-color: #000000;
 
+$background-color:gray;
 
 
 
@@ -13,9 +13,9 @@ $dark-color: #000000;
 // Минимальная ширина страницы
 $minWidth: 420px;
 // Ширина полотна (макета)
-$maxWidth: 1920px;
+$maxWidth: 1440px;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1590px;
+$maxWidthContainer: 1140px;
 // Общий отступ у контейнера
 // (300= по 150px слева и справа, 0 = нет отступа)
 $containerPadding: 150;
