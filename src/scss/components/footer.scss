@@ -56,25 +56,6 @@
         color: $text-secondary;
     }
   }
-//   @include respond-to($l-tablet) { 
-//     .footer{
-//         .footer__body{
-//             display: grid;
-//             grid-template-columns: 1fr 1fr;
-//             .footer__menu{
-//                 order: 2;
-//                 justify-content: center;
-//                 width: 100%;
-//             }
-//             .footer__logo{
-//                 grid-column: 2 span;
-//                 order: 1;
-//                 justify-self: center;
-//                 margin-bottom: 36px;
-//             }
-//         }
-//     }
-//   }
 
 }
 

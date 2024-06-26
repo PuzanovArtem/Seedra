@@ -1,0 +1,80 @@
+<section class="search">
+  <div class="container">
+    <div class="search__container">
+      <div class="search__block">
+        <div class="search-box">
+          <form action="#" class="filter-box__form search__form">
+            <button class="search-form__btn" aria-label="Search" type="submit">
+              <img
+                src="/src/assets/images/icons/icon_search.svg"
+                alt="search"
+                class="svg-search"
+                width="24px"
+                height="24px"
+              />
+            </button>
+            <input
+              autocomplete="off"
+              type="text"
+              name="form[]"
+              data-value="Search"
+              placeholder="Search"
+              class="search-form__input"
+            />
+            <div class="search-form__filter">
+              <img
+                class="svg-seatch-filter"
+                src="/src/assets/images/icons/icon_search_filter.svg"
+              />
+            </div>
+          </form>
+
+          <div class="select select_form" data-id="1">
+            <select
+              name="form[]"
+              data-class-modif="form"
+              hidden=""
+              data-id="1"
+              data-speed="150"
+            >
+              <option value="1" selected="">Most expensive</option>
+              <option value="2">The cheapest</option>
+              <option value="3">By popularity</option>
+              <option value="4">Our recommendation</option>
+            </select>
+            <div class="select__body">
+              <button type="button" class="select__title">
+                <span class="select__value">
+                  <span class="select__label">Sort by</span>
+                  <span class="select__content">Most expensive</span>
+                </span>
+              </button>
+              <div class="select__options" hidden="">
+                <div class="select__scroll">
+                  <button
+                    class="select__option"
+                    data-value="1"
+                    type="button"
+                  >Most expensive</button>
+                  <button
+                    class="select__option"
+                    data-value="2"
+                    type="button"
+                  >The cheapest</button>
+                  <button class="select__option" data-value="3" type="button">By
+                    popularity</button>
+                  <button
+                    class="select__option"
+                    data-value="4"
+                    type="button"
+                  >Our recommendation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -51,14 +51,17 @@ export default defineConfig({
       },
     }),
     handlebars({
-      partialDirectory: resolve(__dirname, "src/html/components"),
+      partialDirectory: [
+        resolve(__dirname, "src/html/components"),
+        resolve(__dirname, "src/html/pages/catalog"),
+      ],
     }),
   ],
   build: {
     outDir: "docs",
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/pages/login/login.html"),
+        catalog: resolve(__dirname, "src/pages/catalog/catalog.html"),
       },
     },
   },

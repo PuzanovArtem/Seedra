@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/images/icons/all-product-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SEEDRA</title>
+    <link rel="stylesheet" href="/src/pages/catalog/catalog.scss">
+    <title>SEEDRA-catalog</title>
   </head>
   <body>
     <div class="wrapper">
-      {{> _header }}
-      <h1>Index</h1>
-      <p>first</p>
-      <a href="/catalog/">Login</a>
-     
-      {{>_footer}}
+        <main>
+            {{> _search}}
+        </main>
+      
+      <!-- {{>_footer}} -->
     </div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/pages/catalog/catalog.js"></script>
   </body>
 </html>

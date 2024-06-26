@@ -1,10 +1,23 @@
 @import '/src/scss/base/vars.scss';
 @import 'fonts.scss';
 
-.wrapper{
-	display: flex;
-	flex-direction: column;
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: $fontFamilyBase;
+	font-weight: $fontWeightBase;
+	font-size: $fontSizeBase;
+	background: $white;
+	color: $text-primary;
+}
+
+body.no-scroll {
 	overflow: hidden;
+}
+
+.wrapper{
+	
 	font-family: $fontFamilyBase;
 	font-weight: $fontWeightBase;
 	font-size: $fontSizeBase;
@@ -16,6 +29,6 @@
 	margin: 0 auto;
 	max-width: $maxWidthContainer;
 	padding:0 15px;
-	
+	position: relative;
 }
 
