@@ -1,3 +1,101 @@
-<header>
-    <h1>My name is Handlebars </h1>
+<header class="header">
+  <div class="header__wrapper container">
+    <a href="#" class="header__logo">
+      <img
+        src="/src/assets/images/icons/logo.svg"
+        alt="logo"
+        width="97"
+        height="21"
+      />
+    </a>
+
+    <nav class="menu" id="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">ALL PRODUCTS</a>
+        </li>
+
+        <li class="menu__item">
+          <a href="#" class="menu__link">ABOUT SEEDRA</a>
+        </li>
+
+        <li class="menu__item">
+          <a href="#" class="menu__link">OUR BLOG</a>
+        </li>
+
+        <li class="menu__item">
+          <a href="#" class="menu__link">CONTACTS</a>
+        </li>
+      </ul>
+
+      <ul class="menu__social-list">
+        <li class="menu__social-item">
+          <a href="#">
+            <img
+              src="/src/assets/images/icons/instagram-header.svg"
+              alt="instagram"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+
+        <li class="menu__social-item">
+          <a href="#">
+            <img
+              src="/src/assets/images/icons/facebook-header.svg"
+              alt="facebook"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu__search-container">
+        <input
+          type="text"
+          id="searchInput"
+          class="menu__search-input"
+          placeholder="Search"
+        />
+      </div>
+    </nav>
+
+<div class="header__cart-wrapper">
+    <ul class="menu__cart-list">
+      <li class="menu__card-item">
+        <a href="#">
+          <img
+            src="/src/assets/images/icons/heard.svg"
+            alt="heard"
+            width="24"
+            height="24"
+          />
+        </a>
+      </li>
+
+      <li class="menu__card-item">
+        <a href="#">
+          <img
+            src="/src/assets/images/icons/icon_cart.svg"
+            alt="cart"
+            width="24"
+            height="24"
+          />
+        </a>
+      </li>
+    </ul>
+
+    <button class="menu__burger" id="menu__burger">
+      <img
+        src="/src/assets/images/icons/Menu.svg"
+        alt="menu-burger"
+        width="24"
+        height="24"
+      />
+    </button>
+</div>
+
+  </div>
 </header>

@@ -1,3 +1,3 @@
-import './main.scss'
 
-console.log('main')
+
+import './src/js/components/header.js'

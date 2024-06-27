@@ -1,5 +1,8 @@
+@import '/src/scss/base/mixins.scss';
+
+
 .main-btn {
-    padding: 11px 33px;
+    padding: 14px 34px;
     background: rgba(53, 151, 64, 1);
     border-radius: 8px;
     color: rgba(255, 255, 255, 1);
@@ -14,17 +17,22 @@
     &:active {
         background: rgba(79, 160, 131, 1);
     }
+
+         @include respond-to($tablet) {
+            font-size: 14px;
+         }
 }
 
 
 .secondary-btn {
-    padding: 11px 33px;
+    padding: 14px 34px;
     background: transparent;
     border-radius: 8px;
     color: rgba(53, 151, 64, 1);
     font-weight: 500;
     font-size: 16px;
     transition: background .3s;
+    border: 1px solid transparent;
 
     &:hover {
         background: rgba(53, 151, 64, 0.08);
@@ -34,6 +42,10 @@
         background: rgba(79, 160, 131, 1);
         border: 1px solid rgba(53, 151, 64, 1);
     }
+
+         @include respond-to($tablet) {
+             font-size: 14px;
+         }
 }
 
 
@@ -74,9 +86,9 @@
     font-weight: 600;
     color: $text-primary;
 
-    // @include respond-to($mobile) {
-    //     font-weight: 700;
-    //     font-size: 18px;
-    // }
+    @include respond-to($mobile) {
+        font-weight: 700;
+        font-size: 18px;
+    }
 
 }
