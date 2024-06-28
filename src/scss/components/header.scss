@@ -162,17 +162,24 @@
       z-index: 100;
       top: 60px;
       right: 0;
-      opacity: 0;
+     
       width: 280px;
       height: 100vh;
       padding: 15px 0 15px 0;
       background-color: $white;
-      transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+     display: none;
+      opacity: 0;
+      transform: translateX(100%);
+      visibility: hidden;
 box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     }
 
     &.show {
+   
       opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
     }
 
     &__search-container {
@@ -217,6 +224,8 @@ box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
       background: #cfcfcf;
     }
   }
+
+    
 }
 .main-blur {
     filter: blur(5px);

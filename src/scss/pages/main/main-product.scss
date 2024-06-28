@@ -1,0 +1,153 @@
+.main-product {
+  margin: 58px 0 0 0;
+
+  &__top-wrapper {
+    @extend %display-jc-sb;
+  }
+
+  &__btn {
+    border: 1px solid $light-gray-stroke;
+  }
+
+  &__category-list {
+    @extend %display-jc-sb;
+    margin: 40px 0 0 0;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+
+  &__category-item {
+    flex: 0 0 auto;
+  }
+
+  &__category-item:not(:last-child) {
+    margin: 0 12px 0 0;
+  }
+
+  &__list {
+    margin: 32px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+  }
+
+  &__item {
+    padding: 28px;
+    border: 2px solid $light-gray-stroke;
+    border-radius: 8px;
+    min-width: 350px;
+    
+    width: 100%;
+    position: relative;
+    transition: box-shadow 0.3s;
+
+    img {
+        margin: 0 auto;
+        max-height: 295px;
+        width: auto;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 0px 1px 13px 0px #00000040;
+      }
+    }
+  }
+
+  &__heard-fill {
+    display: none;
+  }
+
+  &__heard-wrapper.active {
+
+    & {
+      border: 1px solid $yellow;
+    }
+  }
+
+  &__heard-wrapper {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $light-gray-stroke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(85%) sepia(93%)
+        saturate(2064%) hue-rotate(315deg) brightness(105%) contrast(101%);
+    }
+  }
+
+  &__rat-wrapper {
+    margin: 29px 0 0 0;
+    @extend %display-flex;
+  }
+
+  &__rat-list {
+    @extend %display-flex;
+    margin: 0 13px 0 0;
+  }
+
+  &__rat-item:not(:last-child) {
+    margin: 0 1px 0 0;
+  }
+
+  &__com {
+    color: $text-secondary;
+  }
+
+  &__card-title {
+    margin: 8px 0 0 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__price-wrapper {
+    margin: 8px 0 0 0;
+    @extend %display-jc-sb;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  &__cart-btn {
+    cursor: pointer;
+  }
+
+
+  @include respond-to($tablet) {
+    &__list {
+           
+           display: flex;
+           gap: 11px;
+            overflow: scroll;
+        }
+
+        &__item {
+            min-width: 319px;
+
+            img {
+                max-height: 235px;
+            }
+           
+        }
+  }
+
+  @include respond-to($s-mobile) {
+      
+
+      &__item {
+          min-width: 295px;
+
+      }
+  }
+
+}
