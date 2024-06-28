@@ -1,4 +1,5 @@
 .search {
+  font-family: "Lexend",sans-serif;
   .search__container {
     .search__block {
       .search-box {
@@ -37,6 +38,31 @@
             right: 29px;
           }
         }
+      }
+
+      .filter__buttons{
+        @extend %display-jc-sb;
+        gap: 12px;
+        padding: 0 0 10px 0;
+        .button-product{
+          width: 144px;
+          height: 72px;
+          padding: 0 16px;
+          gap: 8px;
+          border: 2px solid $light-gray-stroke;
+          color: $text-primary;
+          @extend %display-center;
+        }
+        .filter__btn:first-child {
+          max-width: 110px;
+      }
+      }
+      .store__buttons{
+        margin: 25px 0 0 0;
+        button {
+          position: relative;
+          z-index: 1;
+      }
       }
     }
   }
