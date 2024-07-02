@@ -1,5 +1,5 @@
 @import '/src/scss/base/vars.scss';
-@import 'fonts.scss';
+@import '/src/scss/base/fonts.scss';
 
 body,
 html {
@@ -17,7 +17,6 @@ body.no-scroll {
 }
 
 .wrapper{
-	
 	font-family: $fontFamilyBase;
 	font-weight: $fontWeightBase;
 	font-size: $fontSizeBase;

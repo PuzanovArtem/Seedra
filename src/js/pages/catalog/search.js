@@ -41,3 +41,39 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Herbs Popup
+    document.getElementById('popupButton').onclick = function() {
+        document.getElementById('herbsPopup').style.display = 'block';
+    };
+
+    document.getElementsByClassName('popup-close')[0].onclick = function() {
+        document.getElementById('herbsPopup').style.display = 'none';
+    };
+
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('herbsPopup')) {
+            document.getElementById('herbsPopup').style.display = 'none';
+        }
+    };
+
+    // Filter Popup
+    const filterBtn = document.querySelector('.search-form__filter');
+    const popup = document.getElementById('filter-popup');
+    const closeBtn = document.querySelector('.filter-popup__close');
+
+    filterBtn.addEventListener('click', () => {
+        popup.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
