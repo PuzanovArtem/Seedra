@@ -1,5 +1,5 @@
 .main-product {
-  margin: 58px 0 0 0;
+  padding: 58px 0;
 
   &__top-wrapper {
     @extend %display-jc-sb;
@@ -11,9 +11,10 @@
 
   &__category-list {
     @extend %display-jc-sb;
-    margin: 40px 0 0 0;
+    margin: 40px -15px 0;
     overflow: scroll;
     scrollbar-width: none;
+    padding: 0 15px;
   }
 
   &__category-item {
@@ -25,10 +26,12 @@
   }
 
   &__list {
-    margin: 32px 0 0 0;
+    margin: 32px -15px 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
+    padding: 0 15px;
+    
   }
 
   &__item {
@@ -129,6 +132,7 @@
            display: flex;
            gap: 11px;
             overflow: scroll;
+            scrollbar-width: none;
         }
 
         &__item {
@@ -143,6 +147,7 @@
 
   @include respond-to($s-mobile) {
       
+    padding: 37px 0 24px 0;
 
       &__item {
           min-width: 295px;
