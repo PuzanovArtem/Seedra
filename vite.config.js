@@ -54,6 +54,7 @@ export default defineConfig({
       partialDirectory: [
         resolve(__dirname, "src/html/components"),
         resolve(__dirname, "src/html/pages/main/"),
+        resolve(__dirname, "src/html/pages/blog/"),
       ]
     }),
   ],
@@ -62,6 +63,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/pages/login/login.html"),
+        blog: resolve(__dirname, "src/pages/blog/blog.html"),
       },
     },
   },

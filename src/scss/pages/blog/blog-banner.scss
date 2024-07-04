@@ -1,0 +1,93 @@
+.blog-banner {
+  &__wrapper {
+    margin: 32px 0 0 0;
+    padding: 65px 17px 52px 17px;
+    width: 100%;
+    border-radius: 24px;
+    background: $light-green;
+    text-align: center;
+    position: relative;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 12px auto;
+  }
+
+  &__bg-first,
+  &__bg-sec,
+  &__bg-third,
+  &__bg-forth,
+  &__bg-fifth,
+  &__bg-sixth {
+    position: absolute;
+  }
+
+  &__bg-first {
+    top: 38px;
+    left: 76px;
+  }
+
+  &__bg-sec {
+    left: 0;
+    bottom: 1px;
+  }
+
+  &__bg-third {
+    right: 0;
+    top: 15px;
+  }
+
+  &__bg-forth {
+    top: 35px;
+    right: 0;
+  }
+
+  &__bg-fifth {
+    display: none;
+  }
+
+  &__bg-sixth {
+    display: none;
+  }
+
+  @include respond-to($tablet) {
+    &__subtitle {
+      font-size: 14px;
+      line-height: 2;
+      max-width: 450px;
+    }
+
+    &__wrapper {
+      margin: 30px 0 0 0;
+      padding: 47px 17px 42px 17px;
+    }
+
+    &__bg-fifth {
+      display: block;
+      right: 3px;
+      bottom: 5px;
+    }
+
+    &__bg-third,
+    &__bg-forth,
+    &__bg-sec {
+      display: none;
+    }
+
+    &__bg-first {
+      top: auto;
+      bottom: -35px;
+      left: -20px;
+    }
+
+    &__bg-sixth {
+      display: block;
+      top: 5px;
+      right: 3px;
+    }
+  }
+}
