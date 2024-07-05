@@ -53,6 +53,8 @@ export default defineConfig({
     handlebars({
       partialDirectory: [
         resolve(__dirname, "src/html/components"),
+        resolve(__dirname, "src/html/pages/main/"),
+        resolve(__dirname, "src/html/pages/blog/"),
         resolve(__dirname, "src/html/pages/catalog"),
       ],
     }),
@@ -61,6 +63,8 @@ export default defineConfig({
     outDir: "docs",
     rollupOptions: {
       input: {
+        main: resolve(__dirname, "src/pages/login/login.html"),
+        blog: resolve(__dirname, "src/pages/blog/blog.html"),
         catalog: resolve(__dirname, "src/pages/catalog/catalog.html"),
       },
     },
@@ -70,8 +74,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // esbuild: {
-  //   jsxFactory: 'create',
-  //   jsxInject: 'import { create } from "../settings/create.js"',
-  // }
 });

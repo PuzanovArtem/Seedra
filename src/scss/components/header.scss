@@ -1,4 +1,236 @@
-.header__title{
-    font-size: 35px ;
-    color: red;
+@import '/src/scss/base/mixins.scss';
+@import '/src/scss/base/extends.scss';
+
+.header {
+  padding: 17px 0;
+  box-shadow: 0px 4px 12px 0px #cfcfcf40;
+  z-index: 2;
+  
+
+  &__wrapper,
+  &__cart-wrapper {
+    @extend %display-flex;
+  }
+
+  &__logo {
+    margin: 0 48px 0 0;
+  }
+
+  @include respond-to($lapTop) {
+    &__wrapper {
+      justify-content: space-between;
+    }
+  }
+}
+
+.menu {
+  @extend %display-flex;
+
+  &__list,
+  &__social-list,
+  &__cart-list {
+    @extend %display-flex;
+  }
+
+  &__list {
+    color: $text-secondary;
+    margin: 0 29px 0 0;
+  }
+
+  &__item {
+    padding: 0 16px;
+    transition: color 0.3s;
+    position: relative;
+
+    &.active {
+      color: $primary-color;
+      font-weight: 700;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: $light-gray-stroke;
+  }
+
+  &__social-list {
+    margin: 0 13px 0 0;
+  }
+
+  &__social-item {
+    img {
+      transition: filter 0.3s;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        img {
+          filter: brightness(0) saturate(100%) invert(43%) sepia(78%)
+            saturate(395%) hue-rotate(76deg) brightness(95%) contrast(90%);
+        }
+      }
+    }
+  }
+
+  &__social-item:not(:last-child) {
+    margin: 0 8px 0 0;
+  }
+
+  &__search-container {
+    width: 285px;
+    margin: 0 13px 0 0;
+    position: relative;
+  }
+
+  &__search-container::before {
+    content: "";
+    position: absolute;
+    background-image: url(/src/assets/images/icons/icon_search.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font-size: 20px;
+    color: #aaa;
+  }
+
+  &__search-input {
+    width: 100%;
+    border-radius: 71px;
+    border: 1px solid $light-gray-stroke;
+    padding: 13px 20px 11px 50px;
+    outline: none;
+
+    &:focus {
+      border-color: $light-gray-stroke;
+      box-shadow: 0px 1px 6px 0px #00000052;
+    }
+  }
+
+  &__card-item:not(:last-child) {
+    margin: 0 24px 0 0;
+  }
+
+  &__card-item:last-of-type {
+    img {
+      filter: brightness(0) saturate(100%) invert(43%) sepia(78%) saturate(395%)
+        hue-rotate(76deg) brightness(95%) contrast(90%);
+    }
+  }
+
+  &__card-item {
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__burger {
+    margin: 0 0 0 28px;
+    display: none;
+  }
+
+  @include respond-to($lapTop) {
+    &__search-container {
+      max-width: 241px;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    & {
+      flex-direction: column;
+      position: absolute;
+      z-index: 100;
+      top: 60px;
+      right: 0;
+     
+      width: 280px;
+      height: 100vh;
+      padding: 15px 0 15px 0;
+      background-color: $white;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+     display: none;
+      opacity: 0;
+      transform: translateX(100%);
+      visibility: hidden;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    }
+
+    &.show {
+   
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    &__search-container {
+      order: 1;
+    }
+
+    &__list {
+      order: 2;
+      margin: 21px 0 0 0;
+      display: block;
+      width: 100%;
+      padding: 0 23px;
+    }
+
+    &__item {
+      padding: 15px 0;
+    }
+
+    &__item:not(:last-child):after {
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      top: auto;
+    }
+
+    &__social-list {
+      order: 3;
+      margin: 22px 0 0 0;
+      padding: 14px 23px;
+      position: relative;
+      width: 100%;
+    }
+
+    &__social-list::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 0;
+      right: 0;
+
+      background: #cfcfcf;
+    }
+  }
+
+    
+}
+.main-blur {
+    filter: blur(5px);
+   
 }

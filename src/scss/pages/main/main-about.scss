@@ -1,0 +1,190 @@
+.main-about {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    @extend %display-jc-sb;
+    padding: 70px 0 61px 0;
+  }
+
+  &__content {
+    max-width: 521px;
+  }
+
+  &__title {
+    margin: 0 0 31px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  &__text:not(:last-child) {
+    margin: 0 0 20px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  // &__ellipse {
+  //     position: relative;
+
+  // }
+
+  &__icon-ellipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__first-icon,
+  &__second-icon,
+  &__third-icon,
+  &__forth-icon,
+  &__fifth-icon {
+    position: absolute;
+  }
+
+  &__first-icon {
+    top: -10px;
+    right: 10px;
+  }
+
+  &__second-icon {
+    top: 52px;
+    right: -15px;
+  }
+
+  &__third-icon {
+    right: 0;
+    top: 368px;
+  }
+
+  &__forth-icon {
+    top: 38px;
+    left: 40px;
+  }
+
+  &__fifth-icon {
+    bottom: -31px;
+    left: 40px;
+  }
+
+  @include respond-to($lapTop) {
+      &__img {
+          width: 414px;
+          height: 414px;
+      }
+
+      &__icon-ellipse {
+          width: 472px;
+          height: 472px;
+      }
+  }
+
+
+   @include respond-to($l-tablet) {
+
+
+    &__wrapper {
+        display: block;
+        padding: 0 0 61px 0;
+    }
+
+    &__content {
+        max-width: 100%;
+        margin: 0 0 41px;
+    }
+
+        &__title {
+            margin: 0 0 19px;
+        }
+
+                &__third-icon {
+                    top: auto;
+                    bottom: 93px;
+                }
+   }
+
+   @include respond-to($tablet) {
+&__img {
+        width: 384px;
+        height: 384px;
+    }
+
+    &__icon-ellipse {
+        width: 422px;
+        height: 422px;
+    }
+   }
+
+   @include respond-to($mobile) {
+
+&__title {
+    max-width: 237px;
+  }
+
+    &__img {
+        width: 284px;
+        height: 284px;
+    }
+
+    &__icon-ellipse {
+        width: 322px;
+        height: 322px;
+    }
+
+        &__first-icon {
+            top: -33px;
+            right: -10px;
+        }
+    
+        &__second-icon {
+            top: 31px;
+            right: -15px;
+        }
+    
+        &__third-icon {
+            right: 10px;
+            top: auto;
+            bottom: 8px;
+        }
+    
+        &__forth-icon {
+            top: 38px;
+            left: 0;
+        }
+    
+        &__fifth-icon {
+            bottom: -21px;
+            left: 0;
+        }
+   }
+
+   @include respond-to($s-mobile) {
+
+    &__second-icon {
+           
+            right: -65px;
+        }
+
+        &__forth-icon {
+          
+            left: -30px;
+        }
+
+                &__fifth-icon {
+                    
+                    left: -10px;
+                }
+   }
+}

@@ -1,0 +1,342 @@
+.main-banner {
+  &__wrapper {
+    padding: 46px 0 0 76px;
+    border-radius: 24px;
+    background: $light-green;
+    margin: 32px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+  }
+
+  &__first-block {
+    max-width: 660px;
+  }
+
+  &__subtitle {
+    margin: 12px 0 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    max-width: 560px;
+  }
+
+  &__price-wrapper {
+    @extend %display-flex;
+    margin: 21px 0 0 0;
+  }
+
+  &__price-sale {
+    margin: 0 21px 0 16px;
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  &__img-bg {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__old-price {
+    font-size: 22px;
+    font-weight: 600;
+    color: $text-secondary;
+    text-decoration: line-through;
+  }
+
+  &__btn-wrapper {
+    margin: 30px 0 0 0;
+  }
+
+  &__sec-btn {
+    background: $white;
+    margin: 0 0 0 13px;
+  }
+
+  &__second-wrapper {
+    margin: 16px 0 0 0;
+    padding: 24px 0;
+    width: 100%;
+    background: rgba(255, 230, 46, 0.09);
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+  }
+
+  &__second-title {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__second-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: $text-secondary;
+    line-height: 1.8;
+  }
+
+  .icon-bg {
+    &-right-f,
+    &-right-s,
+    &-right-t,
+    &-right-fo,
+    &-left-f,
+    &-left-s,
+    &-left-t,
+    &-left-fo,
+    &-top-f,
+    &-top-s,
+    &-top-t,
+    &-top-fo,
+    &-top-fif {
+      position: absolute;
+      z-index: 1;
+    }
+
+    &-right-f {
+      bottom: 0;
+      right: 0;
+    }
+
+    &-right-s {
+      top: 15px;
+      right: 84px;
+    }
+
+    &-right-t {
+      top: 0;
+      right: 120px;
+    }
+
+    &-right-fo {
+      bottom: 15px;
+      right: 124px;
+    }
+
+    &-left-f {
+      top: 2px;
+      left: 12px;
+    }
+
+    &-left-s {
+      bottom: 0;
+      left: 37px;
+    }
+
+    &-left-t {
+      bottom: 37px;
+      left: 103px;
+    }
+
+    &-left-fo {
+      bottom: 0;
+      left: 142px;
+    }
+
+    &-top-f {
+      top: 15px;
+      right: 0;
+    }
+
+    &-top-s {
+      top: 35px;
+      right: 0;
+    }
+
+    &-top-t {
+      top: 91px;
+      right: 202px;
+    }
+
+    &-top-fo {
+      bottom: 0;
+      right: 0;
+    }
+
+    &-top-fif {
+      bottom: 0;
+      right: 237px;
+    }
+  }
+
+  .mob-icon-bg {
+    &-top-f,
+    &-top-s,
+    &-top-t,
+    &-top-fo,
+    &-top-fif {
+      display: none;
+    }
+  }
+
+  @include respond-to($lapTop) {
+    &__wrapper {
+      flex-direction: column;
+      padding: 46px 76px;
+    }
+
+    &__sec-block {
+      order: 1;
+      margin: 0 auto;
+    }
+
+    &__first-block {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    &__price-wrapper {
+      order: 1;
+    margin: 21px 0 12px 0;
+    }
+
+    &__title {
+      order: 2;
+    }
+
+    &__subtitle {
+      order: 3;
+    }
+
+    &__btn-wrapper {
+      order: 4;
+    }
+
+    .mob-icon-bg {
+      &-top-f,
+      &-top-s,
+      &-top-t,
+      &-top-fo,
+      &-top-fif {
+        display: block;
+        position: absolute;
+      }
+
+      &-top-f {
+        top: 0;
+        left: 0;
+      }
+
+      &-top-s {
+        top: 156px;
+        left: 8px;
+      }
+
+      &-top-fif {
+        top: 28px;
+        right: 0;
+      }
+
+      &-top-fo {
+        top: 77px;
+        right: 9px;
+      }
+
+      &-top-t {
+        top: 28px;
+        right: 58px;
+      }
+    }
+
+    .icon-bg {
+      &-top-f,
+      &-top-s,
+      &-top-t,
+      &-top-fo,
+      &-top-fif,
+    &-left-fo,
+    &-left-s {
+        display: none;
+      }
+
+
+      &-left-f {
+        bottom: 33px;
+        left: 7px;
+        top: auto;
+    }
+
+    &-left-t {
+        bottom: 5px;
+        left: 66px;
+    }
+
+    &-right-t {
+        bottom: 0;
+        left: -10px;
+        top: auto;
+        rotate: -185deg;
+    }
+
+        &-right-s {
+            top: auto;
+            bottom: 0;
+            right: 86px;
+        }
+
+                &-right-fo {
+                    bottom: 55px;
+                    right: 0;
+                }
+
+    }
+
+        &__second-wrapper {
+            padding: 32px 51px 56px 52px;
+        }
+  }
+
+  @include respond-to($tablet) {
+
+    &__second-wrapper {
+            padding: 32px 31px 56px 32px;
+        }
+    
+    &__wrapper {
+            padding: 41px 14px;
+        }
+    
+    &__img-bg {
+        width: 188px;
+        height: 188px;
+    }
+
+    &__price-wrapper {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__price-sale {
+        font-size: 32px;
+    }
+
+    &__title {
+        font-size: 28px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+    }
+  }
+
+  @include respond-to($s-mobile) {
+
+    &__first-btn,
+    &__sec-btn {
+        width: 100%;
+    }
+
+    &__sec-btn {
+        margin: 15px 0 0 0;
+    }
+  }
+}

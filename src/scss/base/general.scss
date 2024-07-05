@@ -16,12 +16,19 @@ body.no-scroll {
 	overflow: hidden;
 }
 
-.wrapper{
-	font-family: $fontFamilyBase;
+body {
+font-family: $fontFamilyBase;
 	font-weight: $fontWeightBase;
 	font-size: $fontSizeBase;
 	background: $white;
 	color: $text-primary;
+
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	
 }
 
 .container{
@@ -30,4 +37,6 @@ body.no-scroll {
 	padding:0 15px;
 	position: relative;
 }
+
+
 
