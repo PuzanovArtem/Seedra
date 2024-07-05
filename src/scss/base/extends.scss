@@ -1,3 +1,7 @@
+%display-flex{
+    display: flex;
+}
+
 %display-center {
     display: flex;
     align-items: center;
@@ -14,3 +18,17 @@
     display: flex;
     align-items: center;
 } 
+
+%display-start {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+%position-rel{
+    position: relative;
+}
+
+%position-abs{
+    position: absolute;
+}

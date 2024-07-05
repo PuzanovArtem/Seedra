@@ -15,6 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const rangeInput = document.getElementById('styled-range');
+
+    function updateRangeBackground() {
+        const value = (rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min) * 100;
+        rangeInput.style.background = `linear-gradient(to right, #4CAF50 ${value}%, #e1e1e1 ${value}%)`;
+    }
+
+    rangeInput.addEventListener('input', updateRangeBackground);
+
+    // Initialize background on load
+    updateRangeBackground();
+});
+
+
 
 // fetch api product-list
 
