@@ -56,6 +56,7 @@ export default defineConfig({
         resolve(__dirname, "src/html/pages/main/"),
         resolve(__dirname, "src/html/pages/blog/"),
         resolve(__dirname, "src/html/pages/catalog"),
+        resolve(__dirname, "src/html/pages/product"),
       ],
     }),
   ],
@@ -65,6 +66,7 @@ export default defineConfig({
       input: {
         blog: resolve(__dirname, "src/pages/blog/blog.html"),
         catalog: resolve(__dirname, "src/pages/catalog/catalog.html"),
+        product: resolve(__dirname, "src/pages/product/product.html"),
       },
     },
   },

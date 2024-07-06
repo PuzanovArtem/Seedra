@@ -2,12 +2,12 @@
   .catalog__wrapper {
     display: flex;
     gap: 32px;
-    margin: 22px 0 0 0;
+    margin: 12px 0 0 0;
   }
   .filters {
     width: 254px;
     .filters__title {
-      line-height: 24.95px;
+      line-height: 25px;
     }
     .filter {
       margin-bottom: 10px;
@@ -35,7 +35,7 @@
       }
       .panel {
         display: none;
-        padding: 18px 0 0;
+        padding: 18px 0 3px;
         font-family: "Lexend", sans-serif;
         color: $text-secondary;
         li {
@@ -49,27 +49,24 @@
           display: none;
         }
 
-        /* Custom checkbox */
         .custom-checkbox .checkbox {
-          width: 24px;
-          height: 24px;
-          border: 2px solid #ccc; /* Light grey border */
-          border-radius: 8px; /* Rounded corners */
-          background-color: white;
+          width: 21px;
+           height: 21px;
+          border: 2px solid #ccc;
+          border-radius: 8px;
+          background-color: $white;
           display: inline-block;
           @extend %position-rel;
           cursor: pointer;
-          vertical-align: middle; /* Align with the label text */
-          margin-right: 8px; /* Space between checkbox and label text */
+          vertical-align: middle; 
+          margin-right: 8px; 
         }
 
-        /* Checked state */
         .custom-checkbox input[type="checkbox"]:checked + .checkbox {
-          background-color: #e8f5e9; /* Light green background */
-          border-color: #4caf50; /* Green border */
+          background-color: #e8f5e9; 
+          border-color: #4caf50; 
         }
 
-        /* Checkmark */
         .custom-checkbox input[type="checkbox"]:checked + .checkbox::after {
           content: "";
           @extend %position-abs;
@@ -77,10 +74,12 @@
           left: 50%;
           width: 10px;
           height: 18px;
-          border: solid #4caf50; /* Green checkmark */
+          border: solid #4caf50;
           border-width: 0 3px 3px 0;
           transform: translate(-50%, -50%) rotate(45deg);
         }
+
+        
       }
     }
   }
@@ -180,21 +179,7 @@
     cursor: pointer;
   }
 
-  @include respond-to($tablet) {
-    .catalog-product__list {
-      display: flex;
-      gap: 11px;
-      overflow: scroll;
-    }
-
-    .catalog-product__item {
-      min-width: 319px;
-
-      img {
-        max-height: 235px;
-      }
-    }
-  }
+  
 
   @include respond-to($s-mobile) {
     .catalog-product__item {
@@ -357,4 +342,47 @@ input[type="range"]:focus::-ms-fill-lower {
 
 input[type="range"]:focus::-ms-fill-upper {
   background: transparent;
+}
+
+
+@media (max-width:1142px){
+  .catalog__product-list{
+    .catalog-product__list{
+      grid-template-columns: 1fr 1fr ;
+    }
+  }
+}
+
+
+@media (max-width:853px){
+  .catalog__product-list{
+    .filters{
+      display: none;
+    }
+    .catalog-product__list{
+      margin: 0 auto;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width:575px){
+  .catalog__product-list{
+    .catalog-product__list{
+      margin: 0 auto;
+      gap: 20px;
+      grid-template-columns: 1fr ;
+    }
+  }
+}
+
+@media (max-width:340px){
+  .catalog__product-list{
+    .catalog-product__list{
+      .catalog-product__item{
+        min-width: 290px;
+      }
+    }
+  }
 }
