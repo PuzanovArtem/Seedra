@@ -28,10 +28,10 @@
 
   &__item {
     padding: 30px;
+    min-height: 300px;
     border-radius: 12px;
     background: $light-blue;
     position: relative;
-    min-height: 300px;
   }
 
   &__item-spec {
@@ -48,6 +48,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 1;
   }
 
   &__item-title {
@@ -67,6 +68,8 @@
 
   &__item-btn {
     margin: 14px 0 0 0;
+    position: relative;
+    z-index: 2;
   }
 
   @include respond-to($l-tablet) {
