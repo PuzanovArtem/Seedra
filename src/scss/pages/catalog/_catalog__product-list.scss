@@ -4,23 +4,24 @@
     gap: 32px;
     margin: 12px 0 0 0;
   }
-  .filters {
+  .filter {
     width: 254px;
+    margin: 5px 0 0 0;
     .filters__title {
       line-height: 25px;
     }
-    .filter {
+    .filter__item {
       margin-bottom: 10px;
 
       .accordion {
         @extend %display-jc-sb;
         font-weight: bold;
         cursor: pointer;
-        padding: 13px 0 5px;
+        padding: 20px 0 4px;
         // width: 100%;
         width: 254px;
         text-align: left;
-        border-top: 1px solid $light-gray-stroke;
+        border-bottom: 1px solid $light-gray-stroke;
         font-size: 16px;
         font-weight: 500;
         line-height: 29px;
@@ -33,13 +34,16 @@
           transform: rotate(180deg);
         }
       }
-      .panel {
+      .filter__menu {
         display: none;
-        padding: 18px 0 3px;
+        padding: 18px 0 0px;
         font-family: "Lexend", sans-serif;
         color: $text-secondary;
-        li {
-          margin: 0 0 19px 0;
+
+        .filter__menu--item {
+          margin: 0 0 13px 0;
+          line-height: 25px;
+          letter-spacing: 1px;
         }
         .custom-checkbox {
           @extend %display-flex;
@@ -51,20 +55,20 @@
 
         .custom-checkbox .checkbox {
           width: 21px;
-           height: 21px;
+          height: 21px;
           border: 2px solid #ccc;
           border-radius: 8px;
           background-color: $white;
           display: inline-block;
           @extend %position-rel;
           cursor: pointer;
-          vertical-align: middle; 
-          margin-right: 8px; 
+          vertical-align: middle;
+          margin-right: 8px;
         }
 
         .custom-checkbox input[type="checkbox"]:checked + .checkbox {
-          background-color: #e8f5e9; 
-          border-color: #4caf50; 
+          background-color: #e8f5e9;
+          border-color: #4caf50;
         }
 
         .custom-checkbox input[type="checkbox"]:checked + .checkbox::after {
@@ -78,15 +82,12 @@
           border-width: 0 3px 3px 0;
           transform: translate(-50%, -50%) rotate(45deg);
         }
-
-        
       }
     }
   }
 
   .catalog-product__list {
     display: grid;
-    //   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
@@ -179,8 +180,6 @@
     cursor: pointer;
   }
 
-  
-
   @include respond-to($s-mobile) {
     .catalog-product__item {
       min-width: 295px;
@@ -247,16 +246,17 @@
   margin: -5px 0px 9px 0px;
   color: $text-secondary;
   .title-to {
-    margin-left: 124px;
+    margin-left: 101px;
   }
 }
-.price-inputs {
+.popup-price-inputs {
   @extend %display-jc-sb;
-  margin-bottom: 10px;
+  margin: 0 0px 10px 0;
+  width: 279px;
 }
 
-.price-inputs input {
-  width: 95px;
+.popup-price-inputs input {
+  width: 116px;
   padding: 12px 5px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -344,22 +344,20 @@ input[type="range"]:focus::-ms-fill-upper {
   background: transparent;
 }
 
-
-@media (max-width:1142px){
-  .catalog__product-list{
-    .catalog-product__list{
-      grid-template-columns: 1fr 1fr ;
+@media (max-width: 1142px) {
+  .catalog__product-list {
+    .catalog-product__list {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
 
-
-@media (max-width:853px){
-  .catalog__product-list{
-    .filters{
+@media (max-width: 853px) {
+  .catalog__product-list {
+    .filter {
       display: none;
     }
-    .catalog-product__list{
+    .catalog-product__list {
       margin: 0 auto;
       gap: 20px;
       grid-template-columns: 1fr 1fr;
@@ -367,20 +365,20 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 }
 
-@media (max-width:575px){
-  .catalog__product-list{
-    .catalog-product__list{
+@media (max-width: 575px) {
+  .catalog__product-list {
+    .catalog-product__list {
       margin: 0 auto;
       gap: 20px;
-      grid-template-columns: 1fr ;
+      grid-template-columns: 1fr;
     }
   }
 }
 
-@media (max-width:340px){
-  .catalog__product-list{
-    .catalog-product__list{
-      .catalog-product__item{
+@media (max-width: 340px) {
+  .catalog__product-list {
+    .catalog-product__list {
+      .catalog-product__item {
         min-width: 290px;
       }
     }

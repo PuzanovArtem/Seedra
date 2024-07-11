@@ -1,0 +1,178 @@
+.category {
+  .filter__buttons__box {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .filter__buttons {
+    @extend %display-jc-sb;
+    gap: 12px;
+    padding: 0 0 10px 0;
+    .button-product {
+      width: 144px;
+      height: 72px;
+      padding: 0 16px 0 0px;
+      gap: 8px;
+      border: 2px solid $light-gray-stroke;
+      color: $text-primary;
+      @extend %display-center;
+      font-family: "Lexend", sans-serif;
+    }
+    .filter__btn:first-child {
+      width: 110px;
+    }
+    .filter__btn:nth-child(2) {
+      width: 144px;
+    }
+    .filter__btn:nth-child(3) {
+      width: 128px;
+    }
+    .filter__btn:nth-child(4) {
+      width: 187px;
+    }
+    .filter__btn:nth-child(5) {
+      width: 148px;
+    }
+    .filter__btn:nth-child(6) {
+      width: 157px;
+    }
+    .filter__btn:last-child {
+      width: 163px;
+    }
+  }
+  .store__buttons {
+    margin: 25px 0 0 0;
+    button {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .store__buttons::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+//popup filter buttons ------------------------
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  
+    .popup-content {
+      background-color: #ffffff;
+      margin: 285px auto;
+      padding: 26px 27px;
+      box-shadow: 0px 4px 26px 0px rgba(199, 199, 199, 0.5);
+      width: 524px;
+      height: 504px;
+  
+      .popup-close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      .herbs-popup-title {
+        font-family: "Lexend", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 2px;
+        display: flex;
+      }
+      .herbs-popup__lists {
+        display: flex;
+        text-align: start;
+        margin: 27px 0 30px 0px;
+  
+        .herbs-popup__list {
+          max-width: 134px;
+  
+          li {
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+            letter-spacing: 1px;
+            margin: 0 0 15px 0;
+          }
+          &:first-child {
+            margin: 0 57px 0 0;
+          }
+          &:nth-last-child(2) {
+            margin: 0 77px 0 0px;
+          }
+        }
+      }
+      .herbs-popup-button {
+        display: flex;
+        text-align: start;
+      }
+    }
+  }
+
+  @media (max-width: 1024px){
+    .category{
+      .popup{
+        .popup-content{
+          margin: 250px auto;
+          
+        }
+      }
+    }
+  }
+
+
+@media (max-width: 992px) {
+  .filter__buttons__box {
+    overflow: auto;
+    .store__buttons {
+      min-width: 992px;
+
+      .button-product {
+        height: 57px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .category{
+    .popup{
+      .popup-content{
+        margin: 250px auto;
+        width: 345px;
+        .herbs-popup__lists{
+          display: block;
+          max-width: 500px;
+    max-height: 80%;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .filter__buttons__box {
+    .store__buttons {
+      margin: 15px 0 0 0;
+      .button-product {
+        margin: 0 0px 0 0;
+      }
+    }
+  }
+}

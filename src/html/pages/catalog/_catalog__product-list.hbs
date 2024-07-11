@@ -1,12 +1,12 @@
 <section class="catalog__product-list">
   <div class="container">
-    <div class="catalog__product-list__wrapper catalog__wrapper">
-      <div class="catalog__product-list__filters filters">
-        <h3 class="filters__title">FILTERS</h3>
+    <div class="list__wrapper catalog__wrapper">
+      <div class="list__filter filter">
+        <h3 class="filter--title">FILTERS</h3>
 
-        <div class="filter">
-          <button class="accordion">Seed type
-            <span class="arrow">
+        <div class="filter__item">
+          <button class="filter__accordion accordion">Seed type
+            <span class="filter__arrow arrow">
               <img
                 src="/src/assets/images/icons/arrow-down.svg"
                 alt="arrow-down"
@@ -16,15 +16,15 @@
             </span>
           </button>
 
-          <ul class="panel">
-            <li>
+          <ul class="filter__menu">
+            <li class="filter__menu--item">
               <label for="hybrid" class="custom-checkbox">
                 <input type="checkbox" name="hybrid" id="hybrid" />
                 <span class="checkbox"></span>
                 Hybrid
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="open-pollinated" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -35,7 +35,7 @@
                 Open Pollinated
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="organic-seeds" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -43,10 +43,10 @@
                   id="organic-seeds"
                 />
                 <span class="checkbox"></span>
-                Organic Seeds, Plants, and Supplies
+                Organic Seeds, Plants, <br> and Supplies
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="pelleted-seed" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -60,9 +60,9 @@
           </ul>
         </div>
 
-        <div class="filter">
-          <button class="accordion">Featured
-            <span class="arrow">
+        <div class="filter__item">
+          <button class="filter__accordion accordion">Featured
+            <span class="filter__arrow arrow">
               <img
                 src="/src/assets/images/icons/arrow-down.svg"
                 alt="arrow-down"
@@ -71,8 +71,9 @@
               />
             </span>
           </button>
-          <ul class="panel">
-            <li>
+          
+          <ul class="filter__menu">
+            <li class="filter__menu--item">
               <label for="hybrid-featured" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -83,7 +84,7 @@
                 Hybrid
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="open-pollinated-featured" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -94,7 +95,7 @@
                 Open Pollinated
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="organic-seeds-featured" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -105,7 +106,7 @@
                 Organic Seeds, Plants, and Supplies
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="pelleted-seed-featured" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -119,9 +120,9 @@
           </ul>
         </div>
 
-        <div class="filter">
-          <button class="accordion">Growing Conditions
-            <span class="arrow">
+        <div class="filter__item">
+          <button class="filter__accordion accordion">Growing Conditions
+            <span class="filter__arrow arrow">
               <img
                 src="/src/assets/images/icons/arrow-down.svg"
                 alt="arrow-down"
@@ -130,8 +131,8 @@
               />
             </span>
           </button>
-          <ul class="panel">
-            <li>
+          <ul class="filter__menu">
+            <li class="filter__menu--item">
               <label for="hybrid-growing" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -142,7 +143,7 @@
                 Hybrid
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="open-pollinated-growing" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -153,7 +154,7 @@
                 Open Pollinated
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="organic-seeds-growing" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -164,7 +165,7 @@
                 Organic Seeds, Plants, and Supplies
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="pelleted-seed-growing" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -178,9 +179,9 @@
           </ul>
         </div>
 
-        <div class="filter">
-          <button class="accordion">Price
-            <span class="arrow">
+        <div class="filter__item">
+          <button class="filter__accordion accordion">Price
+            <span class="filter__arrow arrow">
               <img
                 src="/src/assets/images/icons/arrow-down.svg"
                 alt="arrow-down"
@@ -189,7 +190,7 @@
               />
             </span>
           </button>
-          <div class="panel price-filter">
+          <div class="filter__menu price-filter">
             <div class="price-filter__title">
               <h3 class="title-from">From</h3>
               <h3 class="title-to">To</h3>
@@ -213,9 +214,9 @@
           </div>
         </div>
 
-        <div class="filter">
-          <button class="accordion">Use
-            <span class="arrow">
+        <div class="filter__item">
+          <button class="filter__accordion accordion">Use
+            <span class="filter__arrow arrow">
               <img
                 src="/src/assets/images/icons/arrow-down.svg"
                 alt="arrow-down"
@@ -224,15 +225,15 @@
               />
             </span>
           </button>
-          <ul class="panel">
-            <li>
+          <ul class="filter__menu">
+            <li class="filter__menu--item">
               <label for="hybrid-use" class="custom-checkbox">
                 <input type="checkbox" name="hybrid-use" id="hybrid-use" />
                 <span class="checkbox"></span>
                 Hybrid
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="open-pollinated-use" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -243,7 +244,7 @@
                 Open Pollinated
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="organic-seeds-use" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -254,7 +255,7 @@
                 Organic Seeds, Plants, and Supplies
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="pelleted-seed-use" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -268,9 +269,9 @@
           </ul>
         </div>
 
-        <div class="filter">
-          <button class="accordion">Additional Characteristic
-            <span class="arrow">
+        <div class="filter__item">
+          <button class="filter__accordion accordion">Additional Characteristic
+            <span class="filter__arrow arrow">
               <img
                 src="/src/assets/images/icons/arrow-down.svg"
                 alt="arrow-down"
@@ -279,8 +280,8 @@
               />
             </span>
           </button>
-          <ul class="panel">
-            <li>
+          <ul class="filter__menu">
+            <li class="filter__menu--item">
               <label for="hybrid-additional" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -291,7 +292,7 @@
                 Hybrid
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="open-pollinated-additional" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -302,7 +303,7 @@
                 Open Pollinated
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="organic-seeds-additional" class="custom-checkbox">
                 <input
                   type="checkbox"
@@ -313,7 +314,7 @@
                 Organic Seeds, Plants, and Supplies
               </label>
             </li>
-            <li>
+            <li class="filter__menu--item">
               <label for="pelleted-seed-additional" class="custom-checkbox">
                 <input
                   type="checkbox"
