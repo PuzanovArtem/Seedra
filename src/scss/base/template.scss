@@ -1,6 +1,7 @@
 @import "/src/scss/base/mixins.scss";
 
 .main-btn {
+  display: inline-block;
   padding: 14px 34px;
   background: rgba(53, 151, 64, 1);
   border-radius: 8px;
