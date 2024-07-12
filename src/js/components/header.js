@@ -34,6 +34,7 @@ itemList.forEach(item => {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', function () {
   const cartIcon = document.getElementById('cart-icon');
   const cartPopup = document.getElementById('cart-popup');
