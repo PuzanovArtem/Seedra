@@ -80,111 +80,103 @@
   }
 
   @include respond-to($lapTop) {
-      &__img {
-          width: 414px;
-          height: 414px;
-      }
+    &__img {
+      width: 414px;
+      height: 414px;
+    }
 
-      &__icon-ellipse {
-          width: 472px;
-          height: 472px;
-      }
+    &__icon-ellipse {
+      width: 472px;
+      height: 472px;
+    }
   }
 
-
-   @include respond-to($l-tablet) {
-
-
+  @include respond-to($l-tablet) {
     &__wrapper {
-        display: block;
-        padding: 0 0 61px 0;
+      display: block;
+      padding: 0 0 61px 0;
     }
 
     &__content {
-        max-width: 100%;
-        margin: 0 0 41px;
+      max-width: 100%;
+      margin: 0 0 41px;
     }
 
-        &__title {
-            margin: 0 0 19px;
-        }
-
-                &__third-icon {
-                    top: auto;
-                    bottom: 93px;
-                }
-   }
-
-   @include respond-to($tablet) {
-&__img {
-        width: 384px;
-        height: 384px;
+    &__title {
+      margin: 0 0 19px;
     }
 
-    &__icon-ellipse {
-        width: 422px;
-        height: 422px;
+    &__third-icon {
+      top: auto;
+      bottom: 93px;
     }
-   }
-
-   @include respond-to($mobile) {
-
-&__title {
-    max-width: 237px;
   }
 
+  @include respond-to($tablet) {
     &__img {
-        width: 284px;
-        height: 284px;
+      width: 384px;
+      height: 384px;
     }
 
     &__icon-ellipse {
-        width: 322px;
-        height: 322px;
+      width: 422px;
+      height: 422px;
+    }
+  }
+
+  @include respond-to($mobile) {
+    &__title {
+      max-width: 237px;
     }
 
-        &__first-icon {
-            top: -33px;
-            right: -10px;
-        }
-    
-        &__second-icon {
-            top: 31px;
-            right: -15px;
-        }
-    
-        &__third-icon {
-            right: 10px;
-            top: auto;
-            bottom: 8px;
-        }
-    
-        &__forth-icon {
-            top: 38px;
-            left: 0;
-        }
-    
-        &__fifth-icon {
-            bottom: -21px;
-            left: 0;
-        }
-   }
+    &__img {
+      width: 284px;
+      height: 284px;
+    }
 
-   @include respond-to($s-mobile) {
+    &__icon-ellipse {
+      width: 322px;
+      height: 322px;
+    }
+
+    &__first-icon {
+      top: -33px;
+      right: -10px;
+    }
 
     &__second-icon {
-           
-            right: -65px;
-        }
+      top: 31px;
+      right: -15px;
+    }
 
-        &__forth-icon {
-          
-            left: -30px;
-        }
+    &__third-icon {
+      right: 10px;
+      top: auto;
+      bottom: 8px;
+    }
 
-                &__fifth-icon {
-                    
-                    left: -10px;
-                }
-   }
+    &__forth-icon {
+      top: 38px;
+      left: 0;
+    }
+
+    &__fifth-icon {
+      bottom: -21px;
+      left: 0;
+    }
+  }
+
+  @include respond-to($s-mobile) {
+    &__second-icon {
+      right: -65px;
+    }
+
+    &__forth-icon {
+      left: -30px;
+    }
+
+    &__fifth-icon {
+      left: -10px;
+    }
+  }
 }

@@ -1,0 +1,217 @@
+<section class="checkout">
+  <div class="container">
+
+    <div class="swiper-container payment-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="cart__wrapper">
+
+            <div class="cart__block">
+
+              <div class="cart__top-wrapper checkout__top-wrapper">
+                <div class="checkout__arrow-wrapper">
+                <a href="/src/pages/cart/cart.html">
+                  <img
+                    src="/src/assets/images/icons/arrow-left.svg"
+                    width="30"
+                    height="30"
+                    loading="lazy"
+                    alt="arrow"
+                    class="checkout__arrow"
+                  />
+                </a>
+
+                <h2 class="sections-title checkout__title">Checkout</h2>
+                </div>
+
+               <div class="checkout__pagination-wrapper">
+                <span class="checkout__pagination checkout__pagination-active"></span>
+                <span class="checkout__pagination"></span>
+               </div>
+              </div>
+
+              <form class="form-container">
+
+                <h3 class="checkout__title-form">Personal info</h3>
+                <div class="checkout__form-row">
+                  <div class="checkout__form-group">
+                    <label class="checkout__label" for="name">Name</label>
+                    <input
+                      class="cart__input"
+                      type="text"
+                      id="name"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="checkout__form-group">
+                    <label class="checkout__label" for="phone">Phone number</label>
+                    <input
+                      class="cart__input"
+                      type="tel"
+                      id="phone"
+                      placeholder="Your number"
+                    />
+                  </div>
+                </div>
+
+                <h3 class="checkout__title-form">Adress</h3>
+                <div class="checkout__form-row">
+                  <div class="checkout__form-group">
+                    <label class="checkout__label" for="state">State</label>
+                    <input
+                      class="cart__input"
+                      type="text"
+                      id="state"
+                      placeholder="Name of state"
+                    />
+                  </div>
+                  <div class="checkout__form-group">
+                    <label class="checkout__label" for="city">City</label>
+                    <input
+                      class="cart__input"
+                      type="text"
+                      id="city"
+                      placeholder="Name of city"
+                    />
+                  </div>
+                </div>
+                <div class="checkout__form-row">
+                  <div class="checkout__form-group">
+                    <label class="checkout__label" for="address">Address</label>
+                    <input
+                      class="cart__input"
+                      type="text"
+                      id="address"
+                      placeholder="1901 Thornridge Cir. Shiloh, Hawaii 81063"
+                    />
+                  </div>
+                  <div class="checkout__form-group">
+                    <label class="checkout__label" for="zip">ZIP code</label>
+                    <input
+                      class="cart__input"
+                      type="text"
+                      id="zip"
+                      placeholder="ZIP code"
+                    />
+                  </div>
+                </div>
+
+              </form>
+
+              <div class="checkout__btn-wrapper">
+                <a
+                  href="/src/pages/checkout/checkout.html"
+                  class="main-btn checkout__btn"
+                >Continue</a>
+              </div>
+
+            </div>
+
+            <div class="cart__block-summary">
+              <h2 class="cart__block-summary-title">Your cart</h2>
+
+              <ul class="checkout__summary-list">
+                <li class="checkout__summary-item">
+                  <p class="checkout__summary-text">SEEDRA Corn - Bodacious
+                    Hybrid Seeds for Indoor and Outdoor Planting
+                  </p>
+                  <p class="cart__total-price">$12.56</p>
+                </li>
+
+                <li class="checkout__summary-item">
+                  <p class="checkout__summary-text">SEEDRA Corn - Bodacious
+                    Hybrid Seeds for Indoor and Outdoor Planting
+                  </p>
+                  <p class="cart__total-price">$12.56</p>
+                </li>
+
+                <li class="checkout__summary-item">
+                  <p class="checkout__summary-text">SEEDRA Corn - Bodacious
+                    Hybrid Seeds for Indoor and Outdoor Planting
+                  </p>
+                  <p class="cart__total-price">$12.56</p>
+                </li>
+              </ul>
+
+              <div class="cart__total-price-wrapper">
+                <p class="cart__total-items">Total amount</p>
+                <p class="cart__total-price">$12.56</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+         <div class="payment__wrapper">
+            <div class="cart__top-wrapper payment__top-wrapper">
+                <div class="checkout__arrow-wrapper">
+                    <img src="/src/assets/images/icons/arrow-left.svg" width="30" height="30" loading="lazy" alt="arrow"
+                        class="checkout__arrow payment__arrow" />
+            
+                <h2 class="sections-title checkout__title">Payment info</h2>
+                </div>
+
+            <div class="checkout__pagination-wrapper">
+                <span class="checkout__pagination"></span>
+                <span class="checkout__pagination checkout__pagination-active"></span>
+            </div>
+            </div>
+
+            <div class="payment__row">
+                <h3 class="payment__subtitle">Card type</h3>
+                <div class="payment__card-wrapper">
+                    <img src="/src/assets/images/icons/apple-pay.svg" alt="apple-pay" width="67" height="43" loading="lazy" class="payment__card">
+                    <img src="/src/assets/images/icons/viza.svg" alt="viza" width="67" height="43" loading="lazy" class="payment__card">
+                    <img src="/src/assets/images/icons/master-card.svg" alt="master-card" width="67" height="43" loading="lazy" class="payment__card">
+                    <img src="/src/assets/images/icons/paypal.svg" alt="paypal" width="67" height="43" loading="lazy" class="payment__card">
+                </div>
+
+                
+            </div>
+
+            <div class="payment__row">
+                <h3 class="payment__subtitle">Card number</h3>
+                <input class="cart__input payment__input" type="number" id="card-number" placeholder="0000 0000 0000 0000" />
+            </div>
+
+            <div class="payment__row-wrapper">
+                <div class="payment__row-w">
+                    <h3 class="payment__subtitle">Expiring date</h3>
+                    <input class="cart__input payment__input" type="number" id="card-number" placeholder="01/01" />
+                </div>
+
+                <div class="payment__row">
+                    <h3 class="payment__subtitle">CCV</h3>
+                    <input class="cart__input payment__input" type="number" id="card-number" placeholder="123" />
+                </div>
+            </div>
+
+            <div class="cart__total-price-wrapper cart__total-price-wrapper-s">
+                <p class="cart__total-items">Total amount</p>
+                <p class="cart__total-price">$12.56</p>
+            </div>
+
+            <a href="#" class="main-btn payment__btn">
+                <p class="payment__total-price">$12.56</p>
+                <div class="payment__btn-wrapper">
+                    <p>Continue</p>
+                    <img src="/src//assets/images/icons/arrow-right.svg" alt="arrow">
+                </div>
+            </a>
+
+
+         </div>
+
+       
+
+
+        </div>
+
+      </div>
+    {{!-- <div class="swiper-pagination"></div> --}}
+    </div>
+
+  </div>
+</section>

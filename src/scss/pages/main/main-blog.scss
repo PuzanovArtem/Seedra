@@ -111,19 +111,18 @@
       margin: 0;
     }
 
-        &__item-title {
-          font-weight: 700;
-          font-size: 18px;
-          max-width: 273px;
-        }
-    
-        &__subtitle {
-          max-width: 301px;
-        }
+    &__item-title {
+      font-weight: 700;
+      font-size: 18px;
+      max-width: 273px;
+    }
+
+    &__subtitle {
+      max-width: 301px;
+    }
   }
 
   @include respond-to($s-mobile) {
     padding: 24px 0;
-
   }
 }
