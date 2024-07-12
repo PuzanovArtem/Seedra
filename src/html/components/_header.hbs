@@ -62,40 +62,149 @@
       </div>
     </nav>
 
-<div class="header__cart-wrapper">
-    <ul class="menu__cart-list">
-      <li class="menu__card-item">
-        <a href="#">
-          <img
-            src="/src/assets/images/icons/heard.svg"
-            alt="heard"
-            width="24"
-            height="24"
-          />
-        </a>
-      </li>
+    <div class="header__cart-wrapper">
+      <ul class="menu__cart-list">
+        <li class="menu__card-item">
+          <a href="#">
+            <img
+              src="/src/assets/images/icons/heard.svg"
+              alt="heard"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
 
-      <li class="menu__card-item">
-        <a href="#">
-          <img
-            src="/src/assets/images/icons/icon_cart.svg"
-            alt="cart"
-            width="24"
-            height="24"
-          />
-        </a>
-      </li>
-    </ul>
+        <li class="menu__card-item">
+          <a href="#" id="cart-icon">
+            <img
+              src="/src/assets/images/icons/icon_cart.svg"
+              alt="cart"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+      </ul>
 
-    <button class="menu__burger" id="menu__burger">
-      <img
-        src="/src/assets/images/icons/Menu.svg"
-        alt="menu-burger"
-        width="24"
-        height="24"
-      />
-    </button>
-</div>
+      <button class="menu__burger" id="menu__burger">
+        <img
+          src="/src/assets/images/icons/Menu.svg"
+          alt="menu-burger"
+          width="24"
+          height="24"
+        />
+      </button>
+    </div>
 
   </div>
 </header>
+
+<div id="cart-popup" class="cart-popup hidden">
+  <div class="cart-popup__content">
+    <button id="close-popup-btn" class="close-popup--btn"><img
+        src="/src/assets/images/icons/close.svg"
+        width="13"
+        height="13"
+        loading="lazy"
+        alt=""
+      /></button>
+    <div class="cart__item">
+      <img
+        src="/src/assets/images/cart-item.png"
+        width="64"
+        height="63"
+        loading="lazy"
+        alt="Product Image"
+        class="cart__item--img"
+      />
+      <div class="cart__item__info">
+        <p class="item__info--text">
+          SEEDRA Corn - Bodacious Hybrid Seeds for Indoor and Outdoor Planting
+        </p>
+        <div class="item__info__price-mobile">
+          <div class="item__info__price">
+            <p class="info__price--quantity">1 pack</p>
+            <p class="info__price--cash">$24.56</p>
+          </div>
+          <div class="counter-container counter-container__mobile">
+            <button
+              class="counter-button counter-button--minus"
+              onclick="decrement('counter1')"
+            >&#8722;</button>
+            <div class="counter-value" id="counter1">2</div>
+            <button
+              class="counter-button counter-button--plus"
+              onclick="increment('counter1')"
+            >&#43;</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart__item__price">
+        <div class="counter-container">
+          <button
+            class="counter-button counter-button--minus"
+            onclick="decrement('counter1')"
+          >&#8722;</button>
+          <div class="counter-value" id="counter1">2</div>
+          <button
+            class="counter-button counter-button--plus"
+            onclick="increment('counter1')"
+          >&#43;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart__item">
+      <img
+        src="/src/assets/images/cart-item.png"
+        width="64"
+        height="63"
+        loading="lazy"
+        alt="Product Image"
+        class="cart__item--img"
+      />
+      <div class="cart__item__info">
+        <p class="item__info--text">
+          SEEDRA Corn - Bodacious Hybrid Seeds for Indoor and Outdoor Planting
+        </p>
+        <div class="item__info__price-mobile">
+          <div class="item__info__price">
+            <p class="info__price--quantity">1 pack</p>
+            <p class="info__price--cash">$24.56</p>
+          </div>
+          <div class="counter-container counter-container__mobile">
+            <button
+              class="counter-button counter-button--minus"
+              onclick="decrement('counter2')"
+            >&#8722;</button>
+            <div class="counter-value" id="counter2">2</div>
+            <button
+              class="counter-button counter-button--plus"
+              onclick="increment('counter2')"
+            >&#43;</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart__item__price">
+        <div class="counter-container">
+          <button
+            class="counter-button counter-button--minus"
+            onclick="decrement('counter2')"
+          >&#8722;</button>
+          <div class="counter-value" id="counter2">2</div>
+          <button
+            class="counter-button counter-button--plus"
+            onclick="increment('counter2')"
+          >&#43;</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart__buttons">
+      <button id="clear">Clear</button>
+      <button id="proceed-to-payment">Proceed to payment</button>
+    </div>
+
+  </div>
+
+</div>
