@@ -61,29 +61,26 @@
 
   &__slide {
     background-color: white;
-        padding: 35px 34px 41px 34px;
-        border-radius: 12px;
-        border: 1px solid $light-gray-stroke;
-        box-shadow: 0px 4px 21px 0px #d1d1d140;
-        max-width: 418px;
-        flex: 0 0 auto;
+    padding: 35px 34px 41px 34px;
+    border-radius: 12px;
+    border: 1px solid $light-gray-stroke;
+    box-shadow: 0px 4px 21px 0px #d1d1d140;
+    max-width: 418px;
+    flex: 0 0 auto;
   }
 
-   &__container {
-      display: none;
-       overflow: auto;
-       max-width: 1440px;
-       margin: 0 -15px 0 0;
-      @extend %display-jc-sb;
+  &__container {
+    display: none;
+    overflow: auto;
+    max-width: 1440px;
+    @extend %display-jc-sb;
     padding: 0 15px;
-scrollbar-width: none;
-   }
+    scrollbar-width: none;
+  }
 
-   
-
-   &__slide:not(:last-child) {
+  &__slide:not(:last-child) {
     margin: 0 25px 0 0;
-   }
+  }
 
   .swiper-container {
     position: relative;
@@ -116,8 +113,6 @@ scrollbar-width: none;
     }
   }
 
-  
-
   .swiper-pagination-bullet {
     width: var(
       --swiper-pagination-bullet-width,
@@ -137,37 +132,33 @@ scrollbar-width: none;
     background: var(--swiper-pagination-color, #359740);
   }
 
-
-   @include respond-to($l-tablet) {
-&__container {
-    display: flex;
-}
-
-.swiper-container {
-    display: none;
-}
-   }
-
-   @include respond-to($mobile) {
-
-    &__slide {
-        max-width: 318px;
+  @include respond-to($l-tablet) {
+    &__container {
+      display: flex;
     }
 
-        &__img-user {
-           
-            width: 40px;
-            height: 40px;
-        }
+    .swiper-container {
+      display: none;
+    }
+  }
 
-                &__text {
-                    font-size: 14px;
-                    line-height: 2;
-                }
+  @include respond-to($mobile) {
+    &__slide {
+      max-width: 318px;
+    }
 
-                &__name {
-                    font-size: 16px;
-                }
-   }
+    &__img-user {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+  }
 }
-

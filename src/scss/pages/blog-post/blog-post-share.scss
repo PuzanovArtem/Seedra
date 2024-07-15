@@ -1,0 +1,45 @@
+.blog-post-share {
+  &__wrapper {
+    padding: 30px 36px;
+    background: $green-brand;
+    border-radius: 12px;
+    margin: 5px 0 48px 0;
+    @extend %display-jc-sb;
+  }
+
+  &__question {
+    font-weight: 500;
+    font-size: 16px;
+    color: $white;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: $white;
+  }
+
+  &__social-list {
+    @extend %display-flex;
+  }
+
+  &__item:not(:last-child) {
+    margin: 0 10px 0 0;
+  }
+
+  @include respond-to($mobile) {
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      margin: 16px 0 48px 0;
+    }
+
+    &__text-wrapper {
+      text-align: center;
+    }
+
+    &__social-list {
+      margin: 7px 0 0;
+    }
+  }
+}

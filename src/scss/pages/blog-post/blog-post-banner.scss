@@ -1,0 +1,36 @@
+.blog-post-banner {
+  .blog-banner__wrapper {
+    padding: 65px 17px 78px 57px;
+  }
+
+  &__title {
+    max-width: 600px;
+    text-align: start;
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @include respond-to($tablet) {
+    &__bg {
+      width: 250px;
+    }
+
+    &__title {
+      max-width: 320px;
+    }
+  }
+
+  @include respond-to($tablet) {
+    &__bg {
+      width: 150px;
+    }
+
+    .blog-banner__wrapper {
+      padding: 22px 36px 127px 36px;
+    }
+  }
+}

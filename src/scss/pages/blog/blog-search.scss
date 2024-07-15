@@ -1,0 +1,44 @@
+.blog-search {
+  &__wrapper {
+    @extend %display-jc-sb;
+    margin: 19px 0 0;
+  }
+
+  &__search-container {
+    width: 100%;
+    margin: 0 20px 0 0;
+  }
+
+  &__search-input {
+    padding: 18px 20px 16px 50px;
+  }
+
+  @include respond-to($lapTop) {
+    &__search-container {
+      max-width: 100%;
+    }
+
+    .select {
+      order: 2;
+    }
+  }
+
+  @include respond-to($mobile) {
+    &__search-container::after {
+      content: "";
+      position: absolute;
+      background-image: url(/src/assets/images/icons/filter.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      font-size: 18px;
+      color: #aaa;
+    }
+  }
+}
+
+
