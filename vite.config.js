@@ -58,6 +58,7 @@ export default defineConfig({
         resolve(__dirname, "src/html/pages/blog-post/"),
         resolve(__dirname, "src/html/pages/cart/"),
         resolve(__dirname, "src/html/pages/checkout/"),
+        resolve(__dirname, "src/html/pages/about/"),
       ]
     }),
   ],
@@ -70,6 +71,7 @@ export default defineConfig({
         blogPost: resolve(__dirname, "src/pages/blog-post/blog-post.html"),
         cart: resolve(__dirname, "src/pages/cart/cart.html"),
         checkout: resolve(__dirname, "src/pages/checkout/checkout.html"),
+        about: resolve(__dirname, "src/pages/about/about.html"),
       },
     },
   },

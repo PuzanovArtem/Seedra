@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/images/icons/logo.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/pages/about/about.scss" />
+    <title>SEEDRA</title>
+  </head>
+  <body>
+    {{> _header }}
+    <main class="main">
+      {{> blog-banner title="Who we are and what we do" subtitle="Here you can
+      find a lot of interesting and useful information that you need in
+      gardening and creating a beautiful garden" }}
+      {{> info }}
+      {{> team }}
+    </main>
+    <script type="module" src="/src/pages/about/about.js"></script>
+  </body>
+</html>
