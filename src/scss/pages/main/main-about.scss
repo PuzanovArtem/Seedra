@@ -10,11 +10,13 @@
   }
 
   &__content {
-    max-width: 521px;
+    max-width: 490px;
   }
 
   &__title {
     margin: 0 0 31px;
+    line-height: 1.5;
+    letter-spacing: -1px;
   }
 
   &__text {

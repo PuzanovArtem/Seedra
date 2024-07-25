@@ -1,0 +1,61 @@
+.team {
+    &__wrapper {
+        padding: 75px 0 79px 0;
+        text-align: center;
+    }
+
+    &__list {
+        margin: 85px 0 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+        gap: 30px;
+    }
+
+
+
+    &__name {
+        margin: 25px 0 0;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    &__prof {
+        margin: 25px 0 0;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+     @include respond-to($mobile) {
+        &__wrapper {
+        padding: 0 0 49px 0;
+        
+    }
+
+    &__list {
+        margin: 35px -15px 0;
+        grid-template-columns: repeat(4, 147px);
+        gap: 12px;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+
+    &__item {
+flex: 0 0 auto;
+
+        img {
+           width: 140px;
+           height: 140px;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &__prof {
+        margin: 4px 0 0;
+        font-size: 14px;
+    }
+     }
+}
