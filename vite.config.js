@@ -70,6 +70,7 @@ export default defineConfig({
     outDir: "docs",
     rollupOptions: {
       input: {
+        main: resolve(__dirname, "/index.html"),
         blog: resolve(__dirname, "src/pages/blog/blog.html"),
         catalog: resolve(__dirname, "src/pages/catalog/catalog.html"),
         product: resolve(__dirname, "src/pages/product/product.html"),
