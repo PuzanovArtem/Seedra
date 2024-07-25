@@ -2,8 +2,8 @@ import"./header-BTWeqdbP.js";import"./swiper-Ci-xsG_o.js";const n="https://dummy
             <img src="/src/assets/images/icons/all-product-icon.svg" alt="${a.category}">
             <p>${a.name}</p>
         `,i.appendChild(t)})}d();const l="https://dummyjson.com/products?limit=6";console.log(l);async function p(){try{const a=(await(await fetch(l)).json()).products;g(a)}catch(s){console.log(s)}}function g(s){const i=document.getElementById("main-product__list");s.forEach(a=>{const t=document.createElement("li");t.classList="main-product__item",t.innerHTML=`<div class="main-product__heard-wrapper">
-                    <img src="/src/assets/images/icons/heard.svg" alt="heard" width="24" height="24" loading="lazy" class="main-product__heard-full">
-                    <img src="/src/assets/images/icons/heart-fill.svg" alt="heard" width="24" height="24" loading="lazy" class="main-product__heard-fill">
+                    <img src="./src/assets/images/icons/heard.svg" alt="heard" width="24" height="24" loading="lazy" class="main-product__heard-full">
+                    <img src="./src/assets/images/icons/heart-fill.svg" alt="heard" width="24" height="24" loading="lazy" class="main-product__heard-fill">
 
                 </div>
 
