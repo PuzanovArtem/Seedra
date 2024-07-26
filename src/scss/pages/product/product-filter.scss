@@ -59,6 +59,12 @@
         cursor: pointer;
         text-transform: uppercase;
         @extend %display-jc-sb;
+        .main-product__icon{
+          background-image: url(/src/assets/images/icons/all-product-icon.svg);
+          background-repeat: no-repeat;
+          width: 28px;
+          height: 28px;
+        }
       }
       .catalog__category-item:not(:last-child) {
         margin: 0 12px 0 0;
