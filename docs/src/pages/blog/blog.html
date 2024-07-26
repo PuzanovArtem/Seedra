@@ -5,10 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="../../../assets/logo-CALQutSS.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEEDRA</title>
-    <script type="module" crossorigin src="../../../assets/blog-CACMED3R.js"></script>
-    <link rel="modulepreload" crossorigin href="../../../assets/header-BTWeqdbP.js">
-    <link rel="modulepreload" crossorigin href="../../../assets/select-Bu8B1k0f.js">
-    <link rel="stylesheet" crossorigin href="../../../assets/blog-DkaqSqEX.css">
+    <script type="module" crossorigin src="../../../assets/header-BTWeqdbP.js"></script>
+    <script type="module" crossorigin src="../../../assets/select-Bu8B1k0f.js"></script>
+    <script type="module" crossorigin src="../../../assets/search-z7pJi-Ut.js"></script>
+    <link rel="stylesheet" crossorigin href="../../../assets/blog-Ccq1-B0Z.css">
   </head>
   <body>
     <header class="header">
@@ -235,34 +235,707 @@
             <img src="../../../assets/blog-sixth-mob-BpqWO87Z.svg" alt="bg" width="42" height="36" class="blog-banner__bg-sixth">
         </div>
     </div>
-    </section>    <section class="blog-search">
-    <div class="container">
-        <div class="blog-search__wrapper">
-            <div class="menu__search-container blog-search__search-container">
-                <input type="text" id="searchInput" class="menu__search-input blog-search__search-input" placeholder="Search" />
-            </div>
-    
-            <div class="select">
-                <label class="filter__sort-select">Sort by</label>
-                <div class="filter__custom-select">
-                    <div class="filter__select-selected">Recently</div>
-                    <div class="filter__select-items">
-                        <div data-value="nut1" class="filter__select-item">Recently</div>
-                        <div data-value="nut2" class="filter__select-item">Popular</div>
-                        <div data-value="nut3" class="filter__select-item">Rating</div>
-                    </div>
-                    <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="filter__select-arrow" alt="arrow" />
+    </section>    <section class="search">
+      <div class="container">
+        <div class="search__container">
+          <div class="search__block">
+            <div class="search-box">
+              <form action="#" class="filter-box__form search__form">
+                <button class="search-form__btn" aria-label="Search" type="submit">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.7753%2018.6511L16.8091%2015.7067C17.9605%2014.2699%2018.5181%2012.4464%2018.3672%2010.6109C18.2164%208.77535%2017.3685%207.06745%2015.998%205.83834C14.6275%204.60923%2012.8385%203.95232%2010.9989%204.0027C9.15928%204.05307%207.40887%204.8069%206.10758%206.10918C4.80629%207.41146%204.05303%209.1632%204.0027%2011.0042C3.95236%2012.8452%204.60876%2014.6356%205.83694%2016.0071C7.06512%2017.3787%208.77172%2018.2272%2010.6058%2018.3781C12.4399%2018.5291%2014.2621%2017.9711%2015.6978%2016.8188L18.64%2019.7633C18.7143%2019.8383%2018.8028%2019.8978%2018.9002%2019.9385C18.9976%2019.9791%2019.1021%2020%2019.2077%2020C19.3132%2020%2019.4177%2019.9791%2019.5152%2019.9385C19.6126%2019.8978%2019.701%2019.8383%2019.7753%2019.7633C19.9194%2019.6141%2020%2019.4147%2020%2019.2072C20%2018.9997%2019.9194%2018.8003%2019.7753%2018.6511ZM11.2124%2016.8188C10.1055%2016.8188%209.02346%2016.4903%208.10309%2015.8749C7.18272%2015.2595%206.46538%2014.3847%206.04178%2013.3613C5.61818%2012.3379%205.50735%2011.2117%205.7233%2010.1252C5.93925%209.03875%206.47228%208.04076%207.25499%207.25746C8.0377%206.47416%209.03493%205.94072%2010.1206%205.72461C11.2062%205.50849%2012.3315%205.61941%2013.3542%206.04333C14.3768%206.46725%2015.2509%207.18514%2015.8659%208.1062C16.4809%209.02727%2016.8091%2010.1102%2016.8091%2011.2179C16.8091%2012.7034%2016.2195%2014.128%2015.1699%2015.1784C14.1203%2016.2287%2012.6968%2016.8188%2011.2124%2016.8188Z'%20fill='%2370737C'/%3e%3c/svg%3e"
+                    alt="search"
+                    class="svg-search"
+                    width="24px"
+                    height="24px"
+                  />
+                </button>
+                <input
+                  autocomplete="off"
+                  type="text"
+                  name="form[]"
+                  data-value="Search"
+                  placeholder="Search"
+                  class="search-form__input"
+                />
+                <div class="search-form__filter">
+                  <img
+                    class="svg-seatch-filter"
+                    src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13%201H1L5.2%206.6C5.39473%206.85964%205.5%207.17544%205.5%207.5V13L8.5%2011.5V7.5C8.5%207.17544%208.60527%206.85964%208.8%206.6L13%201Z'%20stroke='%23359740'%20stroke-width='1.5'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                  />
                 </div>
+              </form>
+    
+              <div id="filter-popup" class="filter-popup">
+                <div class="filter-popup__content">
+                  <span class="filter-popup__close">&times;</span>
+                  <div class="filter-popup__filter filter__popup">
+                    <h3 class="filter__popup__title">FILTERS</h3>
+    
+                    <div class="filter__popup__item">
+                      <button class="filter__popup__accordion">Seed type
+                        <span class="filter__popup__arrow arrow">
+                          <img
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="arrow-down"
+                            width="24"
+                            height="24"
+                          />
+                        </span>
+                      </button>
+                      <ul class="filter__popup__menu">
+                        <li class="filter__popup__menu--item">
+                          <label for="seed-type-hybrid" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="seed-type-hybrid"
+                              id="seed-type-hybrid"
+                            />
+                            <span class="checkbox"></span>
+                            Hybrid
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="seed-type-open-pollinated"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="seed-type-open-pollinated"
+                              id="seed-type-open-pollinated"
+                            />
+                            <span class="checkbox"></span>
+                            Open Pollinated
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="seed-type-organic-seeds"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="seed-type-organic-seeds"
+                              id="seed-type-organic-seeds"
+                            />
+                            <span class="checkbox"></span>
+                            Organic Seeds, Plants, and Supplies
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="seed-type-pelleted-seed"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="seed-type-pelleted-seed"
+                              id="seed-type-pelleted-seed"
+                            />
+                            <span class="checkbox"></span>
+                            Pelleted Seed
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div class="filter__popup__item">
+                      <button class="filter__popup__accordion ">Featured
+                        <span class="filter__popup__arrow arrow">
+                          <img
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="arrow-down"
+                            width="24"
+                            height="24"
+                          />
+                        </span>
+                      </button>
+                      <ul class="filter__popup__menu">
+                        <li class="filter__popup__menu--item">
+                          <label for="featured-hybrid" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="featured-hybrid"
+                              id="featured-hybrid"
+                            />
+                            <span class="checkbox"></span>
+                            Hybrid
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="featured-open-pollinated"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="featured-open-pollinated"
+                              id="featured-open-pollinated"
+                            />
+                            <span class="checkbox"></span>
+                            Open Pollinated
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="featured-organic-seeds"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="featured-organic-seeds"
+                              id="featured-organic-seeds"
+                            />
+                            <span class="checkbox"></span>
+                            Organic Seeds, Plants, and Supplies
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="featured-pelleted-seed"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="featured-pelleted-seed"
+                              id="featured-pelleted-seed"
+                            />
+                            <span class="checkbox"></span>
+                            Pelleted Seed
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div class="filter__popup__item">
+                      <button class="filter__popup__accordion ">Growing Conditions
+                        <span class="filter__popup__arrow arrow">
+                          <img
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="arrow-down"
+                            width="24"
+                            height="24"
+                          />
+                        </span>
+                      </button>
+                      <ul class="filter__popup__menu">
+                        <li class="filter__popup__menu--item">
+                          <label for="growing-hybrid" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="growing-hybrid"
+                              id="growing-hybrid"
+                            />
+                            <span class="checkbox"></span>
+                            Hybrid
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="growing-open-pollinated"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="growing-open-pollinated"
+                              id="growing-open-pollinated"
+                            />
+                            <span class="checkbox"></span>
+                            Open Pollinated
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="growing-organic-seeds"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="growing-organic-seeds"
+                              id="growing-organic-seeds"
+                            />
+                            <span class="checkbox"></span>
+                            Organic Seeds, Plants, and Supplies
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="growing-pelleted-seed"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="growing-pelleted-seed"
+                              id="growing-pelleted-seed"
+                            />
+                            <span class="checkbox"></span>
+                            Pelleted Seed
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div class="filter__popup__item">
+                      <button class="filter__popup__accordion ">Price
+                        <span class="filter__popup__arrow arrow">
+                          <img
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="arrow-down"
+                            width="24"
+                            height="24"
+                          />
+                        </span>
+                      </button>
+                      <div class="filter__popup__menu price-filter">
+                        <div class="price-filter__title">
+                          <h3 class="title-from">From</h3>
+                          <h3 class="title-to">To</h3>
+                        </div>
+                        <div class="popup-price-inputs">
+                          <input type="text" id="price-from" placeholder="$1232" />
+                          <span><img
+                              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%2011.25C3.58579%2011.25%203.25%2011.5858%203.25%2012C3.25%2012.4142%203.58579%2012.75%204%2012.75H20C20.4142%2012.75%2020.75%2012.4142%2020.75%2012C20.75%2011.5858%2020.4142%2011.25%2020%2011.25H4Z'%20fill='%2370737C'/%3e%3c/svg%3e"
+                              alt=""
+                            /></span>
+                          <input type="text" id="price-to" placeholder="" />
+                        </div>
+                        <div class="slider-container">
+                          <input
+                            type="range"
+                            id="styled-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="filter__popup__item">
+                      <button class="filter__popup__accordion ">Use
+                        <span class="filter__popup__arrow arrow">
+                          <img
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="arrow-down"
+                            width="24"
+                            height="24"
+                          />
+                        </span>
+                      </button>
+                      <ul class="filter__popup__menu">
+                        <li class="filter__popup__menu--item">
+                          <label for="use-hybrid" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="use-hybrid"
+                              id="use-hybrid"
+                            />
+                            <span class="checkbox"></span>
+                            Hybrid
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label for="use-open-pollinated" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="use-open-pollinated"
+                              id="use-open-pollinated"
+                            />
+                            <span class="checkbox"></span>
+                            Open Pollinated
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label for="use-organic-seeds" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="use-organic-seeds"
+                              id="use-organic-seeds"
+                            />
+                            <span class="checkbox"></span>
+                            Organic Seeds, Plants, and Supplies
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label for="use-pelleted-seed" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="use-pelleted-seed"
+                              id="use-pelleted-seed"
+                            />
+                            <span class="checkbox"></span>
+                            Pelleted Seed
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div class="filter__popup__item">
+                      <button class="filter__popup__accordion  ">Additional Characteristic
+                        <span class="filter__popup__arrow arrow">
+                          <img
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="arrow-down"
+                            width="24"
+                            height="24"
+                          />
+                        </span>
+                      </button>
+                      <ul class="filter__popup__menu">
+                        <li class="filter__popup__menu--item">
+                          <label for="additional-hybrid" class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              name="additional-hybrid"
+                              id="additional-hybrid"
+                            />
+                            <span class="checkbox"></span>
+                            Hybrid
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="additional-open-pollinated"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="additional-open-pollinated"
+                              id="additional-open-pollinated"
+                            />
+                            <span class="checkbox"></span>
+                            Open Pollinated
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="additional-organic-seeds"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="additional-organic-seeds"
+                              id="additional-organic-seeds"
+                            />
+                            <span class="checkbox"></span>
+                            Organic Seeds, Plants, and Supplies
+                          </label>
+                        </li>
+                        <li class="filter__popup__menu--item">
+                          <label
+                            for="additional-pelleted-seed"
+                            class="custom-checkbox"
+                          >
+                            <input
+                              type="checkbox"
+                              name="additional-pelleted-seed"
+                              id="additional-pelleted-seed"
+                            />
+                            <span class="checkbox"></span>
+                            Pelleted Seed
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+    
+              <div class="select select_form" data-id="1">
+                <select
+                  name="form[]"
+                  data-class-modif="form"
+                  hidden=""
+                  data-id="1"
+                  data-speed="150"
+                >
+                  <option value="1" selected="">Most expensive</option>
+                  <option value="2">The cheapest</option>
+                  <option value="3">By popularity</option>
+                  <option value="4">Our recommendation</option>
+                </select>
+    
+                <div class="select__body">
+                  <button type="button" class="select__title">
+                    <span class="select__value">
+                      <span class="select__label">Sort by</span>
+                      <span class="select__content">Most expensive</span>
+                    </span>
+                  </button>
+    
+                  <div class="select__options" hidden="">
+                    <div class="select__scroll">
+                      <button
+                        class="select__option"
+                        data-value="1"
+                        type="button"
+                      >Most expensive</button>
+                      <button
+                        class="select__option"
+                        data-value="2"
+                        type="button"
+                      >The cheapest</button>
+                      <button class="select__option" data-value="3" type="button">By
+                        popularity</button>
+                      <button
+                        class="select__option"
+                        data-value="4"
+                        type="button"
+                      >Our recommendation</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>    <section class="blog-list">
         <div class="container">
     
             <ul id="main-blog__list" class="main-blog__list blog-list__list">
+                <li class="main-blog__item main-blog__item-spec">
+                    <div class="main-blog__content-wrapper">
+                        <div class="main-blog__data-wrapper">
+                            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24"
+                                loading="lazy" />
+                            <p class="main-blog__data">12.09.2021</p>
+                        </div>
+    
+                        <h3 class="main-blog__item-title">How to plant spinach correctly in
+                            winter</h3>
+                        <p class="main-blog__subtitle">In most areas, successive sowing can be
+                            done from early spring until early winter, but more often during
+                            hotter months...</p>
+    
+                        <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+    
+                    </div>
+                    <img src="../../../assets/spinach-DwzdniFc.png" alt="spinach" width="294" height="300"
+                        class="main-blog__first-img" />
+    
+                </li>
+    
+                <li class="main-blog__item main-blog__item-sec">
+                    <div class="main-blog__data-wrapper">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24"
+                            loading="lazy" />
+                        <p class="main-blog__data">12.09.2021</p>
+                    </div>
+    
+                    <h3 class="main-blog__item-title">How to plant spinach correctly in
+                        winter</h3>
+                    <p class="main-blog__subtitle">In most areas, successive sowing can be
+                        done from early spring until early winter, but more often during
+                        hotter months...</p>
+    
+                    <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+    
+                    <img src="../../../assets/female-gardener-blog-Cf19sN9W.png" alt="gardener" width="285" height="366"
+                        loading="lazy" class="main-blog__first-img main-blog__sec-img" />
+    
+                </li>
+    
+                <li class="main-blog__item">
+                    <div class="main-blog__data-wrapper">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24"
+                            loading="lazy" />
+                        <p class="main-blog__data">12.09.2021</p>
+                    </div>
+    
+                    <h3 class="main-blog__item-title">How to plant spinach correctly in
+                        winter</h3>
+    
+                        <p class="main-blog__subtitle blog-list__subtitle">In most areas, successive sowing can be
+                            done from early spring until early winter, but more often during
+                            hotter months...</p>
+    
+                    <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+    
+                    <img src="../../../assets/grape-blog-YzfQ5mFO.png" alt="strawberry" width="195" height="123"
+                        loading="lazy" class="main-blog__first-img" />
+    
+                </li>
+    
+                <li class="main-blog__item">
+                    <div class="main-blog__data-wrapper">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24"
+                            loading="lazy" />
+                        <p class="main-blog__data">12.09.2021</p>
+                    </div>
+    
+                    <h3 class="main-blog__item-title">How to plant spinach correctly in
+                        winter</h3>
+                        <p class="main-blog__subtitle blog-list__subtitle">In most areas, successive sowing can be
+                            done from early spring until early winter, but more often during
+                            hotter months...</p>
+                    <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+    
+                    <img src="../../../assets/strawberry-blog-C6mIg5FK.png" alt="strawberry" width="195" height="123"
+                        loading="lazy" class="main-blog__first-img" />
+    
+                </li>
+    
+                <li class="main-blog__item main-blog__item-spec">
+                    <div class="main-blog__content-wrapper">
+                        <div class="main-blog__data-wrapper">
+                            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24" loading="lazy" />
+                            <p class="main-blog__data">12.09.2021</p>
+                        </div>
+                
+                        <h3 class="main-blog__item-title">How to plant spinach correctly in
+                            winter</h3>
+                        <p class="main-blog__subtitle">In most areas, successive sowing can be
+                            done from early spring until early winter, but more often during
+                            hotter months...</p>
+                
+                        <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+                
+                    </div>
+                    <img src="../../../assets/sec-strawbery-blog-BRFWR6n5.png" alt="strawberry" width="294" height="300" class="main-blog__first-img" loading="lazy" />
+                
+                </li>
+    
+                <li class="main-blog__item blog-list__spec">
+                    <div class="main-blog__data-wrapper">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24" loading="lazy" />
+                        <p class="main-blog__data">12.09.2021</p>
+                    </div>
+                
+                    <h3 class="main-blog__item-title">How to plant spinach correctly in
+                        winter</h3>
+                        <p class="main-blog__subtitle blog-list__subtitle">In most areas, successive sowing can be
+                            done from early spring until early winter, but more often during
+                            hotter months...</p>
+                    <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+                
+                    <img src="../../../assets/girl-in-garden-blog-TOF0IT59.png" alt="strawberry" width="195" height="123" loading="lazy"
+                        class="main-blog__first-img" />
+                
+                </li>
+    
+                <li class="main-blog__item main-blog__item-sec blog-list__item-sec-tab">
+                    <div class="main-blog__data-wrapper">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24" loading="lazy" />
+                        <p class="main-blog__data">12.09.2021</p>
+                    </div>
+                
+                    <h3 class="main-blog__item-title">How to plant spinach correctly in
+                        winter</h3>
+                    <p class="main-blog__subtitle">In most areas, successive sowing can be
+                        done from early spring until early winter, but more often during
+                        hotter months...</p>
+                
+                    <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+                
+                    <img src="../../../assets/woman-with-cactus-blog-ARfRRLXh.png" alt="gardener" width="270" height="366" loading="lazy"
+                        class="main-blog__first-img main-blog__sec-img blog-list__sec-img" />
+                
+                </li>
+    
+                <li class="main-blog__item main-blog__item-sec">
+                    <div class="main-blog__data-wrapper">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24" loading="lazy" />
+                        <p class="main-blog__data">12.09.2021</p>
+                    </div>
+                
+                    <h3 class="main-blog__item-title">How to plant spinach correctly in
+                        winter</h3>
+                    <p class="main-blog__subtitle">In most areas, successive sowing can be
+                        done from early spring until early winter, but more often during
+                        hotter months...</p>
+                
+                    <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+                
+                    <img src="../../../assets/sec-grape-blog-Cv-YLdVx.png" alt="gardener" width="267" height="366" loading="lazy"
+                        class="main-blog__first-img main-blog__sec-img" />
+                
+                </li>
+    
+                <li class="main-blog__item main-blog__item-sec blog-list__item">
+                    <div class="main-blog__data-wrapper">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24" loading="lazy" />
+                        <p class="main-blog__data">12.09.2021</p>
+                    </div>
+                
+                    <h3 class="main-blog__item-title">How to plant spinach correctly in
+                        winter</h3>
+                    <p class="main-blog__subtitle">In most areas, successive sowing can be
+                        done from early spring until early winter, but more often during
+                        hotter months...</p>
+                
+                    <a href="/Seedra/src/pages/blog/blog-post.html" class="main-blog__item-btn secondary-btn">Read</a>
+                
+                    <img src="../../../assets/young-woman-with--cactus-blog-CAfb0QFv.png" alt="gardener" width="300" height="366" loading="lazy"
+                        class="main-blog__first-img main-blog__sec-img" />
+                
+                </li>
             </ul>
         </div>
     </section>    
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__body">
+        <ul class="footer__menu">
+          <li class="menu__item">
+            <a href="/Seedra/src/pages/catalog/catalog.html" class="menu__link">ALL PRODUCTS</a>
+          </li>
+          <li class="menu__item">
+            <a href="/Seedra/src/pages/card/card.html" class="menu__link">ABOUT SEEDRA</a>
+          </li>
+          <li class="menu__item">
+            <a href="/Seedra/src/pages/blog/blog.html" class="menu__link">OUR BLOG</a>
+          </li>
+        </ul>
+        <a href="/Seedra/" class="footer__logo">
+          <img
+            src="data:image/svg+xml,%3csvg%20width='97'%20height='21'%20viewBox='0%200%2097%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2_17)'%3e%3cpath%20d='M0%2018.2738L2.34072%2015.6633C3.51215%2016.9686%205.09913%2017.4041%206.81627%2017.4041C8.94984%2017.4041%2010.095%2016.5048%2010.095%2014.8514C10.095%2014.1256%209.91306%2013.5166%209.52294%2013.1107C9.15806%2012.7343%208.74162%2012.5312%207.88297%2012.386L5.64573%2012.0379C4.05875%2011.777%202.88732%2011.226%202.05516%2010.3267C1.17036%209.3398%200.728499%208.00518%200.728499%206.26552C0.728499%202.58112%203.17395%200%207.18097%200C9.73008%200%2011.5783%200.69623%2013.1653%202.40761L10.875%204.93071C9.70466%203.6833%208.29958%203.50979%207.07623%203.50979C5.15087%203.50979%204.21416%204.69937%204.21416%206.12029C4.21416%206.64191%204.37063%207.19309%204.76075%207.59904C5.12563%207.97672%205.72397%208.29527%206.47771%208.41223L8.66428%208.76034C10.3547%209.02125%2011.4216%209.54287%2012.2019%2010.3548C13.1916%2011.3993%2013.6334%2012.9074%2013.6334%2014.7356C13.6334%2018.7376%2010.6414%2021%206.76435%2021C3.95419%2021%201.82062%2020.3331%200%2018.2738Z'%20fill='%23359740'/%3e%3cpath%20d='M17.0422%2020.8264V0.173492H29.2442V3.77067H20.658V8.61527H27.9702V12.2112H20.658V17.2293H29.2442V20.8264H17.0422Z'%20fill='%23359740'/%3e%3cpath%20d='M32.784%2020.8264V0.173492H44.986V3.77067H36.3998V8.61527H43.712V12.2112H36.3998V17.2293H44.986V20.8264H32.784Z'%20fill='%23359740'/%3e%3cpath%20d='M75.5077%2020.8264L71.8906%2012.5888H69.2887V20.8264H65.6729V0.173492H72.932C76.7043%200.173492%2078.9416%203.04599%2078.9416%206.49684C78.9416%209.39761%2077.3546%2011.1962%2075.5594%2011.922L79.6966%2020.8264H75.5077ZM72.6973%203.77067H69.2887V9.22428H72.6973C74.2843%209.22428%2075.3257%208.09255%2075.3257%206.49684C75.3257%204.90241%2074.2843%203.77067%2072.6973%203.77067Z'%20fill='%23359740'/%3e%3cpath%20d='M93.2265%2020.8264L92.1343%2017.1714H85.5517L84.432%2020.8264H80.6598L87.3988%200.173492H90.2344L97%2020.8264H93.2265ZM88.9076%206.26549L86.5656%2013.7784H91.1711L88.9076%206.26549Z'%20fill='%23359740'/%3e%3cpath%20d='M60.1041%202.14669C58.8807%200.783611%2057.1373%200.173492%2055.2119%200.173492H48.5258V20.8264H52.5798C53.9762%2016.8158%2056.0899%2012.4403%2054.6492%205.95777C56.5685%2012.7179%2054.6702%2017.0141%2053.3305%2020.8264H55.2119C57.1373%2020.8264%2058.8807%2020.2174%2060.1039%2018.8543C62.1857%2016.533%2061.9773%2013.5164%2061.9773%2010.4126C61.9775%207.30984%2062.1859%204.4669%2060.1041%202.14669ZM54.5232%2018.3867C55.5609%2015.7915%2056.6516%2011.6286%2055.0997%206.52511C57.1763%209.12624%2057.4979%2012.97%2057.0578%2014.7236C60.8161%2010.5128%2056.9536%205.59313%2053.0999%203.49692C55.5571%208.10466%2055.1865%2012.4462%2053.2785%2017.6694C47.2841%2013.4709%2054.4005%208.12211%2052.3837%202.36555C61.0891%206.09768%2062.641%2014.4906%2054.5232%2018.3867Z'%20fill='%23359740'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2_17'%3e%3crect%20width='97'%20height='21'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+            alt="logo"
+            width="125"
+            height="27"
+            loading="lazy"
+          />
+        </a>
+        <ul class="footer__menu second">
+          <li class="menu__item">
+            <a href="/Seedra/src/pages/card/card.html" class="menu__link">Terms&Conditions</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer__block">
+        <div class="footer__social">
+          <a href="#" class="menu__social-link">
+            <img
+              src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.99999%206.87579C8.27968%206.87579%206.87577%208.2797%206.87577%2010C6.87577%2011.7203%208.27968%2013.1242%209.99999%2013.1242C11.7203%2013.1242%2013.1242%2011.7203%2013.1242%2010C13.1242%208.2797%2011.7203%206.87579%209.99999%206.87579ZM19.3703%2010C19.3703%208.70626%2019.382%207.42423%2019.3094%206.13283C19.2367%204.63283%2018.8945%203.30158%2017.7976%202.2047C16.6984%201.10548%2015.3695%200.765639%2013.8695%200.692982C12.5758%200.620326%2011.2937%200.632045%2010.0023%200.632045C8.70858%200.632045%207.42655%200.620326%206.13515%200.692982C4.63515%200.765639%203.3039%201.10783%202.20702%202.2047C1.1078%203.30392%200.767958%204.63283%200.695302%206.13283C0.622645%207.42658%200.634364%208.70861%200.634364%2010C0.634364%2011.2914%200.622645%2012.5758%200.695302%2013.8672C0.767958%2015.3672%201.11015%2016.6985%202.20702%2017.7953C3.30624%2018.8945%204.63515%2019.2344%206.13515%2019.307C7.4289%2019.3797%208.71093%2019.368%2010.0023%2019.368C11.2961%2019.368%2012.5781%2019.3797%2013.8695%2019.307C15.3695%2019.2344%2016.7008%2018.8922%2017.7976%2017.7953C18.8969%2016.6961%2019.2367%2015.3672%2019.3094%2013.8672C19.3844%2012.5758%2019.3703%2011.2938%2019.3703%2010ZM9.99999%2014.807C7.33983%2014.807%205.19296%2012.6602%205.19296%2010C5.19296%207.33986%207.33983%205.19298%209.99999%205.19298C12.6601%205.19298%2014.807%207.33986%2014.807%2010C14.807%2012.6602%2012.6601%2014.807%209.99999%2014.807ZM15.0039%206.11876C14.3828%206.11876%2013.8812%205.6172%2013.8812%204.99611C13.8812%204.37501%2014.3828%203.87345%2015.0039%203.87345C15.625%203.87345%2016.1266%204.37501%2016.1266%204.99611C16.1267%205.14359%2016.0978%205.28966%2016.0415%205.42595C15.9851%205.56224%2015.9024%205.68607%2015.7981%205.79036C15.6939%205.89464%2015.57%205.97733%2015.4337%206.03368C15.2974%206.09004%2015.1514%206.11895%2015.0039%206.11876Z'%20fill='%23359740'/%3e%3c/svg%3e"
+              alt="instagram"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+          </a>
+          <a href="#" class="menu__social-link">
+            <img
+              src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%2010.0558C0%2015.0275%203.61083%2019.1617%208.33333%2020V12.7775H5.83333V10H8.33333V7.7775C8.33333%205.2775%209.94417%203.88917%2012.2225%203.88917C12.9442%203.88917%2013.7225%204%2014.4442%204.11083V6.66667H13.1667C11.9442%206.66667%2011.6667%207.2775%2011.6667%208.05583V10H14.3333L13.8892%2012.7775H11.6667V20C16.3892%2019.1617%2020%2015.0283%2020%2010.0558C20%204.525%2015.5%200%2010%200C4.5%200%200%204.525%200%2010.0558Z'%20fill='%23359740'/%3e%3c/svg%3e"
+              alt="facebook"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+          </a>
+        </div>
+  
+        <p class="menu__copyright">All rights reserved</p>
+      </div>
+  
+    </div>
+  </footer>    
   </body>
 </html>
