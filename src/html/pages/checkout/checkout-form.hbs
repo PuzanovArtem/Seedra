@@ -30,72 +30,52 @@
                </div>
               </div>
 
-              <form class="form-container">
-
+              <form id="contactForm" class="form-container">
                 <h3 class="checkout__title-form">Personal info</h3>
                 <div class="checkout__form-row">
                   <div class="checkout__form-group">
                     <label class="checkout__label" for="name">Name</label>
-                    <input
-                      class="cart__input"
-                      type="text"
-                      id="name"
-                      placeholder="Your name"
-                    />
+                    <input class="cart__input" type="text" id="name" placeholder="Your name" />
+                    <span class="form__group__error error" id="nameError"></span>
                   </div>
                   <div class="checkout__form-group">
                     <label class="checkout__label" for="phone">Phone number</label>
-                    <input
-                      class="cart__input"
-                      type="tel"
-                      id="phone"
-                      placeholder="Your number"
-                    />
+                    <input class="cart__input" type="tel" id="phone" placeholder="Your number" />
+                    <span class="form__group__error error" id="phoneError"></span>
                   </div>
                 </div>
-
-                <h3 class="checkout__title-form">Adress</h3>
+              
+                <h3 class="checkout__title-form">Address</h3>
                 <div class="checkout__form-row">
                   <div class="checkout__form-group">
                     <label class="checkout__label" for="state">State</label>
-                    <input
-                      class="cart__input"
-                      type="text"
-                      id="state"
-                      placeholder="Name of state"
-                    />
+                    <input class="cart__input" type="text" id="state" placeholder="Name of state" />
+                    <span class="form__group__error error" id="stateError"></span>
                   </div>
                   <div class="checkout__form-group">
                     <label class="checkout__label" for="city">City</label>
-                    <input
-                      class="cart__input"
-                      type="text"
-                      id="city"
-                      placeholder="Name of city"
-                    />
+                    <input class="cart__input" type="text" id="city" placeholder="Name of city" />
+                    <span class="form__group__error error" id="cityError"></span>
                   </div>
                 </div>
                 <div class="checkout__form-row">
                   <div class="checkout__form-group">
                     <label class="checkout__label" for="address">Address</label>
-                    <input
-                      class="cart__input"
-                      type="text"
-                      id="address"
-                      placeholder="1901 Thornridge Cir. Shiloh, Hawaii 81063"
-                    />
+                    <input class="cart__input" type="text" id="address" placeholder="1901 Thornridge Cir. Shiloh, Hawaii 81063" />
+                    <span class="form__group__error error" id="addressError"></span>
                   </div>
                   <div class="checkout__form-group">
                     <label class="checkout__label" for="zip">ZIP code</label>
-                    <input
-                      class="cart__input"
-                      type="text"
-                      id="zip"
-                      placeholder="ZIP code"
-                    />
+                    <input class="cart__input" type="text" id="zip" placeholder="ZIP code" />
+                    <span class="form__group__error error" id="zipError"></span>
                   </div>
                 </div>
+              
 
+              {{!-- <div class="checkout__btn-wrapper">
+                <button type="submit" class="main-btn request--button checkout__btn">Continue</button>
+              </div> --}}
+                
               </form>
 
               <div class="checkout__btn-wrapper">
@@ -159,47 +139,71 @@
             </div>
             </div>
 
-            <div class="payment__row">
-                <h3 class="payment__subtitle">Card type</h3>
-                <div class="payment__card-wrapper">
-                    <img src="/src/assets/images/icons/apple-pay.svg" alt="apple-pay" width="67" height="43" loading="lazy" class="payment__card">
-                    <img src="/src/assets/images/icons/viza.svg" alt="viza" width="67" height="43" loading="lazy" class="payment__card">
-                    <img src="/src/assets/images/icons/master-card.svg" alt="master-card" width="67" height="43" loading="lazy" class="payment__card">
-                    <img src="/src/assets/images/icons/paypal.svg" alt="paypal" width="67" height="43" loading="lazy" class="payment__card">
-                </div>
 
-                
-            </div>
+<div class="payment__row">
+  <h3 class="payment__subtitle">Card type</h3>
+  <div class="payment__card-wrapper">
+    <img src="/src/assets/images/icons/apple-pay.svg" alt="apple-pay" width="67" height="43" loading="lazy"
+      class="payment__card" data-type="Apple Pay">
+    <img src="/src/assets/images/icons/viza.svg" alt="viza" width="67" height="43" loading="lazy" class="payment__card"
+      data-type="Visa">
+    <img src="/src/assets/images/icons/master-card.svg" alt="master-card" width="67" height="43" loading="lazy"
+      class="payment__card" data-type="MasterCard">
+    <img src="/src/assets/images/icons/paypal.svg" alt="paypal" width="67" height="43" loading="lazy"
+      class="payment__card" data-type="PayPal">
+  </div>
+  <span class="form__group__error error" id="cardTypeError"></span>
+</div>
 
-            <div class="payment__row">
-                <h3 class="payment__subtitle">Card number</h3>
-                <input class="cart__input payment__input" type="number" id="card-number" placeholder="0000 0000 0000 0000" />
-            </div>
+<div class="payment__row">
+  <h3 class="payment__subtitle">Card number</h3>
+  <input class="cart__input payment__input" type="text" id="card-number" placeholder="0000 0000 0000 0000" />
+  <span class="form__group__error error" id="cardNumberError"></span>
+</div>
 
-            <div class="payment__row-wrapper">
-                <div class="payment__row-w">
-                    <h3 class="payment__subtitle">Expiring date</h3>
-                    <input class="cart__input payment__input" type="number" id="card-number" placeholder="01/01" />
-                </div>
+<div class="payment__row-wrapper">
+  <div class="payment__row-w">
+    <h3 class="payment__subtitle">Expiring date</h3>
+    <input class="cart__input payment__input" type="text" id="expiry-date" placeholder="01/23" />
+    <span class="form__group__error error" id="expiryDateError"></span>
+  </div>
 
-                <div class="payment__row">
-                    <h3 class="payment__subtitle">CCV</h3>
-                    <input class="cart__input payment__input" type="number" id="card-number" placeholder="123" />
-                </div>
-            </div>
+  <div class="payment__row">
+    <h3 class="payment__subtitle">CCV</h3>
+    <input class="cart__input payment__input" type="text" id="ccv" placeholder="123" />
+    <span class="form__group__error error" id="ccvError"></span>
+  </div>
+</div>
 
-            <div class="cart__total-price-wrapper cart__total-price-wrapper-s">
-                <p class="cart__total-items">Total amount</p>
-                <p class="cart__total-price">$12.56</p>
-            </div>
+<div class="cart__total-price-wrapper cart__total-price-wrapper-s">
+  <p class="cart__total-items">Total amount</p>
+  <p class="cart__total-price">$12.56</p>
+</div>
 
-            <a href="#" class="main-btn payment__btn">
-                <p class="payment__total-price">$12.56</p>
-                <div class="payment__btn-wrapper">
-                    <p>Continue</p>
-                    <img src="/src//assets/images/icons/arrow-right.svg" alt="arrow">
-                </div>
-            </a>
+<button type="submit" class="main-btn payment__btn" id="submitPayment">
+  <p class="payment__total-price">$12.56</p>
+  <div class="payment__btn-wrapper">
+    <p>Continue</p>
+    <img src="/src/assets/images/icons/arrow-right.svg" alt="arrow">
+  </div>
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
          </div>
