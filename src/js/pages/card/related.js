@@ -22,10 +22,9 @@ function displayProducts(products) {
 
         const productItem = document.createElement('li');
         productItem.classList = 'related-product__item swiper-slide ';
-        productItem.innerHTML = `<div class="related-product__heard-wrapper">
-                    <img src="/src/assets/images/icons/heard.svg" alt="heard" width="24" height="24" loading="lazy" class="related-product__heard-full">
-                    <img src="/src/assets/images/icons/heart-fill.svg" alt="heard" width="24" height="24" loading="lazy" class="related-product__heard-fill">
-
+        productItem.innerHTML = `<div class="main-product__heard-wrapper">
+                   <span class="main-product__heard-full"></span>
+                    <span class="main-product__heard-fill"></span>
                 </div>
 
                 <img src="${product.images[0]}" alt="img" width="294" height="294" loading="lazy">
@@ -33,19 +32,19 @@ function displayProducts(products) {
                 <div class="related-product__rat-wrapper">
                     <ul class="related-product__rat-list">
                         <li class="related-product__rat-item">
-                            <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                            <span class="main-product__rat-star"></span>
                         </li>  
                             <li class="related-product__rat-item">
-                                <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                                <span class="main-product__rat-star"></span>
                             </li>
                             <li class="related-product__rat-item">
-                                <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                              <span class="main-product__rat-star"></span>
                             </li>
                             <li class="related-product__rat-item">
-                                <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                               <span class="main-product__rat-star"></span>
                             </li>
                             <li class="related-product__rat-item">
-                                <img src="/src/assets/images/icons/star-half-alt.svg" alt="star" width="16" height="16" loading="lazy">
+                               <span class="main-product__rat-half-star"></span>
                             </li>
                     </ul>
 
@@ -64,9 +63,9 @@ function displayProducts(products) {
 
 
         
-        const heardWrapper = productItem.querySelector('.related-product__heard-wrapper');
-        const fullHeard = productItem.querySelector('.related-product__heard-full');
-        const fillHeard = productItem.querySelector('.related-product__heard-fill');
+        const heardWrapper = productItem.querySelector('.main-product__heard-wrapper');
+        const fullHeard = productItem.querySelector('.main-product__heard-full');
+        const fillHeard = productItem.querySelector('.main-product__heard-fill');
 
         heardWrapper.addEventListener('click', function () {
             heardWrapper.classList.toggle('active');

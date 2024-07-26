@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     rangeInput.addEventListener('input', updateRangeBackground);
 
-    // Initialize background on load
     updateRangeBackground();
 });
 

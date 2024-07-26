@@ -23,8 +23,9 @@ function displayProducts(products) {
         const productItem = document.createElement('li');
         productItem.classList = 'main-product__item';
         productItem.innerHTML = `<div class="main-product__heard-wrapper">
-                    <img src="/src/assets/images/icons/heard.svg" alt="heard" width="24" height="24" loading="lazy" class="main-product__heard-full">
-                    <img src="/src/assets/images/icons/heart-fill.svg" alt="heard" width="24" height="24" loading="lazy" class="main-product__heard-fill">
+                    <span class="main-product__heard-full"></span>
+                    <span class="main-product__heard-fill"></span>
+                    
 
                 </div>
 
@@ -33,19 +34,19 @@ function displayProducts(products) {
                 <div class="main-product__rat-wrapper">
                     <ul class="main-product__rat-list">
                         <li class="main-product__rat-item">
-                            <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                           <span class="main-product__rat-star"></span>
                         </li>  
                             <li class="main-product__rat-item">
-                                <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                               <span class="main-product__rat-star"></span>
                             </li>
                             <li class="main-product__rat-item">
-                                <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                                <span class="main-product__rat-star"></span>
                             </li>
                             <li class="main-product__rat-item">
-                                <img src="/src/assets/images/icons/star.svg" alt="star" width="16" height="16" loading="lazy">
+                               <span class="main-product__rat-star"></span>
                             </li>
                             <li class="main-product__rat-item">
-                                <img src="/src/assets/images/icons/star-half-alt.svg" alt="star" width="16" height="16" loading="lazy">
+                                <span class="main-product__rat-half-star"></span>
                             </li>
                     </ul>
 

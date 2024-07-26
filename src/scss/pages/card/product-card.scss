@@ -1,8 +1,7 @@
 .card {
   .card__wrapper {
     .breadcrumb {
-      display: flex;
-      align-items: center;
+      @extend %display-flex ;
       flex-wrap: wrap;
       margin-bottom: 1rem;
       list-style: none;
@@ -96,7 +95,7 @@
       .card__content__right {
         margin: 0 0 0 51px;
         width: 510px;
-        position: relative;
+        @extend %position-rel;
         .product__right {
           .product__right__size {
             @extend %display-jc-sb;
@@ -196,7 +195,6 @@
                 color: $text-primary;
                 font-size: 28px;
                 font-weight: 600;
-                // line-height: 38px;
                 line-height: 28px;
               }
             }

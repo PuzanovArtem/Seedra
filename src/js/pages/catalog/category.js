@@ -17,7 +17,7 @@ function displayCategories(categories) {
         const categoryItem = document.createElement('li');
         categoryItem.className = 'catalog__category-item catalog__category-btn';
         categoryItem.innerHTML = `
-            <img src="/src/assets/images/icons/all-product-icon.svg" alt="${category.category}">
+            <span class="main-product__icon"></span>   
             <p>${category.name}</p>
         `;
         categoryList.appendChild(categoryItem);
