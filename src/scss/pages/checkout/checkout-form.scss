@@ -221,6 +221,11 @@
     width: 67px;
     height: 43px;
     padding: 11px 8px;
+    cursor: pointer;
+
+    &.active {
+      border: 1px solid $green-brand;
+    }
   }
 
   &__card:not(:last-child) {
@@ -267,4 +272,10 @@
       width: 47px;
     }
   }
+}
+
+
+.form__group__error {
+  color: $danger;
+  padding: 10px 0 0;
 }
