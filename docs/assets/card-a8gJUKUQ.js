@@ -31,5 +31,5 @@ import"./header-BTWeqdbP.js";import"./swiper-Ci-xsG_o.js";document.addEventListe
 
                 <div class="related-product__price-wrapper">
                     <p class="related-product__price">$${t.price}</p>
-                    <button class="related-product__cart-btn cart-btn"></button>
+                    <button class="related-product__cart-btn cart-btn" aria-label="add-cart"></button>
                 </div>`,a.appendChild(e);const c=e.querySelector(".main-product__heard-wrapper"),r=e.querySelector(".main-product__heard-full"),i=e.querySelector(".main-product__heard-fill");c.addEventListener("click",function(){c.classList.toggle("active"),c.classList.contains("active")?(r.style.display="none",i.style.display="block"):(r.style.display="block",i.style.display="none")});const l=e.querySelector(".related-product__cart-btn");l.addEventListener("click",function(){l.classList.toggle("active")})})}o();

@@ -55,7 +55,7 @@ function displayProducts(products) {
 
                 <div class="related-product__price-wrapper">
                     <p class="related-product__price">$${product.price}</p>
-                    <button class="related-product__cart-btn cart-btn"></button>
+                    <button class="related-product__cart-btn cart-btn" aria-label="add-cart"></button>
                 </div>`;
         
         productsList.appendChild(productItem);

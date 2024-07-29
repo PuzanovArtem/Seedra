@@ -185,7 +185,7 @@ const productUrl = 'https://dummyjson.com/products/search?q=phone&limit=9';
                 </div>
                 <div class="catalog-product__price-wrapper">
                     <p class="catalog-product__price">$${product.price}</p>
-                    <button class="catalog-product__cart-btn cart-btn"></button>
+                    <button class="catalog-product__cart-btn cart-btn" aria-label="add-cart" ></button>
                 </div>`;
 
                 productsList.appendChild(productItem);

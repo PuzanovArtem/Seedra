@@ -36,5 +36,5 @@ import"./header-BTWeqdbP.js";import"./search-z7pJi-Ut.js";const l="https://dummy
 
                 <div class="main-product__price-wrapper">
                     <p class="main-product__price">$${s.price}</p>
-                    <button class="main-product__cart-btn cart-btn"></button>
-                </div>`,c.appendChild(t);const r=t.querySelector(".main-product__heard-wrapper"),e=t.querySelector(".main-product__heard-full"),n=t.querySelector(".main-product__heard-fill");r.addEventListener("click",function(){r.classList.toggle("active"),r.classList.contains("active")?(e.style.display="none",n.style.display="block"):(e.style.display="block",n.style.display="none")});const i=t.querySelector(".main-product__cart-btn");i.addEventListener("click",function(){i.classList.toggle("active")})})}m();
+                    <button class="main-product__cart-btn cart-btn" aria-label="add-cart"></button>
+                </div>`,c.appendChild(t);const r=t.querySelector(".main-product__heard-wrapper"),e=t.querySelector(".main-product__heard-full"),i=t.querySelector(".main-product__heard-fill");r.addEventListener("click",function(){r.classList.toggle("active"),r.classList.contains("active")?(e.style.display="none",i.style.display="block"):(e.style.display="block",i.style.display="none")});const n=t.querySelector(".main-product__cart-btn");n.addEventListener("click",function(){n.classList.toggle("active")})})}m();
