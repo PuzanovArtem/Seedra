@@ -37,5 +37,5 @@ import"./header-BTWeqdbP.js";import"./swiper-Ci-xsG_o.js";const l="https://dummy
 
                 <div class="main-product__price-wrapper">
                     <p class="main-product__price">$${s.price}</p>
-                    <button class="main-product__cart-btn cart-btn" aria-lable="cart"></button>
+                    <button class="main-product__cart-btn cart-btn" aria-label="cart"></button>
                 </div>`,c.appendChild(t);const r=t.querySelector(".main-product__heard-wrapper"),i=t.querySelector(".main-product__heard-full"),n=t.querySelector(".main-product__heard-fill");r.addEventListener("click",function(){r.classList.toggle("active"),r.classList.contains("active")?(i.style.display="none",n.style.display="block"):(i.style.display="block",n.style.display="none")});const e=t.querySelector(".main-product__cart-btn");e.addEventListener("click",function(){e.classList.toggle("active")})})}m();
