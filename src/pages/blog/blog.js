@@ -1,6 +1,6 @@
 import '.././../js/components/header.js';
 import '../../js/components/select.js';
-import '../../js/pages/catalog/search.js';
+
 
 // const blogApi = 'https://666b067e7013419182d1f622.mockapi.io/api/nuts/product/product'
 

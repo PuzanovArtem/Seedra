@@ -96,7 +96,7 @@ function displayProducts(products) {
 
                 <div class="main-product__price-wrapper">
                     <p class="main-product__price">$${product.price}</p>
-                    <button class="main-product__cart-btn cart-btn" aria-lable="cart"></button>
+                    <button class="main-product__cart-btn cart-btn" aria-label="cart"></button>
                 </div>`;
         
         productsList.appendChild(productItem);
