@@ -76,10 +76,15 @@
     border: 2px solid $light-gray-stroke;
     border-radius: 8px;
     min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     width: 100%;
     position: relative;
     transition: box-shadow 0.3s;
+
+
 
     img {
       margin: 0 auto;
@@ -155,6 +160,7 @@
   &__price-wrapper {
     margin: 8px 0 0 0;
     @extend %display-jc-sb;
+
   }
 
   &__price {
