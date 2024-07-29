@@ -90,7 +90,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin:  0 0 70px 0;
+    
     .catalog-product__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding: 18px;
       border: 2px solid $light-gray-stroke;
       border-radius: 8px;
