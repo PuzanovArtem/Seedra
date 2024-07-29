@@ -26,6 +26,9 @@
                 class="svg-seatch-filter"
                 alt="filter"
                 src="/src/assets/images/icons/icon_search_filter.svg"
+                width="18"
+                height="18"
+                alt="mob__filter"
               />
             </div>
           </form>
@@ -106,7 +109,7 @@
                 </div>
 
                 <div class="filter__popup__item">
-                  <button class="filter__popup__accordion ">Featured
+                  <button class="filter__popup__accordion">Featured
                     <span class="filter__popup__arrow arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
@@ -174,7 +177,7 @@
                 </div>
 
                 <div class="filter__popup__item">
-                  <button class="filter__popup__accordion ">Growing Conditions
+                  <button class="filter__popup__accordion">Growing Conditions
                     <span class="filter__popup__arrow arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
@@ -241,9 +244,9 @@
                   </ul>
                 </div>
 
-                <div class="filter__popup__item">
-                  <button class="filter__popup__accordion ">Price
-                    <span class="filter__popup__arrow arrow">
+                <div class="filter__item">
+                  <button class="filter__accordion accordion">Price
+                    <span class="filter__arrow arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
                         alt="arrow-down"
@@ -252,18 +255,30 @@
                       />
                     </span>
                   </button>
-                  <div class="filter__popup__menu price-filter">
+                  <div class="filter__menu popup__price-filter">
                     <div class="price-filter__title">
                       <h3 class="title-from">From</h3>
                       <h3 class="title-to">To</h3>
                     </div>
-                    <div class="popup-price-inputs">
-                      <input type="text" id="price-from" placeholder="$1232" />
-                      <span><img
+                    <div class="popup__price-inputs">
+                      <input
+                        class="popup__price-input"
+                        type="text"
+                        id="price-from"
+                        placeholder="$1232"
+                      />
+                      <span>
+                        <img
                           src="/src/assets/images/icons/minus-gray.svg"
                           alt=""
-                        /></span>
-                      <input type="text" id="price-to" placeholder="" />
+                        />
+                      </span>
+                      <input
+                        class="popup__price-input"
+                        type="text"
+                        id="price-to"
+                        placeholder=""
+                      />
                     </div>
                     <div class="slider-container">
                       <input
@@ -278,7 +293,7 @@
                 </div>
 
                 <div class="filter__popup__item">
-                  <button class="filter__popup__accordion ">Use
+                  <button class="filter__popup__accordion">Use
                     <span class="filter__popup__arrow arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
@@ -337,7 +352,8 @@
                 </div>
 
                 <div class="filter__popup__item">
-                  <button class="filter__popup__accordion  ">Additional Characteristic
+                  <button class="filter__popup__accordion">Additional
+                    Characteristic
                     <span class="filter__popup__arrow arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
