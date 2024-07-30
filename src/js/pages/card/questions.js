@@ -28,3 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+document.querySelectorAll('.question__item__title').forEach(item => {
+  item.addEventListener('click', function() {
+    const toggleElement = this.querySelector('.toggle');
+    if (toggleElement) {
+      toggleElement.classList.toggle('active');
+    }
+  });
+});

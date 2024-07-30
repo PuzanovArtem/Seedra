@@ -49,6 +49,12 @@
             .content__main-image {
               border-radius: 10px;
               margin: 0 0 20px 0;
+              display: inline-block;
+            width: 445px;
+            height: 445px;
+              background-image: url('/src/assets/images/cart-item.png'); 
+              background-size: cover; 
+              background-position: center;
             }
           }
           .slider__content__thumbnails {

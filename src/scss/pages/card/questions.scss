@@ -39,6 +39,33 @@
             .question__item--image {
               margin-left: 50px;
             }
+            $transition-duration: 0.3s;
+
+.toggle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  .horizontal, .vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 1px;
+    background-color: $green-brand;
+    transform: translate(-50%, -50%);
+  }
+
+  .vertical {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: transform $transition-duration;
+  }
+
+  &.active .vertical {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
           }
 
           .question__item__text {
