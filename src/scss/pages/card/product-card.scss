@@ -46,43 +46,70 @@
       .card__content__left {
         .slider__content {
           .slider__content__main__image {
-            .content__main-image {
-              border-radius: 10px;
-              margin: 0 0 20px 0;
-              display: inline-block;
+            // .content__main-image {
+            //   border-radius: 10px;
+            //   margin: 0 0 20px 0;
+            //   display: inline-block;
+            // width: 445px;
+            // height: 445px;
+            //   background-image: url('/src/assets/images/cart-item.png'); 
+            //   background-size: cover; 
+            //   background-position: center;
+            // }
+          }
+          // .slider__content__thumbnails {
+          //   overflow: scroll;
+          //   -ms-overflow-style: none;  /* IE и Edge */
+          //   scrollbar-width: none;  /* Firefox */
+          //   width: 445px;
+          //   padding: 3px 3px;
+
+          //   .content__thumbnails__wrapper {
+          //     display: flex;
+          //     min-width: max-content;
+          //     gap: 8px;
+          //     .content__thumbnails--img {
+          //       border-radius: 5px;
+          //       cursor: pointer;
+          //       transition: opacity 0.3s;
+          //     }
+          //     .content__thumbnails--img:hover {
+          //       opacity: 0.5;
+          //     }
+
+          //     .content__thumbnails--img.active {
+          //       box-shadow: 0px 0px 2px 2px $hover;
+          //     }
+          //   }
+          // }
+          .content__main-image {
+            border-radius: 10px;
+            margin: 0 0 20px 0;
+            display: inline-block;
             width: 445px;
             height: 445px;
-              background-image: url('/src/assets/images/cart-item.png'); 
-              background-size: cover; 
-              background-position: center;
-            }
-          }
-          .slider__content__thumbnails {
-            overflow: scroll;
-            -ms-overflow-style: none;  /* IE и Edge */
-            scrollbar-width: none;  /* Firefox */
-            width: 445px;
-            padding: 3px 3px;
+            background-size: cover;
+            background-position: center;
+        }
 
-            .content__thumbnails__wrapper {
-              display: flex;
-              min-width: max-content;
-              gap: 8px;
-              .content__thumbnails--img {
-                border-radius: 5px;
-                cursor: pointer;
-                transition: opacity 0.3s;
-              }
-              .content__thumbnails--img:hover {
-                opacity: 0.5;
-              }
+        .content__thumbnails__wrapper {
+            display: flex;
+            gap: 8px;
+        }
 
-              .content__thumbnails--img.active {
-                box-shadow: 0px 0px 2px 2px $hover;
-              }
-            }
-          }
-          
+        .content__thumbnails--img {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .content__thumbnails--img:hover {
+            opacity: 0.5;
+        }
+
+        .content__thumbnails--img.active {
+            box-shadow: 0px 0px 2px 2px #000;
+        }
         }
       }
       .card__content__right {

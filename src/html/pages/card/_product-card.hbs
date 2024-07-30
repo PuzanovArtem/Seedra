@@ -63,7 +63,7 @@
               Hybrid Seeds for Indoor and Outdoor Planting
             </h1>
             <div class="slider__content__main__image">
-              <img
+              {{!-- <img
                 id="currentImage"
                 src="/src/assets/images/card-item.png"
                 alt="Main Image"
@@ -71,12 +71,15 @@
                 class="content__main-image"
                 width="445"
                 height="445"
-              />
-             
+              /> --}}
+             <img id="currentImage" src="path/to/main-image.png" alt="Main Image" class="content__main-image">
             </div>
             <div class="slider__content__thumbnails">
               <div class="content__thumbnails__wrapper">
-                <img
+                 <img class="content__thumbnails--img" src="/src/assets/images/cart-item.png" alt="Thumbnail 1" data-src="/src/assets/images/cart-item.png">
+            <img class="content__thumbnails--img" src="/src/assets/images/back-side-product.png" alt="Thumbnail 2" data-src="/src/assets/images/back-side-product.png">
+            <img class="content__thumbnails--img" src="/src/assets/images/non-gmo.png" alt="Thumbnail 3" data-src="/src/assets/images/non-gmo.png">
+                {{!-- <img
                   class="content__thumbnails--img active"
                   src="/src/assets/images/cart-item.png"
                   alt="Main Image"
@@ -130,7 +133,7 @@
                   data-src="/src/assets/images/video.png"
                   width="67"
                   height="67"
-                />
+                /> --}}
               </div>
 
             </div>
