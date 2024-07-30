@@ -55,7 +55,7 @@
         .custom-checkbox .checkbox {
           width: 21px;
           height: 21px;
-          border: 2px solid $white;
+          border: 2px solid $light-gray-stroke;
           border-radius: 8px;
           background-color: $white;
           display: inline-block;
@@ -73,10 +73,10 @@
         .custom-checkbox input[type="checkbox"]:checked + .checkbox::after {
           content: "";
           @extend %position-abs;
-          top: 50%;
+          top:40%;
           left: 50%;
-          width: 10px;
-          height: 18px;
+          width: 8px;
+          height: 14px;
           border: solid $green-brand;
           border-width: 0 3px 3px 0;
           transform: translate(-50%, -50%) rotate(45deg);

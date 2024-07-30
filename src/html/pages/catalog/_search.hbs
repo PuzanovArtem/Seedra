@@ -37,12 +37,13 @@
           <div id="filter-popup" class="filter-popup">
             <div class="filter-popup__content">
               <span class="filter-popup__close">&times;</span>
-              <div class="filter-popup__filter filter__popup">
-                <h3 class="filter__popup__title">FILTERS</h3>
+              <div class="popup__list filter__popup">
+                <h3 class="filter-popup__title">FILTERS</h3>
 
-                <div class="filter__popup__item">
-                  <button class="filter__popup__accordion">Seed type
-                    <span class="filter__popup__arrow arrow">
+                <div class="filter-popup__item">
+                  <button class="filter-popup__accordion popup-accordion">Seed
+                    type
+                    <span class="filter-popup__arrow popup-arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
                         alt="arrow-down"
@@ -51,55 +52,48 @@
                       />
                     </span>
                   </button>
-                  <ul class="filter__popup__menu">
-                    <li class="filter__popup__menu--item">
-                      <label for="seed-type-hybrid" class="custom-checkbox">
+                  <ul class="filter-popup__menu">
+                    <li class="filter-popup__menu-item">
+                      <label for="popup-hybrid" class="popup-checkbox">
                         <input
                           type="checkbox"
-                          name="seed-type-hybrid"
-                          id="seed-type-hybrid"
+                          name="popup-hybrid"
+                          id="popup-hybrid"
                         />
                         <span class="checkbox"></span>
                         Hybrid
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
-                      <label
-                        for="seed-type-open-pollinated"
-                        class="custom-checkbox"
-                      >
+                    <li class="filter-popup__menu-item">
+                      <label for="popup-open-pollinated" class="popup-checkbox">
                         <input
                           type="checkbox"
-                          name="seed-type-open-pollinated"
-                          id="seed-type-open-pollinated"
+                          name="popup-open-pollinated"
+                          id="popup-open-pollinated"
                         />
                         <span class="checkbox"></span>
                         Open Pollinated
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
-                      <label
-                        for="seed-type-organic-seeds"
-                        class="custom-checkbox"
-                      >
+                    <li class="filter-popup__menu-item">
+                      <label for="popup-organic-seeds" class="popup-checkbox">
                         <input
                           type="checkbox"
-                          name="seed-type-organic-seeds"
-                          id="seed-type-organic-seeds"
+                          name="popup-organic-seeds"
+                          id="popup-organic-seeds"
                         />
                         <span class="checkbox"></span>
-                        Organic Seeds, Plants, and Supplies
+                        Organic Seeds, Plants,
+                        <br />
+                        and Supplies
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
-                      <label
-                        for="seed-type-pelleted-seed"
-                        class="custom-checkbox"
-                      >
+                    <li class="filter-popup__menu-item">
+                      <label for="popup-pelleted-seed" class="popup-checkbox">
                         <input
                           type="checkbox"
-                          name="seed-type-pelleted-seed"
-                          id="seed-type-pelleted-seed"
+                          name="popup-pelleted-seed"
+                          id="popup-pelleted-seed"
                         />
                         <span class="checkbox"></span>
                         Pelleted Seed
@@ -108,9 +102,11 @@
                   </ul>
                 </div>
 
-                <div class="filter__popup__item">
-                  <button class="filter__popup__accordion">Featured
-                    <span class="filter__popup__arrow arrow">
+                <div class="filter-popup__item">
+                  <button
+                    class="filter-popup__accordion popup-accordion"
+                  >Featured
+                    <span class="filter-popup__arrow popup-arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
                         alt="arrow-down"
@@ -119,55 +115,55 @@
                       />
                     </span>
                   </button>
-                  <ul class="filter__popup__menu">
-                    <li class="filter__popup__menu--item">
-                      <label for="featured-hybrid" class="custom-checkbox">
+                  <ul class="filter-popup__menu">
+                    <li class="filter-popup__menu-item">
+                      <label for="popup-hybrid-featured" class="popup-checkbox">
                         <input
                           type="checkbox"
-                          name="featured-hybrid"
-                          id="featured-hybrid"
+                          name="popup-hybrid-featured"
+                          id="popup-hybrid-featured"
                         />
                         <span class="checkbox"></span>
                         Hybrid
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="featured-open-pollinated"
-                        class="custom-checkbox"
+                        for="popup-open-pollinated-featured"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="featured-open-pollinated"
-                          id="featured-open-pollinated"
+                          name="popup-open-pollinated-featured"
+                          id="popup-open-pollinated-featured"
                         />
                         <span class="checkbox"></span>
                         Open Pollinated
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="featured-organic-seeds"
-                        class="custom-checkbox"
+                        for="popup-organic-seeds-featured"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="featured-organic-seeds"
-                          id="featured-organic-seeds"
+                          name="popup-organic-seeds-featured"
+                          id="popup-organic-seeds-featured"
                         />
                         <span class="checkbox"></span>
                         Organic Seeds, Plants, and Supplies
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="featured-pelleted-seed"
-                        class="custom-checkbox"
+                        for="popup-pelleted-seed-featured"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="featured-pelleted-seed"
-                          id="featured-pelleted-seed"
+                          name="popup-pelleted-seed-featured"
+                          id="popup-pelleted-seed-featured"
                         />
                         <span class="checkbox"></span>
                         Pelleted Seed
@@ -176,9 +172,11 @@
                   </ul>
                 </div>
 
-                <div class="filter__popup__item">
-                  <button class="filter__popup__accordion">Growing Conditions
-                    <span class="filter__popup__arrow arrow">
+                <div class="filter-popup__item">
+                  <button
+                    class="filter-popup__accordion popup-accordion"
+                  >Growing Conditions
+                    <span class="filter-popup__arrow popup-arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
                         alt="arrow-down"
@@ -187,55 +185,55 @@
                       />
                     </span>
                   </button>
-                  <ul class="filter__popup__menu">
-                    <li class="filter__popup__menu--item">
-                      <label for="growing-hybrid" class="custom-checkbox">
+                  <ul class="filter-popup__menu">
+                    <li class="filter-popup__menu-item">
+                      <label for="popup-hybrid-growing" class="popup-checkbox">
                         <input
                           type="checkbox"
-                          name="growing-hybrid"
-                          id="growing-hybrid"
+                          name="popup-hybrid-growing"
+                          id="popup-hybrid-growing"
                         />
                         <span class="checkbox"></span>
                         Hybrid
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="growing-open-pollinated"
-                        class="custom-checkbox"
+                        for="popup-open-pollinated-growing"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="growing-open-pollinated"
-                          id="growing-open-pollinated"
+                          name="popup-open-pollinated-growing"
+                          id="popup-open-pollinated-growing"
                         />
                         <span class="checkbox"></span>
                         Open Pollinated
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="growing-organic-seeds"
-                        class="custom-checkbox"
+                        for="popup-organic-seeds-growing"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="growing-organic-seeds"
-                          id="growing-organic-seeds"
+                          name="popup-organic-seeds-growing"
+                          id="popup-organic-seeds-growing"
                         />
                         <span class="checkbox"></span>
                         Organic Seeds, Plants, and Supplies
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="growing-pelleted-seed"
-                        class="custom-checkbox"
+                        for="popup-pelleted-seed-growing"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="growing-pelleted-seed"
-                          id="growing-pelleted-seed"
+                          name="popup-pelleted-seed-growing"
+                          id="popup-pelleted-seed-growing"
                         />
                         <span class="checkbox"></span>
                         Pelleted Seed
@@ -244,9 +242,9 @@
                   </ul>
                 </div>
 
-                <div class="filter__item">
-                  <button class="filter__accordion accordion">Price
-                    <span class="filter__arrow arrow">
+                <div class="filter-popup__item">
+                  <button class="filter-popup__accordion popup-accordion">Price
+                    <span class="filter-popup__arrow popup-arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
                         alt="arrow-down"
@@ -255,35 +253,31 @@
                       />
                     </span>
                   </button>
-                  <div class="filter__menu popup__price-filter">
-                    <div class="price-filter__title">
+                  <div class="filter-popup__menu popup-price-filter">
+                    <div class="popup-price-filter__title">
                       <h3 class="title-from">From</h3>
                       <h3 class="title-to">To</h3>
                     </div>
-                    <div class="popup__price-inputs">
+                    <div class="popup-price-inputs">
                       <input
-                        class="popup__price-input"
                         type="text"
-                        id="price-from"
+                        id="popup-price-from"
                         placeholder="$1232"
                       />
                       <span>
                         <img
                           src="/src/assets/images/icons/minus-gray.svg"
-                          alt=""
+                          alt="line"
+                          width="24"
+                          height="24"
                         />
                       </span>
-                      <input
-                        class="popup__price-input"
-                        type="text"
-                        id="price-to"
-                        placeholder=""
-                      />
+                      <input type="text" id="popup-price-to" placeholder="" />
                     </div>
-                    <div class="slider-container">
+                    <div class="popup-slider-container">
                       <input
                         type="range"
-                        id="styled-range"
+                        id="popup-styled-range"
                         min="0"
                         max="100"
                         value="50"
@@ -292,9 +286,9 @@
                   </div>
                 </div>
 
-                <div class="filter__popup__item">
-                  <button class="filter__popup__accordion">Use
-                    <span class="filter__popup__arrow arrow">
+                <div class="filter-popup__item">
+                  <button class="filter-popup__accordion popup-accordion">Use
+                    <span class="filter-popup__arrow popup-arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
                         alt="arrow-down"
@@ -303,46 +297,55 @@
                       />
                     </span>
                   </button>
-                  <ul class="filter__popup__menu">
-                    <li class="filter__popup__menu--item">
-                      <label for="use-hybrid" class="custom-checkbox">
+                  <ul class="filter-popup__menu">
+                    <li class="filter-popup__menu-item">
+                      <label for="popup-hybrid-use" class="popup-checkbox">
                         <input
                           type="checkbox"
-                          name="use-hybrid"
-                          id="use-hybrid"
+                          name="popup-hybrid-use"
+                          id="popup-hybrid-use"
                         />
                         <span class="checkbox"></span>
                         Hybrid
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
-                      <label for="use-open-pollinated" class="custom-checkbox">
+                    <li class="filter-popup__menu-item">
+                      <label
+                        for="popup-open-pollinated-use"
+                        class="popup-checkbox"
+                      >
                         <input
                           type="checkbox"
-                          name="use-open-pollinated"
-                          id="use-open-pollinated"
+                          name="popup-open-pollinated-use"
+                          id="popup-open-pollinated-use"
                         />
                         <span class="checkbox"></span>
                         Open Pollinated
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
-                      <label for="use-organic-seeds" class="custom-checkbox">
+                    <li class="filter-popup__menu-item">
+                      <label
+                        for="popup-organic-seeds-use"
+                        class="popup-checkbox"
+                      >
                         <input
                           type="checkbox"
-                          name="use-organic-seeds"
-                          id="use-organic-seeds"
+                          name="popup-organic-seeds-use"
+                          id="popup-organic-seeds-use"
                         />
                         <span class="checkbox"></span>
                         Organic Seeds, Plants, and Supplies
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
-                      <label for="use-pelleted-seed" class="custom-checkbox">
+                    <li class="filter-popup__menu-item">
+                      <label
+                        for="popup-pelleted-seed-use"
+                        class="popup-checkbox"
+                      >
                         <input
                           type="checkbox"
-                          name="use-pelleted-seed"
-                          id="use-pelleted-seed"
+                          name="popup-pelleted-seed-use"
+                          id="popup-pelleted-seed-use"
                         />
                         <span class="checkbox"></span>
                         Pelleted Seed
@@ -351,10 +354,11 @@
                   </ul>
                 </div>
 
-                <div class="filter__popup__item">
-                  <button class="filter__popup__accordion">Additional
-                    Characteristic
-                    <span class="filter__popup__arrow arrow">
+                <div class="filter-popup__item">
+                  <button
+                    class="filter-popup__accordion popup-accordion"
+                  >Additional Characteristic
+                    <span class="filter-popup__arrow popup-arrow">
                       <img
                         src="/src/assets/images/icons/arrow-down.svg"
                         alt="arrow-down"
@@ -363,55 +367,58 @@
                       />
                     </span>
                   </button>
-                  <ul class="filter__popup__menu">
-                    <li class="filter__popup__menu--item">
-                      <label for="additional-hybrid" class="custom-checkbox">
+                  <ul class="filter-popup__menu">
+                    <li class="filter-popup__menu-item">
+                      <label
+                        for="popup-hybrid-characteristic"
+                        class="popup-checkbox"
+                      >
                         <input
                           type="checkbox"
-                          name="additional-hybrid"
-                          id="additional-hybrid"
+                          name="popup-hybrid-characteristic"
+                          id="popup-hybrid-characteristic"
                         />
                         <span class="checkbox"></span>
                         Hybrid
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="additional-open-pollinated"
-                        class="custom-checkbox"
+                        for="popup-open-pollinated-characteristic"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="additional-open-pollinated"
-                          id="additional-open-pollinated"
+                          name="popup-open-pollinated-characteristic"
+                          id="popup-open-pollinated-characteristic"
                         />
                         <span class="checkbox"></span>
                         Open Pollinated
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="additional-organic-seeds"
-                        class="custom-checkbox"
+                        for="popup-organic-seeds-characteristic"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="additional-organic-seeds"
-                          id="additional-organic-seeds"
+                          name="popup-organic-seeds-characteristic"
+                          id="popup-organic-seeds-characteristic"
                         />
                         <span class="checkbox"></span>
                         Organic Seeds, Plants, and Supplies
                       </label>
                     </li>
-                    <li class="filter__popup__menu--item">
+                    <li class="filter-popup__menu-item">
                       <label
-                        for="additional-pelleted-seed"
-                        class="custom-checkbox"
+                        for="popup-pelleted-seed-characteristic"
+                        class="popup-checkbox"
                       >
                         <input
                           type="checkbox"
-                          name="additional-pelleted-seed"
-                          id="additional-pelleted-seed"
+                          name="popup-pelleted-seed-characteristic"
+                          id="popup-pelleted-seed-characteristic"
                         />
                         <span class="checkbox"></span>
                         Pelleted Seed
