@@ -49,7 +49,12 @@
             .content__main-image {
               border-radius: 10px;
               margin: 0 0 20px 0;
-              
+              display: inline-block;
+            width: 445px;
+            height: 445px;
+              background-image: url('/src/assets/images/cart-item.png'); 
+              background-size: cover; 
+              background-position: center;
             }
           }
           .slider__content__thumbnails {
@@ -108,6 +113,38 @@
               height: 44px;
               border-radius: 10px;
               @extend %display-flex;
+              .counter-container {
+                @extend %display-flex;
+                .counter-button {
+                  background: none;
+                  border: none;
+                  font-size: 24px;
+    
+                  cursor: pointer;
+                  color: $green-brand;
+                }
+                .counter-button--minus {
+                  padding: 0 7px 0px 14px;
+                }
+                .counter-button--plus {
+                  padding: 0 7px 0px 6px;
+                }
+    
+                .counter-value {
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 29px;
+                  margin: 0 0px;
+                  color: $green-brand;
+                  background-color: $invisible-green;
+                  padding: 0px 12px;
+                  border-radius: 10px;
+                }
+                .counter-button:focus {
+                  outline: none;
+                  @extend %display-flex;
+                }
+              }
             }
           }
           .size-selector {
