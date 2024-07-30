@@ -41,6 +41,10 @@ var relatedSwiper = new Swiper(".related-product-swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 2500, 
+    disableOnInteraction: false,  
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,

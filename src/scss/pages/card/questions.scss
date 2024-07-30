@@ -151,6 +151,7 @@
         font-weight: 300;
         letter-spacing: 0px;
         color: $text-secondary;
+        resize: none;
       }
 
       .question__block--button {
@@ -375,6 +376,22 @@
         .question__block--button:hover {
           background-color: #218838;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .questions {
+    .questions__content {
+      display: contents;
+      
+      &__right {
+        .question__block {
+          width: 300px;
+          
+        }
+        
       }
     }
   }

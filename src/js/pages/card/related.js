@@ -22,10 +22,10 @@ function displayProducts(products) {
 
         const productItem = document.createElement('li');
         productItem.classList = 'related-product__item swiper-slide ';
-        productItem.innerHTML = `<div class="main-product__heard-wrapper">
+        productItem.innerHTML = `<a href="/Seedra/src/pages/card/card.html" class="main-product__heard-wrapper">
                    <span class="main-product__heard-full"></span>
                     <span class="main-product__heard-fill"></span>
-                </div>
+                </a>
 
                 <img src="${product.images[0]}" alt="img" width="294" height="294" loading="lazy">
 

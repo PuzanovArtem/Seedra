@@ -1,7 +1,7 @@
 .card {
   .card__wrapper {
     .breadcrumb {
-      @extend %display-flex ;
+      @extend %display-flex;
       flex-wrap: wrap;
       margin-bottom: 1rem;
       list-style: none;
@@ -52,7 +52,9 @@
             }
           }
           .slider__content__thumbnails {
-            overflow-x: auto;
+            overflow: scroll;
+            -ms-overflow-style: none;  /* IE и Edge */
+            scrollbar-width: none;  /* Firefox */
             width: 445px;
             padding: 3px 3px;
 
@@ -74,22 +76,7 @@
               }
             }
           }
-          .slider__content__thumbnails::-webkit-scrollbar {
-            height: 8px;
-          }
-
-          .slider__content__thumbnails::-webkit-scrollbar-track {
-            background: $white;
-          }
-
-          .slider__content__thumbnails::-webkit-scrollbar-thumb {
-            background: $light-blue;
-            border-radius: 4px;
-          }
-
-          .slider__content__thumbnails::-webkit-scrollbar-thumb:hover {
-            background: $green-brand;
-          }
+          
         }
       }
       .card__content__right {
@@ -203,12 +190,39 @@
               .info__cart--img {
                 margin: 0 13px 0 0;
               }
+              .price-info__heard-full,
+              .price-info__heard-fill {
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 24px;
+              }
+
+              .price-info__heard-full {
+                background-image: url(/src/assets/images/icons/heard.svg);
+              }
+
+              .price-info__heard-fill {
+                background-image: url(/src/assets/images/icons/heart-fill.svg);
+              }
+
+              .price-info__heard-wrapper {
+                margin: 4px 4px 0 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+              }
+
               .info__cart--button {
                 width: 153px;
                 height: 51px;
                 color: $white;
                 border: none;
                 border-radius: 5px;
+                padding: 0;
                 cursor: pointer;
                 &:hover {
                   background: $hover;
@@ -353,8 +367,8 @@
           }
           .product__right__status-mob {
             margin: 0 0 0 0;
-            .info__content__specs{
-              margin: 0  0 0 0;
+            .info__content__specs {
+              margin: 0 0 0 0;
             }
           }
           .slider__content {
@@ -378,6 +392,75 @@
         }
         .card__content__right {
           width: 345px;
+          .product__right {
+            .product__right__size {
+              margin: 14px 0 15px 0;
+            }
+            .product__right__price-info {
+              margin: 19px 0 0 0;
+              .price-info__total {
+                margin: 0 0 0 0px;
+                .original-price {
+                  display: none;
+                }
+
+                .discounted-price {
+                  line-height: 54px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 355px) {
+  .card {
+    .card__wrapper {
+      .breadcrumb {
+        display: none;
+      }
+      .card__content {
+        display: block;
+        margin: 24px auto 0;
+        .card__content__left {
+          .title-mob {
+            margin: 23px auto 24px ;
+            font-size: 22px;
+            line-height: 34px;
+            letter-spacing: -1px;
+          }
+          .product__right__status-mob {
+            margin: 0 0 0 0;
+            .info__content__specs {
+              margin: 0 0 0 0;
+            }
+          }
+          .slider__content {
+            width: 310px;
+            .slider__content__main__image {
+              .content__main-image {
+                margin: 0 0 13px 0;
+              }
+            }
+            .slider__content__thumbnails {
+              width: 310px;
+              .content__thumbnails__wrapper {
+                gap: 7px;
+                .content__thumbnails--img {
+                  width: 51px;
+                  height: 52px;
+                }
+              }
+            }
+          }
+        }
+        .card__content__right {
+          width: 300px;
+          margin: 0 auto;
           .product__right {
             .product__right__size {
               margin: 14px 0 15px 0;

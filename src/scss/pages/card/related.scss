@@ -42,6 +42,12 @@
   .swiper-button-prev {
     color: $green-brand;
   }
+  .swiper-button-next{
+    right: -15px;
+  }
+  .swiper-button-prev{
+    left: -15px;
+  }
   &__heard-fill {
     display: none;
   }
