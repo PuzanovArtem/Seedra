@@ -3,16 +3,19 @@
 
 document.getElementById('menu__burger').addEventListener('click', function() {
     const menu = document.getElementById('menu');
-    const main = document.querySelector('main');
+  const main = document.querySelector('main');
+  const body = document.body;
 
     if (menu.classList.contains('show')) {
         menu.classList.remove('show');
-        main.classList.remove('main-blur');
+      main.classList.remove('main-blur');
+       body.style.overflow = 'auto';
         setTimeout(() => {
             menu.style.display = 'none';
         }, 300); 
     } else {
-        menu.style.display = 'flex';
+      menu.style.display = 'flex';
+      body.style.overflow = 'hidden';
         setTimeout(() => {
             menu.classList.add('show');
             main.classList.add('main-blur');
