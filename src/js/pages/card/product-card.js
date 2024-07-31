@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
         function increment(id) {
           const counter = document.getElementById(id);
           let value = parseInt(counter.textContent);
