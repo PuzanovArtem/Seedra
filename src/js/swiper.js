@@ -7,10 +7,19 @@ var commentSwiper = new Swiper(".response-swiper-container", {
   centeredSlides: true,
   roundLengths: true,
   loop: true,
-  loopAdditionalSlides: 30,
+
+  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+
+  on: {
+    // Обробка події для створення віртуальних дублікатів без збільшення кількості пагінаційних точок
+    init: function () {
+      this.loopCreate();
+      this.updateSlides();
+    },
   },
 });
 

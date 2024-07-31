@@ -189,12 +189,31 @@ padding: 0 0 103px;
   }
 
   @include respond-to($mobile) {
+ padding: 0 0 45px;
+
     &__form-row {
       display: block;
     }
 
     &__form-group {
       margin: 0 0 30px;
+    }
+
+    .cart__top-wrapper {
+    padding: 0 0 24px;
+   
+}
+
+&__title-form {
+  font-size: 16px;
+}
+
+&__form-group {
+        margin: 0 0 45px;
+    }
+
+    &__btn {
+      margin: 0;
     }
   }
 }
@@ -269,12 +288,22 @@ padding: 0 0 103px;
     &__wrapper {
       width: 100%;
     }
+
+    &__top-wrapper {
+           margin: 31px 0 41px 0;
+}
+
+&__btn {
+  margin: 22px 0 0;
+}
   }
 
   @include respond-to($s-mobile) {
     &__card {
       width: 47px;
     }
+
+    
   }
 }
 

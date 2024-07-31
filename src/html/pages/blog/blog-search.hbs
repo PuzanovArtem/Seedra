@@ -3,6 +3,7 @@
     <div class="blog-search__wrapper">
         <div class="menu__search-container blog-search__search-container">
             <input type="text" id="searchInput" class="menu__search-input blog-search__search-input" placeholder="Search" />
+            <img src="/src/assets/images/icons/filter.svg" id="sort-button" alt="filter" width="24" height="24" class="blog-search__filter-icon">
         </div>
 
         <div class="select">
@@ -14,9 +15,31 @@
                     <div data-value="nut2" class="filter__select-item">Popular</div>
                     <div data-value="nut3" class="filter__select-item">Rating</div>
                 </div>
-                <img src="/src/assets/images/icons/arrow-down.svg" class="filter__select-arrow" alt="arrow" />
+                <img src="/src/assets/images/icons/arrow-down.svg" class="filter__select-arrow" alt="arrow"/>
             </div>
         </div>
+
+
+
+    <div id="sort-popup" class="sort-popup">
+        <div class="sort-popup-content">
+            <span id="close-popup" class="close-popup"></span>
+            <div class="select select-popup" id="sort-popup-select">
+                <label class="filter__sort-select">Sort by</label>
+                <div class="filter__custom-select">
+                    <div class="filter__select-selected">Recently</div>
+                    <div class="filter__select-items">
+                        <div data-value="nut1" class="filter__select-item">Recently</div>
+                        <div data-value="nut2" class="filter__select-item">Popular</div>
+                        <div data-value="nut3" class="filter__select-item">Rating</div>
+                    </div>
+                    <img src="/src/assets/images/icons/arrow-down.svg" class="filter__select-arrow" alt="arrow" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     </div>
 </div>
 </section>

@@ -294,7 +294,7 @@
       width: 100%;
 
       &:not(:last-child) {
-        margin: 0 0 19px;
+        margin: 0 0 20px;
       }
     }
 
@@ -308,8 +308,26 @@
   }
 
   @include respond-to($mobile) {
+padding: 0 0 47px;
+
     &__name {
       max-width: 200px;
+    }
+
+    &__btn {
+      font-size: 16px;
+    }
+
+    &__top-wrapper {
+        margin: 30px 0 5px 0;
+    }
+
+    &__row {
+      padding: 60px 20px 21px 20px;
+    }
+
+    &__total-price-wrapper-s {
+    padding: 0;
     }
   }
 }
