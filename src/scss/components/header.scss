@@ -21,6 +21,12 @@
       justify-content: space-between;
     }
   }
+
+  @include respond-to($mobile) {
+    padding: 27px 18px;
+  }
+
+  
 }
 
 .menu {

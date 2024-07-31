@@ -301,8 +301,13 @@
     }
 
     &__wrapper {
-      padding: 41px 14px;
+     padding: 41px 14px 51px 14px;
+      height: 663px;
     }
+    
+    &__btn-wrapper {
+    margin: 25px 0 0 0;
+}
 
     &__img-bg {
       width: 188px;
@@ -316,15 +321,15 @@
 
     &__price-sale {
       font-size: 32px;
+      color: #E55C5C;
+    margin: 0 16px 0 6px;
     }
 
     &__title {
       font-size: 28px;
     }
 
-    &__subtitle {
-      font-size: 14px;
-    }
+    
   }
 
   @include respond-to($s-mobile) {

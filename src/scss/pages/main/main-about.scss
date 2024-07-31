@@ -131,6 +131,19 @@
       max-width: 237px;
     }
 
+    &__img-wrapper {
+      margin-top: 110px;
+      margin-bottom: 60px;
+    }
+
+    &__text:not(:last-child) {
+    margin: 0 0 30px;
+}
+
+    &__text {
+      line-height: 1.7;
+    }
+
     &__img {
       width: 284px;
       height: 284px;
