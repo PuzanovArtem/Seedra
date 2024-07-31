@@ -133,192 +133,191 @@
           }
         }
       }
-        .card__content__right {
-          margin: 0 0 0 51px;
-          width: 510px;
-          @extend %position-rel;
-          .product__right {
-            .product__right__size {
-              @extend %display-jc-sb;
-              margin: 21px 0 8px 0;
-              .right__size__title {
+      .card__content__right {
+        margin: 0 0 0 51px;
+        width: 510px;
+        @extend %position-rel;
+        .product__right {
+          .product__right__size {
+            @extend %display-jc-sb;
+            margin: 21px 0 8px 0;
+            .right__size__title {
+              @extend %display-flex;
+              .size__title--text {
+                margin: 0 10px 0 0;
+                line-height: 25px;
+                color: $text-secondary;
+              }
+              .size__title--sub-title {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 29px;
+                color: $text-primary;
+              }
+            }
+            .size__title__counter {
+              border: 1px solid $light-gray-stroke;
+              width: 104px;
+              height: 44px;
+              border-radius: 10px;
+              @extend %display-flex;
+              .counter-container {
                 @extend %display-flex;
-                .size__title--text {
-                  margin: 0 10px 0 0;
-                  line-height: 25px;
-                  color: $text-secondary;
+                .counter-button {
+                  background: none;
+                  border: none;
+                  font-size: 24px;
+
+                  cursor: pointer;
+                  color: $green-brand;
                 }
-                .size__title--sub-title {
+                .counter-button--minus {
+                  padding: 0 7px 0px 14px;
+                }
+                .counter-button--plus {
+                  padding: 0 7px 0px 6px;
+                }
+
+                .counter-value {
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 29px;
+                  margin: 0 0px;
+                  color: $green-brand;
+                  background-color: $invisible-green;
+                  padding: 0px 12px;
+                  border-radius: 10px;
+                }
+                .counter-button:focus {
+                  outline: none;
+                  @extend %display-flex;
+                }
+              }
+            }
+          }
+          .size-selector {
+            label {
+              @extend %display-flex;
+              margin: 0 0 8px 0;
+              line-height: 25px;
+              height: 44px;
+              border: 1px solid $light-gray-stroke;
+              border-radius: 10px;
+              padding: 0 17px 0 12px;
+              letter-spacing: 1px;
+              .custom-checkbox {
+                width: 16px;
+                height: 16px;
+                border: 2px solid $green-brand;
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 10px;
+                @extend%position-rel;
+                cursor: pointer;
+              }
+              .size-selector--price {
+                margin-left: auto;
+                @extend %display-flex;
+                line-height: 25px;
+                color: $text-secondary;
+                letter-spacing: 1px;
+                .size-selector--price-cash {
+                  margin-left: 5px;
                   font-size: 16px;
                   font-weight: 500;
                   line-height: 29px;
                   color: $text-primary;
-                }
-              }
-              .size__title__counter {
-                border: 1px solid $light-gray-stroke;
-                width: 104px;
-                height: 44px;
-                border-radius: 10px;
-                @extend %display-flex;
-                .counter-container {
-                  @extend %display-flex;
-                  .counter-button {
-                    background: none;
-                    border: none;
-                    font-size: 24px;
-
-                    cursor: pointer;
-                    color: $green-brand;
-                  }
-                  .counter-button--minus {
-                    padding: 0 7px 0px 14px;
-                  }
-                  .counter-button--plus {
-                    padding: 0 7px 0px 6px;
-                  }
-
-                  .counter-value {
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 29px;
-                    margin: 0 0px;
-                    color: $green-brand;
-                    background-color: $invisible-green;
-                    padding: 0px 12px;
-                    border-radius: 10px;
-                  }
-                  .counter-button:focus {
-                    outline: none;
-                    @extend %display-flex;
-                  }
+                  letter-spacing: 0px;
                 }
               }
             }
-            .size-selector {
-              label {
-                @extend %display-flex;
-                margin: 0 0 8px 0;
-                line-height: 25px;
-                height: 44px;
-                border: 1px solid $light-gray-stroke;
-                border-radius: 10px;
-                padding: 0 17px 0 12px;
-                letter-spacing: 1px;
-                .custom-checkbox {
-                  width: 16px;
-                  height: 16px;
-                  border: 2px solid $green-brand;
-                  border-radius: 50%;
-                  display: inline-block;
-                  margin-right: 10px;
-                  @extend%position-rel;
-                  cursor: pointer;
-                }
-                .size-selector--price {
-                  margin-left: auto;
-                  @extend %display-flex;
-                  line-height: 25px;
-                  color: $text-secondary;
-                  letter-spacing: 1px;
-                  .size-selector--price-cash {
-                    margin-left: 5px;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 29px;
-                    color: $text-primary;
-                    letter-spacing: 0px;
-                  }
-                }
+          }
+
+          .size-selector input[type="radio"] {
+            display: none;
+          }
+
+          .size-selector
+            input[type="radio"]:checked
+            + .custom-checkbox::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: $green-brand;
+            @extend%position-abs;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+          }
+
+          .product__right__price-info {
+            @extend %display-jc-sb;
+            margin: 26px 0 0 0;
+            .price-info__total {
+              margin: 0 0 0 5px;
+              .original-price {
+                text-decoration: line-through;
+                font-weight: 500;
+                line-height: 24px;
+                margin: 0 0 0 4px;
+                color: $text-secondary;
+              }
+
+              .discounted-price {
+                color: $text-primary;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 28px;
               }
             }
-
-            .size-selector input[type="radio"] {
-              display: none;
-            }
-
-            .size-selector
-              input[type="radio"]:checked
-              + .custom-checkbox::before {
-              content: "";
-              width: 8px;
-              height: 8px;
-              background: $green-brand;
-              @extend%position-abs;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              border-radius: 50%;
-            }
-
-            .product__right__price-info {
-              @extend %display-jc-sb;
-              margin: 26px 0 0 0;
-              .price-info__total {
-                margin: 0 0 0 5px;
-                .original-price {
-                  text-decoration: line-through;
-                  font-weight: 500;
-                  line-height: 24px;
-                  margin: 0 0 0 4px;
-                  color: $text-secondary;
-                }
-
-                .discounted-price {
-                  color: $text-primary;
-                  font-size: 28px;
-                  font-weight: 600;
-                  line-height: 28px;
-                }
+            .price-info__cart {
+              @extend %display-flex;
+              .info__cart--img {
+                margin: 0 13px 0 0;
               }
-              .price-info__cart {
-                @extend %display-flex;
-                .info__cart--img {
-                  margin: 0 13px 0 0;
-                }
-                .price-info__heard-full,
-                .price-info__heard-fill {
-                  background-repeat: no-repeat;
-                  width: 24px;
-                  height: 24px;
-                }
+              .price-info__heard-full,
+              .price-info__heard-fill {
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 24px;
+              }
 
-                .price-info__heard-full {
-                  background-image: url(/src/assets/images/icons/heard.svg);
-                }
+              .price-info__heard-full {
+                background-image: url(/src/assets/images/icons/heard.svg);
+              }
 
-                .price-info__heard-fill {
-                  background-image: url(/src/assets/images/icons/heart-fill.svg);
-                }
+              .price-info__heard-fill {
+                background-image: url(/src/assets/images/icons/heart-fill.svg);
+              }
 
-                .price-info__heard-wrapper {
-                  margin: 4px 4px 0 0;
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  cursor: pointer;
-                }
+              .price-info__heard-wrapper {
+                margin: 4px 4px 0 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+              }
 
-                .info__cart--button {
-                  width: 153px;
-                  height: 51px;
-                  color: $white;
-                  border: none;
-                  border-radius: 5px;
-                  padding: 0;
-                  cursor: pointer;
-                  &:hover {
-                    background: $hover;
-                  }
+              .info__cart--button {
+                width: 153px;
+                height: 51px;
+                color: $white;
+                border: none;
+                border-radius: 5px;
+                padding: 0;
+                cursor: pointer;
+                &:hover {
+                  background: $hover;
                 }
               }
             }
           }
         }
-      
+      }
     }
     .product__right--title {
       font-size: 24px;
@@ -367,14 +366,14 @@
         .card__content__left {
           .slider__content {
             width: 400px;
-            
+
             .slider__main {
               position: relative;
               max-width: 445px;
               width: 100%;
             }
-            
-            .thumbnails{
+
+            .thumbnails {
               max-width: 400px;
               width: 100%;
               overflow-x: hidden;
@@ -384,7 +383,7 @@
         .card__content__right {
           margin: 0 0 0 30px;
           width: 510px;
-      }
+        }
       }
     }
   }
@@ -397,7 +396,6 @@
         .card__content__left {
           .slider__content {
             width: 345px;
-            
           }
         }
       }
@@ -427,14 +425,14 @@
           .slider__content {
             width: 445px;
             .thumbnails {
-             .thumbnails__wrapper{
-              .thumbnails__wrapper__label{
-                .wrapper__label--img{
-                  width: 52px;
-                  height: 52px;
+              .thumbnails__wrapper {
+                .thumbnails__wrapper__label {
+                  .wrapper__label--img {
+                    width: 52px;
+                    height: 52px;
+                  }
                 }
               }
-             }
             }
           }
         }
@@ -484,7 +482,7 @@
               width: 100%;
               height: 345px;
             }
-            .thumbnails{
+            .thumbnails {
               padding: 14px 0px 13px;
             }
           }

@@ -1,51 +1,48 @@
+const productUrl = "https://dummyjson.com/products/search?q=phone&limit=9";
 
+console.log(productUrl);
 
-const productUrl = 'https://dummyjson.com/products/search?q=phone&limit=9';
+async function fetchProduct() {
+  try {
+    const response = await fetch(productUrl);
+    const data = await response.json();
+    const products = data.products;
 
-        console.log(productUrl);
+    displayProducts(products);
+  } catch (error) {
+    console.log(error);
+  }
+}
 
-        async function fetchProduct() {
-            try {
-                const response = await fetch(productUrl);
-                const data = await response.json();
-                const products = data.products;
+// Функция для обрезки строки и добавления многоточия
+function truncateDescription(description, maxLength) {
+  if (description.length > maxLength) {
+    return description.substring(0, maxLength) + "..";
+  } else {
+    return description;
+  }
+}
 
-                displayProducts(products);
-            } catch (error) {
-                console.log(error);
-            }
-        }
+function displayProducts(products) {
+  const productsList = document.getElementById("catalog-product__list");
 
-        // Функция для обрезки строки и добавления многоточия
-        function truncateDescription(description, maxLength) {
-            if (description.length > maxLength) {
-                return description.substring(0, maxLength) + '..';
-            } else {
-                return description;
-            }
-        }
+  // // Пользовательский текст для проверки
+  // const customTitle = "Привет как дела. Этот текст тут для поверки сокращения текста :)";
 
-        function displayProducts(products) {
-            const productsList = document.getElementById('catalog-product__list');
+  products.forEach((product) => {
+    const productItem = document.createElement("li");
+    productItem.classList = "catalog-product__item";
 
-            // // Пользовательский текст для проверки
-            // const customTitle = "Привет как дела. Этот текст тут для поверки сокращения текста :)";
+    // // Используем customTitle, если он задан, иначе product.title
+    // let productTitle = customTitle ? customTitle : product.title;
 
-            products.forEach(product => {
-                const productItem = document.createElement('li');
-                productItem.classList = 'catalog-product__item';
+    // const truncatedTitle = truncateDescription(productTitle, 150);
 
-                // // Используем customTitle, если он задан, иначе product.title
-                // let productTitle = customTitle ? customTitle : product.title;
-                
-                // const truncatedTitle = truncateDescription(productTitle, 150);
+    let productTitle = product.title;
+    // Обрезаем заголовок продукта
+    const truncatedTitle = truncateDescription(productTitle, 50);
 
-                
-                let productTitle = product.title;
-                // Обрезаем заголовок продукта
-                const truncatedTitle = truncateDescription(productTitle, 50);
-
-                productItem.innerHTML = `<a class="product__item__content" href="/Seedra/src/pages/card/card.html">
+    productItem.innerHTML = `<a class="product__item__content" href="/Seedra/src/pages/card/card.html">
                     <div class="main-product__heard-wrapper">
                         <span class="main-product__heard-full"></span>
                         <span class="main-product__heard-fill"></span>
@@ -93,31 +90,32 @@ const productUrl = 'https://dummyjson.com/products/search?q=phone&limit=9';
                     <button class="catalog-product__cart-btn cart-btn" aria-label="add-cart" ></button>
                 </div>`;
 
-                productsList.appendChild(productItem);
+    productsList.appendChild(productItem);
 
-                const heardWrapper = productItem.querySelector('.main-product__heard-wrapper');
-                const fullHeard = productItem.querySelector('.main-product__heard-full');
-                const fillHeard = productItem.querySelector('.main-product__heard-fill');
+    const heardWrapper = productItem.querySelector(
+      ".main-product__heard-wrapper"
+    );
+    const fullHeard = productItem.querySelector(".main-product__heard-full");
+    const fillHeard = productItem.querySelector(".main-product__heard-fill");
 
-                heardWrapper.addEventListener('click', function () {
-                    heardWrapper.classList.toggle('active');
-                    if (heardWrapper.classList.contains('active')) {
-                        fullHeard.style.display = 'none';
-                        fillHeard.style.display = 'block';
-                    } else {
-                        fullHeard.style.display = 'block';
-                        fillHeard.style.display = 'none';
-                    }
-                });
+    heardWrapper.addEventListener("click", function () {
+      heardWrapper.classList.toggle("active");
+      if (heardWrapper.classList.contains("active")) {
+        fullHeard.style.display = "none";
+        fillHeard.style.display = "block";
+      } else {
+        fullHeard.style.display = "block";
+        fillHeard.style.display = "none";
+      }
+    });
 
-                const cartButton = productItem.querySelector('.catalog-product__cart-btn');
-                cartButton.addEventListener('click', function () {
-                    cartButton.classList.toggle('active');
-                });
-            });
-        }
+    const cartButton = productItem.querySelector(".catalog-product__cart-btn");
+    cartButton.addEventListener("click", function () {
+      cartButton.classList.toggle("active");
+    });
+  });
+}
 
-        fetchProduct();
+fetchProduct();
 
-
-        // <img src="${product.images[0]}" alt="img" width="188" height="188" loading="lazy">
+// <img src="${product.images[0]}" alt="img" width="188" height="188" loading="lazy">

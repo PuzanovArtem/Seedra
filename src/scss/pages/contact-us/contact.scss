@@ -99,13 +99,12 @@
       z-index: 1;
       position: relative;
       max-width: 536px;
-        width: 100%;
+      width: 100%;
       .contact__form {
         padding: 33px 32px 33px 34px;
         background: $white;
         border-radius: 25px;
-        
-        
+
         .contact__form__group {
           margin: 0 0 25px 0;
           position: relative;
@@ -165,13 +164,12 @@
           }
         }
         .red-placeholder::placeholder {
-          color:$danger;
+          color: $danger;
         }
       }
     }
   }
 }
-
 
 @media (max-width: 870px) {
   .contact {
@@ -231,7 +229,6 @@
         .contact__block__form {
           margin: 0 auto;
           .contact__form {
-            
             .contact__form__request {
               display: contents;
 
@@ -281,9 +278,9 @@
   }
 }
 
-@media (max-width:495px){
-  .contact{
-    .contact__wrapper{
+@media (max-width: 495px) {
+  .contact {
+    .contact__wrapper {
       .contact__leaf {
         top: 30px;
         .contact__leaf-left {

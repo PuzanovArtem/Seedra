@@ -73,7 +73,7 @@
         .custom-checkbox input[type="checkbox"]:checked + .checkbox::after {
           content: "";
           @extend %position-abs;
-          top:40%;
+          top: 40%;
           left: 50%;
           width: 8px;
           height: 14px;
@@ -89,8 +89,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin:  0 0 70px 0;
-    
+    margin: 0 0 70px 0;
+
     .catalog-product__item {
       display: flex;
       flex-direction: column;
@@ -132,7 +132,6 @@
           filter: brightness(0) saturate(100%) invert(85%) sepia(93%)
             saturate(2064%) hue-rotate(315deg) brightness(105%) contrast(101%);
         }
-        
       }
       .catalog-product__heard-wrapper.active {
         & {
@@ -145,7 +144,7 @@
         .catalog-product__rat-list {
           @extend %display-flex;
           margin: 0 13px 0 0;
-          
+
           .catalog-product__rat-item:not(:last-child) {
             margin: 0 1px 0 0;
           }
@@ -170,10 +169,8 @@
           cursor: pointer;
         }
       }
-
     }
   }
-
 
   @include respond-to($s-mobile) {
     .catalog-product__item {
@@ -201,7 +198,7 @@
   .price-filter {
     padding: 20px;
     border-radius: 5px;
-    
+
     &__title {
       display: flex;
       margin-bottom: 10px;
@@ -218,7 +215,7 @@
     }
 
     .price-inputs {
-      @extend %display-jc-sb ;
+      @extend %display-jc-sb;
       margin-bottom: 10px;
       width: 100%;
 
@@ -241,7 +238,7 @@
     .slider-container {
       width: 100%;
       padding: 12px 0 15px;
-     @extend %display-flex ;
+      @extend %display-flex;
 
       input[type="range"] {
         -webkit-appearance: none;
@@ -250,7 +247,11 @@
         border-radius: 5px;
         outline: none;
         transition: opacity 0.2s;
-        background: linear-gradient(to right, $green-brand 50%, $light-gray-stroke 50%);
+        background: linear-gradient(
+          to right,
+          $green-brand 50%,
+          $light-gray-stroke 50%
+        );
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
         &::-webkit-slider-runnable-track,
@@ -284,7 +285,6 @@
     }
   }
 }
-
 
 @media (max-width: 1142px) {
   .catalog__product-list {

@@ -1,28 +1,26 @@
-const productUrl = 'https://dummyjson.com/products/search?q=phone&limit=9';
+const productUrl = "https://dummyjson.com/products/search?q=phone&limit=9";
 
-console.log(productUrl)
+console.log(productUrl);
 
 async function fetchProduct() {
-    try {
-        const response = await fetch(productUrl);
-        const data = await response.json();
-        const products = data.products;
+  try {
+    const response = await fetch(productUrl);
+    const data = await response.json();
+    const products = data.products;
 
-        displayProducts(products);
-    } catch (error) {
-        console.log(error);
-    }
+    displayProducts(products);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-
 function displayProducts(products) {
-    const productsList = document.getElementById('related-product__list');
+  const productsList = document.getElementById("related-product__list");
 
-    products.forEach(product => {
-
-        const productItem = document.createElement('li');
-        productItem.classList = 'related-product__item swiper-slide ';
-        productItem.innerHTML = `<a href="/Seedra/src/pages/card/card.html" class="main-product__heard-wrapper">
+  products.forEach((product) => {
+    const productItem = document.createElement("li");
+    productItem.classList = "related-product__item swiper-slide ";
+    productItem.innerHTML = `<a href="/Seedra/src/pages/card/card.html" class="main-product__heard-wrapper">
                    <span class="main-product__heard-full"></span>
                     <span class="main-product__heard-fill"></span>
                 </a>
@@ -57,37 +55,31 @@ function displayProducts(products) {
                     <p class="related-product__price">$${product.price}</p>
                     <button class="related-product__cart-btn cart-btn" aria-label="add-cart"></button>
                 </div>`;
-        
-        productsList.appendChild(productItem);
 
+    productsList.appendChild(productItem);
 
+    const heardWrapper = productItem.querySelector(
+      ".main-product__heard-wrapper"
+    );
+    const fullHeard = productItem.querySelector(".main-product__heard-full");
+    const fillHeard = productItem.querySelector(".main-product__heard-fill");
 
-        
-        const heardWrapper = productItem.querySelector('.main-product__heard-wrapper');
-        const fullHeard = productItem.querySelector('.main-product__heard-full');
-        const fillHeard = productItem.querySelector('.main-product__heard-fill');
+    heardWrapper.addEventListener("click", function () {
+      heardWrapper.classList.toggle("active");
+      if (heardWrapper.classList.contains("active")) {
+        fullHeard.style.display = "none";
+        fillHeard.style.display = "block";
+      } else {
+        fullHeard.style.display = "block";
+        fillHeard.style.display = "none";
+      }
+    });
 
-        heardWrapper.addEventListener('click', function () {
-            heardWrapper.classList.toggle('active');
-            if (heardWrapper.classList.contains('active')) {
-                fullHeard.style.display = 'none';
-                fillHeard.style.display = 'block';
-            } else {
-                fullHeard.style.display = 'block';
-                fillHeard.style.display = 'none';
-            }
-        });
-
-        const cartButton = productItem.querySelector('.related-product__cart-btn');
-        cartButton.addEventListener('click', function () {
-            cartButton.classList.toggle('active');
-        });
-
-    })
+    const cartButton = productItem.querySelector(".related-product__cart-btn");
+    cartButton.addEventListener("click", function () {
+      cartButton.classList.toggle("active");
+    });
+  });
 }
 
-
 fetchProduct();
-
-
-

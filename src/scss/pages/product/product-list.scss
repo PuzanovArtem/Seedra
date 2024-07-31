@@ -1,39 +1,39 @@
 .main-product {
-  padding: 58px 0 ;
+  padding: 58px 0;
 
   &__top-wrapper {
     @extend %display-jc-sb;
   }
   &__heard-full,
-&__heard-fill {
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-}
+  &__heard-fill {
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
 
-&__heard-full {
-  background-image: url(/src/assets/images/icons/heard.svg);
-}
+  &__heard-full {
+    background-image: url(/src/assets/images/icons/heard.svg);
+  }
 
-&__heard-fill {
-  background-image: url(/src/assets/images/icons/heart-fill.svg);
-}
+  &__heard-fill {
+    background-image: url(/src/assets/images/icons/heart-fill.svg);
+  }
 
-&__rat-star,
-&__rat-half-star {
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 16px;
-  display: flex;
-}
+  &__rat-star,
+  &__rat-half-star {
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: flex;
+  }
 
-&__rat-star {
-  background-image: url(/src/assets/images/icons/star.svg);
-}
+  &__rat-star {
+    background-image: url(/src/assets/images/icons/star.svg);
+  }
 
-&__rat-half-star {
-  background-image: url(/src/assets/images/icons/star-half-alt.svg);
-}
+  &__rat-half-star {
+    background-image: url(/src/assets/images/icons/star-half-alt.svg);
+  }
   &__btn {
     border: 1px solid $light-gray-stroke;
   }
@@ -60,7 +60,6 @@
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
     padding: 0 15px;
-    
   }
 
   &__item {
@@ -68,15 +67,15 @@
     border: 2px solid $light-gray-stroke;
     border-radius: 8px;
     min-width: 350px;
-    
+
     width: 100%;
     position: relative;
     transition: box-shadow 0.3s;
 
     img {
-        margin: 0 auto;
-        max-height: 295px;
-        width: auto;
+      margin: 0 auto;
+      max-height: 295px;
+      width: auto;
     }
 
     @media (hover: hover) {
@@ -91,7 +90,6 @@
   }
 
   &__heard-wrapper.active {
-
     & {
       border: 1px solid $yellow;
     }
@@ -154,10 +152,9 @@
     cursor: pointer;
   }
 
-
   // @include respond-to($tablet) {
   //   &__list {
-           
+
   //          display: flex;
   //          gap: 11px;
   //           overflow: scroll;
@@ -170,18 +167,15 @@
   //           img {
   //               max-height: 235px;
   //           }
-           
+
   //       }
   // }
 
   @include respond-to($s-mobile) {
-      
     padding: 37px 0 24px 0;
 
-      &__item {
-          min-width: 295px;
-
-      }
+    &__item {
+      min-width: 295px;
+    }
   }
-
 }

@@ -10,7 +10,6 @@
   .related-product-swiper {
     overflow: auto;
     overflow-x: hidden;
-
   }
   &__list {
     margin: 32px -15px 0;
@@ -42,10 +41,10 @@
   .swiper-button-prev {
     color: $green-brand;
   }
-  .swiper-button-next{
+  .swiper-button-next {
     right: -15px;
   }
-  .swiper-button-prev{
+  .swiper-button-prev {
     left: -15px;
   }
   &__heard-fill {
@@ -123,7 +122,7 @@
       line-height: 25px;
       letter-spacing: 0px;
     }
-    .related-product-swiper{
+    .related-product-swiper {
       margin: 0 0 35px 0;
     }
     &__list {

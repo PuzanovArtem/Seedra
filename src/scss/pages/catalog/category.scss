@@ -52,89 +52,86 @@
   }
 }
 
-
 //popup filter buttons ------------------------
 
 .popup {
-    display: none;
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-  
-    .popup-content {
-      background-color: #ffffff;
-      margin: 285px auto;
-      padding: 26px 27px;
-      box-shadow: 0px 4px 26px 0px rgba(199, 199, 199, 0.5);
-      width: 524px;
-      height: 504px;
-  
-      .popup-close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        &:hover,
-        &:focus {
-          color: black;
-          text-decoration: none;
-          cursor: pointer;
-        }
-      }
-      .herbs-popup-title {
-        font-family: "Lexend", sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 32px;
-        letter-spacing: 2px;
-        display: flex;
-      }
-      .herbs-popup__lists {
-        display: flex;
-        text-align: start;
-        margin: 27px 0 30px 0px;
-  
-        .herbs-popup__list {
-          max-width: 134px;
-  
-          li {
-            font-family: "Lexend", sans-serif;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 28px;
-            letter-spacing: 1px;
-            margin: 0 0 15px 0;
-          }
-          &:first-child {
-            margin: 0 57px 0 0;
-          }
-          &:nth-last-child(2) {
-            margin: 0 77px 0 0px;
-          }
-        }
-      }
-      .herbs-popup-button {
-        display: flex;
-        text-align: start;
+  display: none;
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  .popup-content {
+    background-color: #ffffff;
+    margin: 285px auto;
+    padding: 26px 27px;
+    box-shadow: 0px 4px 26px 0px rgba(199, 199, 199, 0.5);
+    width: 524px;
+    height: 504px;
+
+    .popup-close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      &:hover,
+      &:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
       }
     }
-  }
+    .herbs-popup-title {
+      font-family: "Lexend", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 2px;
+      display: flex;
+    }
+    .herbs-popup__lists {
+      display: flex;
+      text-align: start;
+      margin: 27px 0 30px 0px;
 
-  @media (max-width: 1024px){
-    .category{
-      .popup{
-        .popup-content{
-          margin: 250px auto;
-          
+      .herbs-popup__list {
+        max-width: 134px;
+
+        li {
+          font-family: "Lexend", sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 28px;
+          letter-spacing: 1px;
+          margin: 0 0 15px 0;
+        }
+        &:first-child {
+          margin: 0 57px 0 0;
+        }
+        &:nth-last-child(2) {
+          margin: 0 77px 0 0px;
         }
       }
     }
+    .herbs-popup-button {
+      display: flex;
+      text-align: start;
+    }
   }
+}
 
+@media (max-width: 1024px) {
+  .category {
+    .popup {
+      .popup-content {
+        margin: 250px auto;
+      }
+    }
+  }
+}
 
 @media (max-width: 992px) {
   .filter__buttons__box {
@@ -149,16 +146,16 @@
   }
 }
 
-@media (max-width: 600px){
-  .category{
-    .popup{
-      .popup-content{
+@media (max-width: 600px) {
+  .category {
+    .popup {
+      .popup-content {
         margin: 250px auto;
         width: 345px;
-        .herbs-popup__lists{
+        .herbs-popup__lists {
           display: block;
           max-width: 500px;
-    max-height: 80%;
+          max-height: 80%;
           overflow-y: auto;
         }
       }

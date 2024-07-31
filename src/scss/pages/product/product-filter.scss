@@ -59,7 +59,7 @@
         cursor: pointer;
         text-transform: uppercase;
         @extend %display-jc-sb;
-        .main-product__icon{
+        .main-product__icon {
           background-image: url(/src/assets/images/icons/all-product-icon.svg);
           background-repeat: no-repeat;
           width: 28px;
@@ -157,7 +157,6 @@
   }
 }
 
-
 // popup-filter tablet/mobile
 .filter-popup {
   display: none;
@@ -223,7 +222,6 @@
       .select {
         display: none;
       }
-      
     }
   }
 }

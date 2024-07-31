@@ -41,31 +41,32 @@
             }
             $transition-duration: 0.3s;
 
-.toggle {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+            .toggle {
+              position: relative;
+              width: 24px;
+              height: 24px;
+              cursor: pointer;
 
-  .horizontal, .vertical {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 16px;
-    height: 1px;
-    background-color: $green-brand;
-    transform: translate(-50%, -50%);
-  }
+              .horizontal,
+              .vertical {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 16px;
+                height: 1px;
+                background-color: $green-brand;
+                transform: translate(-50%, -50%);
+              }
 
-  .vertical {
-    transform: translate(-50%, -50%) rotate(90deg);
-    transition: transform $transition-duration;
-  }
+              .vertical {
+                transform: translate(-50%, -50%) rotate(90deg);
+                transition: transform $transition-duration;
+              }
 
-  &.active .vertical {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-}
+              &.active .vertical {
+                transform: translate(-50%, -50%) rotate(0deg);
+              }
+            }
           }
 
           .question__item__text {
@@ -88,7 +89,7 @@
             margin: 19px auto 0;
             width: 24px;
             height: 24px;
-            background-image: url('/src/assets/images/icons/Minus.svg');
+            background-image: url("/src/assets/images/icons/Minus.svg");
             background-size: cover;
             background-position: center;
           }
@@ -112,12 +113,12 @@
     .question__item__text {
       display: none;
     }
-    
+
     .question__item--image,
     .question__item--image--mobile {
       cursor: pointer;
     }
-    
+
     .question__item.hide .question__item__text {
       display: block;
     }
@@ -308,8 +309,6 @@
               }
               .question__item--image {
                 margin: 19px auto 0;
-                
-                
               }
             }
 
@@ -327,7 +326,6 @@
           }
         }
         .hide {
-          
           .question__item__text {
             opacity: 0;
             font-size: 0;
@@ -417,13 +415,11 @@
   .questions {
     .questions__content {
       display: contents;
-      
+
       &__right {
         .question__block {
           width: 300px;
-          
         }
-        
       }
     }
   }

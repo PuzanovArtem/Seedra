@@ -8,7 +8,6 @@ var commentSwiper = new Swiper(".response-swiper-container", {
   roundLengths: true,
   loop: true,
 
-  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -51,8 +50,8 @@ var relatedSwiper = new Swiper(".related-product-swiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 2500, 
-    disableOnInteraction: false,  
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     320: {
@@ -66,11 +65,10 @@ var relatedSwiper = new Swiper(".related-product-swiper", {
     695: {
       slidesPerView: 3,
       spaceBetween: 30,
-    }
-  }
+    },
+  },
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
   // },
 });
-
