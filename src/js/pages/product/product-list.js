@@ -22,12 +22,15 @@ function displayProducts(products) {
 
         const productItem = document.createElement('li');
         productItem.classList = 'main-product__item';
-        productItem.innerHTML = `<a href="/Seedra/src/pages/card/card.html" class="main-product__heard-wrapper">
+        
+        
+        
+        productItem.innerHTML = `<div class="main-product__heard-wrapper">
                     <span class="main-product__heard-full"></span>
                     <span class="main-product__heard-fill"></span>
                     
 
-                </ф>
+                </div>
 
                 <img src="${product.images[0]}" alt="img" width="294" height="294" loading="lazy">
 
@@ -53,11 +56,11 @@ function displayProducts(products) {
                     <p class="main-product__com">(${product.minimumOrderQuantity})</p>
                 </div>
 
-                <h4 class="main-product__card-title">${product.title}</h4>
+                <h3 class="main-product__card-title">${product.title}</h3>
 
                 <div class="main-product__price-wrapper">
                     <p class="main-product__price">$${product.price}</p>
-                    <button class="main-product__cart-btn cart-btn" aria-label="add-cart"></button>
+                    <button class="main-product__cart-btn cart-btn" aria-label="cart"></button>
                 </div>`;
         
         productsList.appendChild(productItem);
@@ -90,10 +93,3 @@ function displayProducts(products) {
 
 
 fetchProduct();
-
-
-
-
-
-
-
