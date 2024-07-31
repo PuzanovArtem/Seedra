@@ -127,9 +127,6 @@
   }
 
   @include respond-to($mobile) {
-    &__title {
-      max-width: 237px;
-    }
 
     &__img-wrapper {
       margin-top: 110px;
@@ -182,6 +179,10 @@
   }
 
   @include respond-to($s-mobile) {
+ &__title {
+      max-width: 237px;
+    }
+
     &__second-icon {
       right: -65px;
     }
