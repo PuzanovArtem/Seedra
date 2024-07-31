@@ -127,33 +127,7 @@ padding: 0 0 103px;
     box-sizing: border-box;
   }
 
-  // .swiper-pagination-bullet {
-  //     width: var(
-  //       --swiper-pagination-bullet-width,
-  //       var(--swiper-pagination-bullet-size, 22px)
-  //     );
-  //     height: var(
-  //       --swiper-pagination-bullet-height,
-  //       var(--swiper-pagination-bullet-size, 6px)
-  //     );
-  //     display: inline-block;
-  //     border-radius: var(--swiper-pagination-bullet-border-radius, 30px);
-  //     background: var(--swiper-pagination-bullet-inactive-color, #359740);
-  //     opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
-  //   }
-  //   .swiper-pagination-bullet-active {
-  //     opacity: var(--swiper-pagination-bullet-opacity, 1);
-  //     background: var(--swiper-pagination-color, #359740);
-  //   }
-
-  //   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  //     bottom: var(--swiper-pagination-bottom, auto);
-  //     top: var(--swiper-pagination-top, 84px);
-  //     left: auto;
-  //     right: -186px;
-  //     width: 100%;
-
-  // }
+  
 
   &__pagination {
     display: inline-block;
