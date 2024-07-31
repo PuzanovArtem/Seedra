@@ -6,9 +6,10 @@
     <link rel="icon" type="image/svg+xml" href="../../../assets/logo-CALQutSS.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEEDRA</title>
-    <script type="module" crossorigin src="../../../assets/header-BTWeqdbP.js"></script>
-    <script type="module" crossorigin src="../../../assets/select-Bu8B1k0f.js"></script>
-    <link rel="stylesheet" crossorigin href="../../../assets/blog-Cejm_3VI.css">
+    <script type="module" crossorigin src="../../../assets/blog-CvMybJFx.js"></script>
+    <link rel="modulepreload" crossorigin href="../../../assets/header-rZn2fZ3j.js">
+    <link rel="modulepreload" crossorigin href="../../../assets/select-Bu8B1k0f.js">
+    <link rel="stylesheet" crossorigin href="../../../assets/blog-DRljrT4R.css">
   </head>
   <body>
     <header class="header">
@@ -227,6 +228,7 @@
         <div class="blog-search__wrapper">
             <div class="menu__search-container blog-search__search-container">
                 <input type="text" id="searchInput" class="menu__search-input blog-search__search-input" placeholder="Search" />
+                <img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4675)'%3e%3cpath%20d='M15%203H3L7.1%208.46667C7.35964%208.81286%207.5%209.23393%207.5%209.66667V15L10.5%2013.5V9.66667C10.5%209.23393%2010.6404%208.81286%2010.9%208.46667L15%203Z'%20stroke='%23359740'%20stroke-width='1.5'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4675'%3e%3crect%20width='18'%20height='18'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" id="sort-button" alt="filter" width="24" height="24" class="blog-search__filter-icon">
             </div>
     
             <div class="select">
@@ -238,9 +240,31 @@
                         <div data-value="nut2" class="filter__select-item">Popular</div>
                         <div data-value="nut3" class="filter__select-item">Rating</div>
                     </div>
-                    <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="filter__select-arrow" alt="arrow" />
+                    <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="filter__select-arrow" alt="arrow"/>
                 </div>
             </div>
+    
+    
+    
+        <div id="sort-popup" class="sort-popup">
+            <div class="sort-popup-content">
+                <span id="close-popup" class="close-popup"></span>
+                <div class="select select-popup" id="sort-popup-select">
+                    <label class="filter__sort-select">Sort by</label>
+                    <div class="filter__custom-select">
+                        <div class="filter__select-selected">Recently</div>
+                        <div class="filter__select-items">
+                            <div data-value="nut1" class="filter__select-item">Recently</div>
+                            <div data-value="nut2" class="filter__select-item">Popular</div>
+                            <div data-value="nut3" class="filter__select-item">Rating</div>
+                        </div>
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_44_4259)'%3e%3cpath%20d='M7%2010L12%2015L17%2010'%20stroke='%2370737C'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_44_4259'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="filter__select-arrow" alt="arrow" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
         </div>
     </div>
     </section>    <section class="blog-list">
@@ -367,7 +391,7 @@
                 
                 </li>
     
-                <li class="main-blog__item main-blog__item-sec blog-list__item-sec-tab">
+                <li class="main-blog__item main-blog__item-sec blog-list__item-sec-tab blog-list__special">
                     <div class="main-blog__data-wrapper">
                         <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%203C7.05%203%203%207.05%203%2012C3%2016.95%207.05%2021%2012%2021C16.95%2021%2021%2016.95%2021%2012C21%207.05%2016.95%203%2012%203ZM14.7%2012.9H12C11.46%2012.9%2011.1%2012.54%2011.1%2012V7.5C11.1%206.96%2011.46%206.6%2012%206.6C12.54%206.6%2012.9%206.96%2012.9%207.5V11.1H14.7C15.24%2011.1%2015.6%2011.46%2015.6%2012C15.6%2012.54%2015.24%2012.9%2014.7%2012.9Z'%20fill='%2370737C'/%3e%3c/svg%3e" alt="clock" width="24" height="24" loading="lazy" />
                         <p class="main-blog__data">12.09.2021</p>
@@ -424,6 +448,7 @@
                 
                 </li>
             </ul>
+    
         </div>
     </section>    
   </main>

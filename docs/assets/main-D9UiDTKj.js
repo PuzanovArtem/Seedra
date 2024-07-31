@@ -1,4 +1,4 @@
-import"./header-BTWeqdbP.js";import"./swiper-ZDGXbgvO.js";const l="https://dummyjson.com/products/categories";async function p(){try{const c=await(await fetch(l)).json();d(c)}catch(a){console.error("Error fetching categories:",a)}}function d(a){const c=document.getElementById("main-category-list");a.forEach(s=>{const t=document.createElement("li");t.className="main-product__category-item category-btn",t.innerHTML=`
+import"./header-rZn2fZ3j.js";import"./swiper-CLjSId5F.js";const l="https://dummyjson.com/products/categories";async function p(){try{const c=await(await fetch(l)).json();d(c)}catch(a){console.error("Error fetching categories:",a)}}function d(a){const c=document.getElementById("main-category-list");a.forEach(s=>{const t=document.createElement("li");t.className="main-product__category-item category-btn",t.innerHTML=`
         
             <span class="main-product__icon"></span>        
             <p>${s.name}</p>
