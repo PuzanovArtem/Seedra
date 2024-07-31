@@ -332,6 +332,13 @@
     
   }
 
+   @include respond-to($mobile) {
+&__title {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+   }
+
   @include respond-to($s-mobile) {
     &__first-btn,
     &__sec-btn {
@@ -342,4 +349,6 @@
       margin: 15px 0 0 0;
     }
   }
+
+ 
 }

@@ -61,7 +61,8 @@ function displayProducts(products) {
         
         
         
-        productItem.innerHTML = `<div class="main-product__heard-wrapper">
+        productItem.innerHTML = `<a href="/Seedra/src/pages/card/card.html">
+        <div class="main-product__heard-wrapper">
                     <span class="main-product__heard-full"></span>
                     <span class="main-product__heard-fill"></span>
                     
@@ -97,7 +98,8 @@ function displayProducts(products) {
                 <div class="main-product__price-wrapper">
                     <p class="main-product__price">$${product.price}</p>
                     <button class="main-product__cart-btn cart-btn" aria-label="cart"></button>
-                </div>`;
+                </div>
+                </a>`;
         
         productsList.appendChild(productItem);
 
