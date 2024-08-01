@@ -9,6 +9,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
         gap: 30px;
+        justify-items: center;
     }
 
 
@@ -33,6 +34,7 @@
 
     &__list {
         margin: 35px -15px 0;
+        padding: 0 15px;
         grid-template-columns: repeat(4, 147px);
         gap: 12px;
         overflow: scroll;

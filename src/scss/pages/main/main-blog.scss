@@ -1,5 +1,5 @@
 .main-blog {
-  padding: 32px 0 35px 0;
+  padding: 10px 0 35px 0;
 
   &__top-wrapper {
     @extend %display-jc-sb;
@@ -26,13 +26,32 @@
     margin: 34px 0 0;
   }
 
+ 
+
   &__item {
     padding: 30px;
     min-height: 300px;
     border-radius: 12px;
     background: $light-blue;
     position: relative;
+    display: flex;
+    
   }
+
+  &__item-special {
+
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__item-long {
+flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    
+  }
+
+  
 
   &__item-spec {
     background: $light-green;
@@ -44,11 +63,11 @@
     grid-row: span 2;
   }
 
+ 
+
   &__first-img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+margin-right: -30px;
+margin-bottom: -30px;
   }
 
   &__item-title {
@@ -64,6 +83,10 @@
     color: $text-secondary;
     margin: 4px 0 0;
     line-height: 1.8;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 
   &__item-btn {
@@ -90,26 +113,34 @@
     }
 
     &__item {
-      min-height: 400px;
+      max-height: 400px;
       width: 317px;
       flex: 0 0 auto;
       padding: 20px;
     }
 
+       &__item-special {
+flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+ 
+
     &__first-img {
+     
       width: 222px;
+      margin-right: -20px;
+margin-bottom: 0;
+margin-top: -85px;
     }
 
     &__sec-img {
       width: 183px;
+      
+      height: auto;
     }
 
-    &__item-btn {
-      position: absolute;
-      bottom: 147px;
-      left: 20px;
-      margin: 0;
-    }
 
     &__item-title {
       font-weight: 700;
@@ -119,6 +150,7 @@
 
     &__subtitle {
       max-width: 301px;
+      -webkit-line-clamp: 3;
     }
   }
 

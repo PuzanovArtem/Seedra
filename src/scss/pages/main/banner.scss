@@ -302,7 +302,7 @@
 
     &__wrapper {
      padding: 41px 14px 51px 14px;
-      height: 663px;
+
     }
     
     &__btn-wrapper {
@@ -332,14 +332,24 @@
     
   }
 
+   
+
   @include respond-to($s-mobile) {
     &__first-btn,
     &__sec-btn {
       width: 100%;
+      text-align: center;
     }
 
     &__sec-btn {
       margin: 15px 0 0 0;
     }
+
+    &__title {
+        max-width: 250px;
+       
+    }
   }
+
+ 
 }

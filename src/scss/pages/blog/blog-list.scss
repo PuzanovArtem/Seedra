@@ -6,9 +6,7 @@
     background: $light-green;
   }
 
-  &__item {
-    min-height: 630px;
-  }
+ 
 
   &__subtitle {
     display: none;
@@ -20,6 +18,10 @@
     }
 
     &__sec-img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 0;
       width: 110px;
     }
 
@@ -33,6 +35,19 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       margin: 20px -15px 0;
+    }
+
+    &__item {
+      
+align-items: start;
+      
+    }
+
+    &__img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 0;
     }
 
     &__special {
