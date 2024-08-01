@@ -2,7 +2,8 @@ import"./header-rZn2fZ3j.js";import"./swiper-CLjSId5F.js";const l="https://dummy
         
             <span class="main-product__icon"></span>        
             <p>${s.name}</p>
-        `,c.appendChild(t)})}p();const o="https://dummyjson.com/products?limit=6";console.log(o);async function m(){try{const s=(await(await fetch(o)).json()).products;u(s)}catch(a){console.log(a)}}function u(a){const c=document.getElementById("main-product__list");a.forEach(s=>{const t=document.createElement("li");t.classList="main-product__item",t.innerHTML=`<div class="main-product__heard-wrapper">
+        `,c.appendChild(t)})}p();const o="https://dummyjson.com/products?limit=6";console.log(o);async function m(){try{const s=(await(await fetch(o)).json()).products;u(s)}catch(a){console.log(a)}}function u(a){const c=document.getElementById("main-product__list");a.forEach(s=>{const t=document.createElement("li");t.classList="main-product__item",t.innerHTML=`<a href="/Seedra/src/pages/card/card.html">
+        <div class="main-product__heard-wrapper">
                     <span class="main-product__heard-full"></span>
                     <span class="main-product__heard-fill"></span>
                     
@@ -38,4 +39,5 @@ import"./header-rZn2fZ3j.js";import"./swiper-CLjSId5F.js";const l="https://dummy
                 <div class="main-product__price-wrapper">
                     <p class="main-product__price">$${s.price}</p>
                     <button class="main-product__cart-btn cart-btn" aria-label="cart"></button>
-                </div>`,c.appendChild(t);const r=t.querySelector(".main-product__heard-wrapper"),i=t.querySelector(".main-product__heard-full"),n=t.querySelector(".main-product__heard-fill");r.addEventListener("click",function(){r.classList.toggle("active"),r.classList.contains("active")?(i.style.display="none",n.style.display="block"):(i.style.display="block",n.style.display="none")});const e=t.querySelector(".main-product__cart-btn");e.addEventListener("click",function(){e.classList.toggle("active")})})}m();
+                </div>
+                </a>`,c.appendChild(t);const r=t.querySelector(".main-product__heard-wrapper"),e=t.querySelector(".main-product__heard-full"),i=t.querySelector(".main-product__heard-fill");r.addEventListener("click",function(){r.classList.toggle("active"),r.classList.contains("active")?(e.style.display="none",i.style.display="block"):(e.style.display="block",i.style.display="none")});const n=t.querySelector(".main-product__cart-btn");n.addEventListener("click",function(){n.classList.toggle("active")})})}m();

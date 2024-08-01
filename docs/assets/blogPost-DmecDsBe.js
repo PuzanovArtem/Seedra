@@ -1,1 +1,0 @@
-import"./header-rZn2fZ3j.js";const n=new URLSearchParams(window.location.search),s=n.get("id");s&&c(s);async function c(t){try{const e=await(await fetch(`https://666b067e7013419182d1f622.mockapi.io/api/nuts/product/product/${t}`)).json();i(e)}catch(o){console.log("Error fetching post details:",o)}}function i(t){document.getElementById("post-title").innerText=t.title}
