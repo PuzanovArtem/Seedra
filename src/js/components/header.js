@@ -11,14 +11,16 @@ document.getElementById('menu__burger').addEventListener('click', function() {
       main.classList.remove('main-blur');
       body.style.overflow = 'auto';
        menu.style.display = 'none';
-       
+      
     } else {
       menu.style.display = 'flex';
       body.style.overflow = 'hidden';
       menu.classList.add('show');
             main.classList.add('main-blur');
       
-    }
+  }
+  
+ 
 });
 
 const itemList = document.querySelectorAll('.menu__item');

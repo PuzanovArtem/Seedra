@@ -62,11 +62,15 @@
       max-width: 450px;
     }
 
+    &__title {
+      font-size: 27px;
+    }
   
 
     &__wrapper {
       margin: 30px 0 0 0;
       padding: 47px 17px 30px 17px;
+      height: 221px;
     }
 
     &__bg-fifth {
@@ -93,5 +97,7 @@
       right: 3px;
     }
   }
+
+  
 }
 
