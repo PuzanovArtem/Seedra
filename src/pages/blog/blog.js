@@ -1,27 +1,29 @@
 import '.././../js/components/header.js';
 import '../../js/components/select.js';
 
+
+
 document.getElementById('sort-button').addEventListener('click', function() {
-    document.getElementById('sort-popup').style.display = 'flex';
+    document.getElementById('modal').style.display = 'flex';
+    document.querySelector('.select-popup').style.display = 'block';
+    document.body.style.overflow = 'hidden';
 });
 
-document.getElementById('close-popup').addEventListener('click', function() {
-    document.getElementById('sort-popup').style.display = 'none';
-});
 
 window.onclick = function(event) {
-    if (event.target == document.getElementById('sort-popup')) {
-        document.getElementById('sort-popup').style.display = 'none';
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+         document.querySelector('.select-popup').style.display = 'none';
+         document.body.style.overflow = '';
     }
 }
 
 document.querySelectorAll('.filter__select-item').forEach(function(item) {
     item.addEventListener('click', function() {
-        document.getElementById('sort-popup').style.display = 'none';
+         document.getElementById('modal').style.display = 'none';
     });
 });
-
-
 
 
 
