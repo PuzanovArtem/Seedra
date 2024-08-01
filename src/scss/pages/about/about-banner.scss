@@ -1,0 +1,13 @@
+.about-banner {
+    &__wrapper {
+        height: auto;
+    }
+
+    @include respond-to($s-mobile) {
+        
+        .blog-banner__title {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    }
+}
