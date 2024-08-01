@@ -23,3 +23,6 @@ document.querySelectorAll('.filter__select-item').forEach(function(item) {
 
 
 
+
+
+

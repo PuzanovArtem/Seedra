@@ -9,17 +9,15 @@ document.getElementById('menu__burger').addEventListener('click', function() {
     if (menu.classList.contains('show')) {
         menu.classList.remove('show');
       main.classList.remove('main-blur');
-       body.style.overflow = 'auto';
-        setTimeout(() => {
-            menu.style.display = 'none';
-        }, 300); 
+      body.style.overflow = 'auto';
+       menu.style.display = 'none';
+       
     } else {
       menu.style.display = 'flex';
       body.style.overflow = 'hidden';
-        setTimeout(() => {
-            menu.classList.add('show');
+      menu.classList.add('show');
             main.classList.add('main-blur');
-        }, 10); 
+      
     }
 });
 
