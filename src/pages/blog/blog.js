@@ -21,7 +21,8 @@ window.onclick = function(event) {
 
 document.querySelectorAll('.filter__select-item').forEach(function(item) {
     item.addEventListener('click', function() {
-         document.getElementById('modal').style.display = 'none';
+        document.getElementById('modal').style.display = 'none';
+        document.body.style.overflow = '';
     });
 });
 
